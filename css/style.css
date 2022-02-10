@@ -1,0 +1,1035 @@
+
+/* STYLE GENERAL */
+
+/*Import fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:wght@100&display=swap');
+
+
+* {
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior:smooth;
+}
+
+body{
+    
+    font-family:"Montserrat Regular", sans-serif;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+main{
+}
+
+
+/* PAGE D'ACCUEIL*/
+/* --------- EN-TETE > CONTENEUR ------------------*/
+header {
+    background-color:#ffffff;
+    color:#000000;
+    position:fixed;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:120px;
+    box-shadow: 0pX 0px 8px rgba(2, 148, 51, 0.7);
+    
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+
+    z-index:1000;
+}
+
+/*LOGO*/
+.logo_container{
+    margin:20px 40px;
+}
+.logo{
+    height:100px;}
+
+
+/*NOM DU SITE ET BOUTON DU MENU*/
+.menu_container{
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.site_name{
+    font-size:2rem;
+    font-family:"Comfortaa Bold", Montserrat;
+    margin-right:20px;
+}
+
+.menu_btn{
+    border:none;
+    outline:none;
+    background:transparent;
+    margin-right:25px;
+    cursor:pointer;
+}
+.menu_icon{
+    height:28px;
+}
+
+/*LIGNE VERTE*/
+.green_line{
+    height:3px;
+    width:96%;
+    background-color: #029433;
+    margin-top: 3px;
+    margin-bottom: 5px;
+    margin-right:28px;
+}
+
+/*BARRE DE NAVIGATION*/
+.nav_items{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-right:25px;
+}
+
+.menu_item{
+    list-style-type: none;
+    color: rgba(255, 255, 255, 0.9);
+    background-color: #029433;
+    padding:10px 20px;
+    margin-left:2px;
+    margin-right:2px;
+    font-size:1.8rem;
+    cursor:pointer;
+}
+
+.menu_item:hover{
+    background-color: rgb(250, 246, 175);
+    color:#029433;
+    border-bottom:2px solid #029433;
+}
+
+.menu_item.active{
+    color:#059b25;
+    background-color:#fff;
+    border: 2px solid #059b25;
+    font-size: 1.85rem;
+    font-family:"Montserrat Light"
+}
+
+#first_menu{
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+}
+
+#last_menu{
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+
+/* ESPACE VIDE JUSTE POUR LE DESIGN
+à mettre dans les media-queries pour un écran de 1024px
+.espace_vide{
+    width:20%;
+}*/
+
+/* CONTENEUR DU NOM DE SITE, 
+DE LA LIGNE VERTE ET DE LA BARRE DE NAVIGATION*/
+.navigation_bar_container{
+    display:flex;
+    justify-content:flex-end;
+}
+
+.after_logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+/*---------- FIN DE L'ENTETE------------------------------*/
+
+/*-----------CONTENU PRINCIPALE---------------------------*/
+
+.transparent_white_line1, .transparent_white_line2{
+    position:absolute;
+}
+
+.transparent_white_line1{
+    top:120px;
+    height:40px;
+    width:100%;
+    background-color:rgba(255, 255, 255, 0.5);
+}
+
+.transparent_white_line2{
+    bottom:0px;
+    height:40px;
+    width:100%;
+    background-color:rgba(255, 255, 255, 0.5); 
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.transparent_white_line2 input{
+    display:none;
+}
+
+
+.prev_btn, .next_btn{
+    position:absolute;
+    top:50%;
+    transform:translate(-50%);
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    border:none;
+    outline:none;
+    background-color: rgba(255, 255, 255, 0.6);
+    background-repeat:no-repeat;
+    background-position: center;
+    transition:0.6s all ease;
+
+    cursor:pointer;
+}
+
+.prev_btn:hover, .next_btn:hover{
+    background-color: rgb(255,255,255);
+}
+
+.prev_btn {
+    left:10rem;
+    background-image:url(../icons/cil-chevron-circle-left-alt.png);
+}
+
+.next_btn {
+    right:10rem;
+    background-image:url(../icons/cil-chevron-circle-right-alt.png);
+}
+
+
+/*THEMES*/
+.themes_container{
+    height:100vh;
+ }
+
+.theme.zero{
+   
+    background-image: url(../images/r1.jpg);
+}
+
+.theme.first{
+    background-image:url(../images/theme1.jpeg);
+
+}
+
+.theme.second{
+    background-image:url(../images/theme2.jpg);
+}
+
+.theme.color{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+
+    background-color:rgba(5, 139, 105, 0.478);
+}
+
+.theme{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+
+    position:absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+    display:none;
+    
+}
+
+#active{
+    display:flex;
+    animation:fade 2s;
+}
+@keyframes fade{
+    from{
+        opacity:0.7;
+    }
+
+    to{
+        opacity:1;
+    }
+}
+
+
+.church_name *{
+    display:block;
+}
+.church_name{
+    color:rgba(255, 255, 255, 0.9);
+    display:flex;
+    flex-direction:column;
+    justify-content: flex-start;
+    font-size: 6rem;
+}
+.different_color{
+    color:rgb(250, 246, 175);
+}
+
+.theme.first h2{
+    background-color:#fff;
+    color:#058b6a;
+    border-radius:5px;
+    font-size:2rem;
+    padding:10px 50px;
+}
+.theme.first h3{
+    color:#fff;
+    border-radius:5px;
+    font-family: "Montserrat Light";
+    font-size:5rem;
+    margin:20px;
+    text-align:center;
+}
+
+.develop_btn{
+    display:block;
+    overflow:hidden;
+    outline:none;
+    border:none;
+    background-color:#fff;
+    border-radius:5px;
+    padding: 7px 22px;
+    font-size:1.6rem;
+    font-weight: bold;
+    color:#058b6a;
+    cursor:pointer;
+    border:2px solid #fff;
+    border-color:transparent;
+    margin-top:50px;
+    transition:0.6s all ease;
+}
+
+/*.develop_btn::before{
+    content:'';
+    position:absolute;
+    top:50%;
+    left:50%;
+    z-index:-1;
+    background-color:#058b6a;
+    transform:translate(-50%,-50%);
+    transition: all 0.6s ease;
+    width:0%;
+    height:100%;   
+}
+
+.develop_btn:hover::before{
+    width:100%;
+}*/
+
+.develop_btn:hover{
+    background-color:#058b6a;
+    color:#fff;
+    border:2px solid #fff;
+}
+
+.theme.second h2{
+    color:#fff;
+    border-radius:5px;
+    font-size:3rem;
+    padding:0px 50px;
+}
+
+.theme.second h3 span{
+    background-color:#fff;
+    color:rgb(5, 139, 106);
+    font-size:2.5rem;
+    padding:5px;
+    border-radius:3px;
+}
+
+.theme.second h3{
+    font-size:5rem;
+    text-align:center;
+    color:#fff;
+    margin:0px 0px 20px 20px;
+    
+}
+
+.slide_btn{
+    width:1.5rem;
+    height:1.5rem;
+    border-radius:50%;
+    margin:10px;
+    border:transparent;
+    outline:none;
+    background-color:#fff;
+    cursor:pointer;
+    transition:1s;
+}
+
+.slide_btn:hover{
+    background-color:rgb(2, 148, 51);
+}
+
+
+#radio1:checked ~ .slide_btn.r1{
+    background-color: rgb(2, 148, 51);
+ }
+ #radio2:checked ~ .slide_btn.r2{
+    background-color: rgb(2, 148, 51);
+ }
+ #radio3:checked ~ .slide_btn.r3{
+    background-color: rgb(2, 148, 51);
+ }
+ #radio4:checked ~ .slide_btn.r4{
+    background-color: rgb(2, 148, 51);
+ }
+
+
+
+
+.second_content .guides_title{
+    background-color:rgb(2, 148, 51);
+    color:#FFF;
+    font-family:"Montserrat Thin", "sans serif";
+    font-size:6rem;
+    text-align:center;
+    padding:25px 0px;
+    margin-bottom: 15px;
+}
+
+.guides{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.guides div{
+    width: 250px;
+    height:350px;
+    border-radius:20px;
+    margin:15px;
+    background-color:#ebebeb;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    transition:all 0.6s ease;
+}
+
+.guides div:hover{
+    border-radius:30px;
+}
+
+.guides h3{
+    color:#FFF;
+    padding:15px;
+    font-size: 2.5rem;
+    font-weight:200;
+}
+
+.guid_1{
+    background-image:url(../images/priere_web.jpg)
+}
+
+.guid_2{
+    background-image:url(../images/bible.jpg)
+}
+
+.guid_3{
+    background-image:url(../images/we_must_pray.jpg)
+}
+
+.guid_4{
+    background-image:url(../images/guide_par_dieu.jpg)
+}
+
+
+/* SIDE MENU */
+.side_menu{
+    position:fixed;
+    top:34px;
+    right:5px;
+    width:330px;
+    height:94%;
+    overflow: auto;
+    background-color:rgb(255, 255, 255);
+    box-shadow: 0px 0px 8px rgba(0,0,0, 0.5);
+    border-radius:15px;
+    padding:15px;
+    z-index:1500;
+    display: none;
+    transition:0.6s all ease;
+    
+
+}
+
+.close_btn{
+    width:30px;
+    height:30px;
+    border-radius:50%;
+    border:none;
+    outline:none;
+    background-color:rgb(255, 0, 0);
+    background-image:url(../icons/icon_close.svg);
+    background-repeat:no-repeat;
+    background-position:center;
+    box-shadow: 0px 0px 8px rgba(0,0,0,0.5);
+    cursor:pointer; 
+}
+
+.close_btn:hover{
+    background-color:rgb(200, 0, 0);
+}
+
+.top_of_menu{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom:20px;
+}
+
+.input_control{
+    padding:8px 20px;
+    margin-left:5px;
+    border-radius:20px;
+    background-color:rgb(2, 148, 51);
+}
+.input_control:hover{
+    background:rgba(3, 136, 47,1);
+}
+
+
+.input_control input{
+    color:#fff;
+    background:transparent;
+    outline:none;
+    border:none;
+    width:150px;
+    font-size:1.4rem;
+   
+}
+
+.input_control input::placeholder{
+    color:#e1e1e1;
+}
+.input_control input:hover::placeholder{
+    color:#fff;
+}
+
+.input_control img{
+    position:relative;
+    top:2px;
+}
+
+.menu_links a{
+    display:block;
+    margin:12px;
+    font-weight:bold;
+    font-size:1.7rem;
+    transition:all 0.4s ease;
+
+    
+}
+
+.blank_space{
+    height: 16px;
+}
+
+.menu_links a:hover{
+    color:rgb(2, 148, 51);
+    background-color:rgba(200,200,200,0.1);
+    border-left:4px solid rgb(2, 148, 51);
+    padding-left:3px;
+    border-radius:4px;
+}
+
+.gray_line{
+    width:60%;
+    height:1px;
+    background-color:gray;
+    position: absolute;
+    left:0px;    
+}
+.small_guides_title{
+    color:grey;
+    font-size:1.5rem;
+    font-family:"Montserrat Light", sans-serif;
+    text-align:center;
+    display:block;
+    margin-top:30px;
+    margin-bottom:10px;
+}
+
+.small_guides{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
+
+}
+
+.small_guides div{
+    width: 90px;
+    height:140px;
+    border-radius:10px;
+    margin:8px 0px;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    transition:all 0.5s ease;
+}
+
+.small_guides div:hover{
+    border-radius:15px;
+}
+
+.small_guides h4{
+    color:#fff;
+    font-size:1.4rem;
+    font-family:"Montserrat Thin", sans-serif;
+    padding:5px;
+}
+
+.select_control{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:#FFF;
+    text-align:center;
+    margin:10px 0 30px 0;
+    padding:3px 20px;
+    height:40px;
+    background-color: rgb(2, 148, 51);
+    border-radius:20px;
+    font-family:"Montserrat Light", sans-serif;
+    
+}
+.select_control p{
+    font-size:1.7rem;
+
+}
+.languages{
+    background:transparent;
+    color:#fff;
+    border:none;
+    outline:none;
+    font-family:"Montserrat Light", sans-serif;
+    font-size: 1.7rem;
+    margin-left: 5px;
+
+}
+
+.languages::dropdown{
+    color:red;
+    /*not working*/
+}
+
+.menu_links.other_menus a{
+    font-weight: normal;
+    color:rgb(116, 114, 114);
+    font-size:1.7rem;
+}
+.menu_links.other_menus a:hover{
+    color:rgb(0,0,0)
+}
+
+.follow_us_to{
+    color:grey;
+    font-size:1.5rem;
+    font-family:"Montserrat Light", sans-serif;
+    text-align:center;
+    display:block;
+    margin-top:40px;
+    margin-bottom:3px;
+
+}
+.small_grey_line{
+    width:25%;
+    height:2px;
+    background-color:grey;
+    align-self:center;
+    margin-bottom:12px;
+}
+
+.social_menu{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.social_menu svg{
+    border:2px solid #029433;
+    border-radius:50%;
+    width:35px;
+    height:35px;
+    padding:3px;
+    margin:3px;
+    fill:#029433;
+    transition:0.6s all ease;
+
+}
+
+.menu_footer{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.icon.icon-youtube:hover{
+    fill:#fff;
+    background-color: rgb(255, 0, 0);
+    border-color:transparent;
+    
+    
+}
+
+.icon.icon-twitter:hover{
+    fill:#fff;
+    background-color: rgb(0, 168, 219);
+    border-color:transparent;
+
+}
+.icon.icon-facebook:hover{
+    fill:#fff;
+    background-color: rgb(0, 53, 97);
+    border-color:transparent;
+}
+.icon.icon-instagram:hover{
+    fill:#fff;
+    background-image: linear-gradient(49.2deg,#f9ed32 10%,#ee2a7b 55%,#002aff);
+    border:#fff; 
+}
+
+
+/* ------- FIN DU CORPS DE LA PAGE ------
+
+
+
+
+/* -------- PIEDS DE PAGE ----*/
+.real_footer{
+    
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.real_footer p{
+    padding:20px;
+}
+
+.church_contacts{
+    
+    background-color:rgb(2, 148, 51);
+    color:#fff;
+    font-size:1.6rem;
+    font-family:sans-serif;
+    text-align:center;
+    margin-top:10px;
+}
+
+.church_contacts h5{
+    color:#029433;
+    background-color:rgb(255,255,255, 0.8);
+    font-size:3rem;
+    font-family: "Montserrat Thin";
+}
+
+.communities{
+    display:flex;
+    justify-content: center;
+
+}
+
+.communities div{
+    background-color: rgba(2, 148, 51, 0.4);
+    margin:1px;
+    width:30%;
+    padding: 20px;
+    font-size:1.5rem;
+    text-align: center;
+}
+
+.community h5{
+    font-size:1.6rem;  
+}
+
+.community .chief{
+    font-family:"Montserrat semibold";
+}
+
+.community .phone_number{
+    font-size:1.4rem;
+}
+
+p.copy_right{
+    color:grey;
+    padding:5px;
+    font-family:sans-serif;
+    font-size:1.4rem;
+    text-align: center;
+}
+/* PAGE 2 - MEDIAS ############################### */
+
+.image_box{
+    display:flex;
+    justify-content:flex-start;
+    margin:30px;
+}
+
+.image_box .column{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.column img{
+    margin:5px;
+    border-radius:12px;
+}
+
+.portrait{
+    height:70vh;
+    width: 95%;
+}
+.paysage{
+    width:95%;
+}
+
+/* PAGE 3 - CALENDRIER ############################### */
+
+.region{   
+    background-image: url(../images/sky.jpeg);
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 8px rgba(0,0,0,0.6);
+}
+
+.color.goma{
+    background-color:rgba(139, 213, 248, 0.832);
+}
+
+.color.bangui{
+    background-color:rgba(0, 81, 255, 0.596);
+}
+
+.color.cibitoke{
+    background-color:rgba(255, 157, 9, 0.644);
+}
+
+.program{
+    text-align:center;
+    font-size:3rem;
+    padding:10px 30px;
+    background-color: transparent;
+}
+
+.program.bangui{
+    color:#fff;
+}
+
+.prev_btn.second, .next_btn.second{
+    background-color:transparent;
+    margin:10px;
+}
+.cards_btns{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cards_container{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-y:hidden;
+    overflow-x: scroll;
+    margin:20px 30px;
+    width:62%;
+}
+.card{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:center;
+
+    margin:0px 10px;
+}
+
+.card *{
+    font-size:2rem;
+    text-align:center;
+    font-family:"Montserrat Light";
+}
+
+.h_a{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width:220px;
+    height:220px;
+    background-color:rgba(255, 255, 255, 1);
+    border-radius:50%;
+    box-shadow:0px 0px 8px rgba(0,0,0,0.4);
+    padding:20px;
+    margin:10px;
+}
+.day{
+    background-color:rgb(2, 148, 51);
+    color:#fff;
+    height:42px;
+    width:220px;
+    padding:10px;
+    border-radius:30px;
+    box-shadow:0px 0px 8px rgba(0,0,0,0.4);
+}
+
+.day.bangui{
+    background-color:rgb(255, 174, 0);
+    color:#000;
+}
+
+.hour{
+    font-weight:400;
+    border-bottom: 2px solid;
+    padding:2px 12px;
+}
+
+.activity{
+    font-family:"Montserrat Light";
+    font-size:2.2rem;
+}
+
+/* PAGE 4 - ACTIVITES ############################### */
+
+
+
+
+
+/* PAGE 5 - A PROPOS ############################### */
+
+.text .who_we_are{
+    padding-left:30px;
+    font-size:6rem;
+    font-family:"Montserrat Thin";
+    color:rgb(2, 148, 51);
+}
+
+.text{
+
+    margin-left:0%;
+    font-size:2rem;
+    font-family:"Montserrat Light";
+    /*padding:50px;*/
+    line-height: 1.5;
+    text-align:justify;
+}
+
+section{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+
+    padding:30px 40px;
+}
+
+
+.circle{
+    width:300px;
+    min-width: 300px;
+    height:300px;
+    margin:50px;
+    padding:10px;
+    border-radius:50%;
+    background-color:rgba(255, 255, 255);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align:center;
+    font-family:"Montserrat Thin";
+    font-size:4rem;
+    color:rgb(2, 148, 51);
+}
+
+.section_1{
+    background-color: rgb(2, 148, 51);
+    color:#fff;
+}
+
+.section_2, .section_4{
+    background-color:rgb(250, 246, 175);
+    color:#000;
+    padding:60px;
+}
+
+.section_3{
+    background-color: #00588b;
+    color:#fff;
+}
+
+.circle.third_section *{
+    display:block;
+    color:#00588b;
+}
+
+.section_4{
+    display:inline-block;
+}
+
+.section_5{
+    background-color: rgba(88, 4, 53, 0.288);
+    color:#000;
+}
+
+
+.section_6{
+    background-color: #067a37;
+    color:#fff;
+}
+
+.cicle.sixth_section{
+    color:#000;
+}
+
+.resume_section{
+    display:block;
+    margin:50px;
+    background-color:rgba(2, 148, 51, 0.2);
+    border-radius:20px;
+    text-align:center;
+}
