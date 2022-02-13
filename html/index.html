@@ -6,8 +6,9 @@
 		<meta charset="utf-8"/>
 		<title>Eglise la Compassion Divine - Accueil</title>
 		<link rel="stylesheet" type="text/css" href="../css/style.css"/>
-		<meta name="description" content="L'Eglise La Compassion Divine vous propose des guides simples
-		pour améliorer votre vie Chrétienne." />
+		<link rel="shortcut icon" type="image/png" href="../images/logo_ecd_small.png">
+		<meta name="description" content="L'Eglise La Compassion Divine vous propose des guides 
+		et Enseigmements simples pour améliorer votre vie Chrétienne."/>
 	</head>
 
 	<body>
@@ -16,7 +17,9 @@
 		<header>
 
 			<div class="logo_container">
-				<img class="logo" alt="Logo ECD" src="../images/logo_ecd.png"/>
+				<a href="../html/index.html">
+					<img class="logo" alt="Logo ECD" src="../images/logo_ecd.png"/>
+				</a>
 			</div>
 			
 			<div class="navigation_bar_container">
@@ -37,7 +40,6 @@
 							<li class="menu_item active" id="first_menu"> <a href="../html/index.html">Accueil</a> </li>
 							<li class="menu_item"> <a href="../html/media.html">Média</a></li>
 							<li class="menu_item"> <a href="../html/calendrier.html">Calendrier</a></li>
-							<li class="menu_item"> <a href="../html/activites.html">Activités</a></li>
 							<li class="menu_item"> <a href="../html/about_us.html">A Propos</a></li>
 							<li class="menu_item" id="last_menu"> <a href="#contact_us">Contacts</a></li>
 						</ul>
@@ -50,35 +52,50 @@
 		<main>
 			<div class="themes_container">
 				
-				<div id="active" class="theme zero">
-					<h2 class="church_name"><span>EGLISE</span><span class="different_color">LA COMPASSION</span><span class="different_color">DIVINE</span></h2>
-					<a href="#" class="develop_btn">Développer</a>					
-				</div>
-					
-				<div class="theme first">
-					<h2>Thème de la semaine</h2>
-					<h3>LA CONSTANCE <br>DANS LA COMMUNION<br>FRATERNELLE</h3>
-					<a href="#" class="develop_btn">Développer</a>
-				</div>
+				<div class="themes">
+					<input type="radio" name="radio_btn" class="radio_slide" id="radio0" checked>
+					<input type="radio" name="radio_btn" class="radio_slide" id="radio1">
+					<input type="radio" name="radio_btn" class="radio_slide" id="radio2">
+					<input type="radio" name="radio_btn" class="radio_slide" id="radio3">
+					<input type="radio" name="radio_btn" class="radio_slide" id="radio4">
 
-				<div class="theme second">
-					<h2>Une semaine</h2>
-					<h3><span>D'ENSEIGNEMENTS</span></br>SUR LA VIE CHRETIENNE</h3>
-					<a href="#" class="develop_btn">Développer</a>
+					<div id="active" class="theme zero">
+						<h2 class="church_name">EGLISE<span>LA COMPASSION</span><span>DIVINE</span></h2>					
+					</div>
+						
+					<div class="theme first">
+						<h2>Thème de la semaine</h2>
+						<h3>LA CONSTANCE <br>DANS LA COMMUNION<br>FRATERNELLE</h3>
+						<a href="../html/theme1.html" class="develop_btn">Développer</a>
+					</div>
+	
+					<div class="theme second">
+						<h2>Une semaine</h2>
+						<h3><span>D'ENSEIGNEMENTS</span><br>SUR LA VIE CHRETIENNE»</h3>
+						<a href="../html/theme2.html" class="develop_btn">Développer</a>
+					</div>
+					<div class="theme third">
+						<h2>«LA CONSTANCE DANS LA VIE<br>DE PRIERE"</h3>
+						<h4 class="verset">Matthieu 7:7-9 & Esaï 6:6-9</h4>
+						<a href="../html/theme3.html" class="develop_btn">Développer</a>
+					</div>
+					<div class="theme fourth">
+						<h2><span>«LA CONSTANCE</span><br>DANS L'EVANGELISATION»</h3>
+						<h4 class="verset">Jacques 1:8-9 & Ephésiens 6:14</h4>
+						<a href="../html/theme4.html" class="develop_btn">Développer</a>
+					</div>
 				</div>
-
+				
 				<button class="prev_btn"></button>
 				<button class="next_btn"></button>
 
 				<div class="transparent_white_line1"></div>
-				<div class="transparent_white_line2">
-					<input type="radio" name="radio_btn" id="radio1" checked>
-					<input type="radio" name="radio_btn" id="radio2">
-					<input type="radio" name="radio_btn" id="radio3">
-					
-					<label for="radio1" class="slide_btn r1"></label>
-					<label for="radio2" class="slide_btn r2"></label>
-					<label for="radio3" class="slide_btn r3"></label>
+				<div class="transparent_white_line2">					
+					<label for="radio0" class="label_slide r0"></label>
+					<label for="radio1" class="label_slide r1"></label>
+					<label for="radio2" class="label_slide r2"></label>
+					<label for="radio3" class="label_slide r3"></label>
+					<label for="radio4" class="label_slide r4"></label>
 				</div>
 
 			</div>
@@ -86,7 +103,7 @@
 			<div class="second_content">
 				<h2 class="guides_title">Suivez nos guides !</h2>
 				<div class="guides">
-					<a href="#">
+					<a href="">
 						<div class="guid_1">
 							<h3>Une vie Chrétienne.</h3>
 						</div>
