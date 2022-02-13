@@ -195,6 +195,7 @@ DE LA LIGNE VERTE ET DE LA BARRE DE NAVIGATION */
     background-repeat:no-repeat;
     background-position: center;
     transition:0.6s all ease;
+    z-index:50;
 
     cursor:pointer;
 }
