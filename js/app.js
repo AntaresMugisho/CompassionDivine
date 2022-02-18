@@ -63,8 +63,10 @@ function suivant(){
     document.getElementById("radio" + visible).checked=true;
 };
 
-prev_btn.addEventListener("click", precedent);
-next_btn.addEventListener("click", suivant);
+if (prev_btn, next_btn){
+    prev_btn.addEventListener("click", precedent);
+    next_btn.addEventListener("click", suivant);
+}
 
-setInterval(suivant, 2500)
+setInterval(suivant, 5000)
 //clearinterval

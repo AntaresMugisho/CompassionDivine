@@ -4,6 +4,7 @@ let prev_goma = document.querySelector(".prev_scroll.goma");
 let next_goma = document.querySelector(".next_scroll.goma");
 let container_goma = document.querySelector(".cards_container.goma");
 
+
 prev_goma.addEventListener("click", function (){
     container_goma.scrollLeft=container_goma.scrollLeft-776;
 })
