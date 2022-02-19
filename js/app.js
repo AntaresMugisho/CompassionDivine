@@ -37,8 +37,8 @@ function delete_active_id(){
     for (let i=0; i < themes_nb; i++ ){
         theme_slider[i].removeAttribute("id");
         document.querySelector(".label_slide.r"+i).style.backgroundColor="white";
-    };
-};
+    }
+}
 
 function precedent(){
     visible--;
@@ -49,7 +49,7 @@ function precedent(){
     //theme_slider[visible].setAttribute("id", "active");
     document.querySelector(".label_slide.r"+visible).style.backgroundColor="rgb(2, 148, 51)"
     document.getElementById("radio" + visible).checked=true;
-};
+}
 
 function suivant(){
     visible++;
@@ -61,12 +61,11 @@ function suivant(){
     //theme_slider[visible].setAttribute("id", "active");
     document.querySelector(".label_slide.r"+visible).style.backgroundColor="rgb(2, 148, 51)"
     document.getElementById("radio" + visible).checked=true;
-};
-
-if (prev_btn, next_btn){
-    prev_btn.addEventListener("click", precedent);
-    next_btn.addEventListener("click", suivant);
 }
+
+prev_btn.addEventListener("click", precedent);
+next_btn.addEventListener("click", suivant);
+
 
 setInterval(suivant, 5000)
 //clearinterval
