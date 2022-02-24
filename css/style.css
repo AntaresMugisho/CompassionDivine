@@ -82,7 +82,7 @@ header {
 /* LIGNE VERTE */
 .green_line{
     height:3px;
-    width:96%;
+    width:98%;
     background-color: #029433;
     margin-top: 3px;
     margin-bottom: 5px;
@@ -130,11 +130,13 @@ header {
 #first_menu{
     border-bottom-left-radius: 30px;
     border-top-left-radius: 30px;
+    
 }
 
 #last_menu{
     border-bottom-right-radius: 30px;
     border-top-right-radius: 30px;
+    margin-right:unset;
 }
 
 /* CONTENEUR DU NOM DE SITE, 
@@ -149,6 +151,7 @@ DE LA LIGNE VERTE ET DE LA BARRE DE NAVIGATION */
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-end;
+    margin-right:16px;
 }
 
 /*---------- FIN DE L'ENTETE------------------------------*/
@@ -768,14 +771,14 @@ DE LA LIGNE VERTE ET DE LA BARRE DE NAVIGATION */
 
 .communities{
     display:flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
 }
 
 .communities div{
     background-color: rgba(2, 148, 51, 0.4);
     margin:1px;
-    min-width:30%;
+    min-width:20%;
     padding: 20px;
     font-size:1.5rem;
     text-align: center;
@@ -891,7 +894,7 @@ figcaption span{
     background-repeat:no-repeat;
     background-position:center;
     background-size:cover;
-    height:80vh;
+    height:autp;
 
     margin-bottom: 20px;
     box-shadow: 0px 0px 8px rgba(0,0,0,0.6);
@@ -964,10 +967,9 @@ figcaption span{
 
 .cards_container{
     display: flex;
-    flex-wrap: nowrap;
-    overflow:hidden;
-    scroll-behavior:smooth;
-    transition: all 1s;
+    justify-content: center;
+    flex-wrap: wrap;
+    transition: 1s;
     width:100%;
 }
 
@@ -977,11 +979,11 @@ figcaption span{
     justify-content: space-between;
     align-items:center;
 
-    margin:0px 60px;
+    margin:10px 10px;
 }
 
 .card *{
-    font-size:4rem;
+    font-size:2rem;
     text-align:center;
     font-family:"Montserrat Light";
 }
@@ -992,20 +994,20 @@ figcaption span{
     justify-content: center;
     align-items: center;
 
-    width:340px;
-    height:340px;
+    width:240px;
+    height:240px;
     background-color:rgba(255, 255, 255, 1);
     border-radius:50%;
     box-shadow:0px 0px 8px rgba(0,0,0,0.4);
-    padding:20px;
-    margin:30px 0;
+    padding:8px;
+    margin:5px 0;
 }
 
 .day{
     background-color:rgb(2, 148, 51);
     color:#fff;
-    height:60px;
-    width:340px;
+    margin: 14px 0;
+    width:200px;
     padding:10px;
     border-radius:30px;
     box-shadow:0px 0px 8px rgba(0,0,0,0.4);
@@ -1022,12 +1024,12 @@ figcaption span{
     padding:2px 12px;
 }
 .hour sup{
-    font-size:3rem;
+    font-size:1rem;
 }
 
 .activity{
     font-family:"Montserrat Light";
-    font-size:2.5rem;
+    font-size:2rem;
 }
 
 
@@ -1441,7 +1443,6 @@ p.lien{
     .navigation_bar_container{
         display:flex;
         justify-content:flex-end;
-        margin-right:8px;
     }
 
     .after_logo{
@@ -1507,6 +1508,10 @@ p.lien{
 
     .church_contacts{
         font-size:2rem;
+    }
+
+    .communities{
+        flex-wrap:wrap;
     }
 
     .communities div{
@@ -1624,154 +1629,15 @@ p.lien{
     }
 
     /* PAGE 3 - CALENDRIER ############################### */
-    .region.goma{
-        margin-top:140px;
-    }
-    .region{   
-        background-image: url(../images/sky.jpeg);
-        background-repeat:no-repeat;
-        background-position:center;
-        background-size:cover;
-        height:80vh;
-
-        margin-bottom: 20px;
-        box-shadow: 0px 0px 8px rgba(0,0,0,0.6);
-    }
-    .prev_scroll{
-        left:5rem;
-        background-image:url(../icons/cil-chevron-circle-left-alt.png);
-    }
-
-    .next_scroll{
-        right:5rem;
-        background-image: url(../icons/cil-chevron-circle-right-alt.png);
-    }
-
-    .prev_scroll, .next_scroll{
-        position:absolute;
-        top:55%;    
-        min-width:50px;
-        min-height:50px;
-        border-radius:50%;
-        border:none;
-        outline:none;
-        background-color:rgba(2, 148, 51, 0.3);
-        background-repeat:no-repeat;
-        background-position:center;
-
-        cursor:pointer;
-        transition:0.5s;
-    }
-
-    .prev_scroll:hover, .next_scroll:hover{
-        background-color:rgba(2, 148, 51, 0.7);
-    }
-    .color{
-        height:100%;
-    }
-
-    .color.goma{
-        background-color:rgba(139, 213, 248, 0.832);
-    }
-
-    .color.bangui{
-        background-color:rgba(0, 81, 255, 0.596);
-    }
-
-    .color.cibitoke{
-        background-color:rgba(255, 157, 9, 0.644);
-    }
-
-    .program{
-        text-align:center;
-        font-size:3rem;
-        padding:10px 30px;
-        margin:20px 0 30px;
-        background-color: transparent;
-    }
-
-    .program.bangui{
-        color:#fff;
-    }
-
-    .cards_btns{
-        display:flex;
-        justify-content: center;
-        align-items: center;
-
-        margin-top:20px;
-        position:relative;
-    }
-
-    .cards_container{
-        display: flex;
-        flex-wrap: nowrap;
-        overflow:hidden;
-        scroll-behavior:smooth;
-        transition: all 1s;
-        width:100%;
-    }
-
-    .card{
-        display:flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items:center;
-
-        margin:0px 60px;
-    }
-
-    .card *{
-        font-size:4rem;
-        text-align:center;
-        font-family:"Montserrat Light";
-    }
-
-    .h_a{
-        display:flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-        width:340px;
-        height:340px;
-        background-color:rgba(255, 255, 255, 1);
-        border-radius:50%;
-        box-shadow:0px 0px 8px rgba(0,0,0,0.4);
-        padding:20px;
-        margin:30px 0;
-    }
-
-    .day{
-        background-color:rgb(2, 148, 51);
-        color:#fff;
-        height:60px;
-        width:340px;
-        padding:10px;
-        border-radius:30px;
-        box-shadow:0px 0px 8px rgba(0,0,0,0.4);
-    }
-
-    .day.bangui{
-        background-color:rgb(255, 174, 0);
-        color:#000;
-    }
-
-    .hour{
-        font-weight:400;
-        border-bottom: 2px solid;
-        padding:2px 12px;
-    }
-    .hour sup{
-        font-size:3rem;
-    }
-
-    .activity{
-        font-family:"Montserrat Light";
-        font-size:2.5rem;
-    }
 
 
+
+
+
+
+
+
+    
     /* PAGE 4 - A PROPOS ############################### */
     .about_us_content{
         margin-top:120px;
