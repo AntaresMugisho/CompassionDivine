@@ -111,6 +111,16 @@ header {
     transition: background-color 0.4s;
 }
 
+.menu_item:nth-child(1){
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+}
+
+.menu_item:nth-last-child(1){
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
 .menu_item:hover{
     background-color: rgb(250, 246, 175);
     color:#029433;
@@ -127,17 +137,6 @@ header {
     font-family:"Montserrat Light";
 }
 
-#first_menu{
-    border-bottom-left-radius: 30px;
-    border-top-left-radius: 30px;
-    
-}
-
-#last_menu{
-    border-bottom-right-radius: 30px;
-    border-top-right-radius: 30px;
-    margin-right:unset;
-}
 
 /* CONTENEUR DU NOM DE SITE, 
 DE LA LIGNE VERTE ET DE LA BARRE DE NAVIGATION */
@@ -241,7 +240,7 @@ DE LA LIGNE VERTE ET DE LA BARRE DE NAVIGATION */
     align-items:center;
     overflow: hidden;
 
-    transition:1s ease-in-out;
+    transition:0.8s ease-in-out;
 }
 
 .theme *{
@@ -494,7 +493,7 @@ DE LA LIGNE VERTE ET DE LA BARRE DE NAVIGATION */
     padding:15px;
     z-index:1500;
     display: none;
-    transition:all 1s;
+    transition: all 1s;
 }
 
 .close_btn{
@@ -517,7 +516,7 @@ DE LA LIGNE VERTE ET DE LA BARRE DE NAVIGATION */
 
 .top_of_menu{
     display:flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     margin-bottom:20px;
 }
@@ -528,8 +527,14 @@ DE LA LIGNE VERTE ET DE LA BARRE DE NAVIGATION */
     border-radius:20px;
     background-color:rgb(2, 148, 51);
 }
+
 .input_control:hover{
-    background:rgba(3, 136, 47,1);
+    background:rgba(3, 136, 47,0.8);
+}
+
+.input_control:focus{
+    border:2px solid rgb(2, 1148, 51);
+    background:rgba(2, 148, 51, 0.8);
 }
 
 .input_control input{
@@ -559,7 +564,7 @@ DE LA LIGNE VERTE ET DE LA BARRE DE NAVIGATION */
     margin:12px;
     font-weight:bold;
     font-size:1.7rem;
-    transition:all 0.4s ease;
+    transition: all 0.4s ease;
 }
 
 .blank_space{
@@ -1013,6 +1018,7 @@ figcaption span{
     border-bottom: 2px solid;
     padding:2px 12px;
 }
+
 .hour sup{
     font-size:1rem;
 }
@@ -1342,7 +1348,12 @@ p.lien{
 
 
 /* STYLE GENERAL */
-@media all and (max-device-width : 414px){
+
+@-ms-viewport {
+    width: device-width;
+}
+
+@media all and (max-width : 414px){
 
     html{
         font-size:40%;
@@ -1370,12 +1381,12 @@ p.lien{
 
     /* LOGO */
     .logo_container{
-        margin-left:5px;
+        margin-left:10px;
     }
 
     .logo{
         height:auto;
-        width:60px;}
+        width:65px;}
 
 
     /* NOM DU SITE ET BOUTON DU MENU */
@@ -1402,30 +1413,24 @@ p.lien{
     .menu_item{
         border: 2px solid #059b25;
         padding:5px 5px;
-        margin-right:2px;
-        width:60px;
+        /* width:60px; */
         height:25px;
         text-align:center;
         font-size:1.6rem;
+        font-family:"Montserrat Light", sans-serif;
         transition: background-color 0.4s;
     }
 
+    .menu_item:not(nth:last-child){
+        margin-right:3px;
+    }
+
     .menu_item:hover{
-        font-size:1.65rem;
+        font-size:1.6rem;
     }
 
     .menu_item.active{
         border: 2px solid #059b25;
-    }
-
-    #first_menu{
-        border-bottom-left-radius: 30px;
-        border-top-left-radius: 30px;
-    }
-
-    #last_menu{
-        border-bottom-right-radius: 30px;
-        border-top-right-radius: 30px;
     }
 
     /* CONTENEUR DU NOM DE SITE, 
@@ -1557,15 +1562,21 @@ p.lien{
 
 
     /* PAGE 3 - CALENDRIER ############################### */
+ 
+   .card_wrapper *{
+       font-size:3rem;
+   }
+   
 
-
-
-
-
-
-
-
-
+   .hour sup{
+       font-size:1rem;
+   }
+   
+   .activity{
+       font-family:"Montserrat Light";
+       font-size:3.5rem;
+   }
+   
     /* PAGE 4 - A PROPOS ############################### */
     .about_us_content{
         margin-top:120px;
