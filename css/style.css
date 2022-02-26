@@ -218,7 +218,7 @@ DE LA LIGNE VERTE ET DE LA BARRE DE NAVIGATION */
 
 .themes{
     width:500%;
-    height:100vh;
+    height:100%;
     overflow:hidden;
 
     display:flex;
@@ -420,7 +420,7 @@ DE LA LIGNE VERTE ET DE LA BARRE DE NAVIGATION */
 /*Stylisation des Guides*/
 
 .second_content .guides_title{
-    background-color:rgb(2, 148, 51);
+    background-color:rgba(2, 148, 51);
     color:#FFF;
     font-family:"Montserrat Thin", "sans serif";
     font-size:6rem;
@@ -1450,9 +1450,20 @@ p.lien{
     /*---------- FIN DE L'ENTETE------------------------------*/
 
     /*-----------CONTENU PRINCIPALE---------------------------*/
-
+    .themes_container{
+        margin-top:80px;
+        height:500px;
+    }
     .transparent_white_line1, .transparent_white_line2{
            height:30px;
+    }
+
+    .transparent_white_line2{
+        top:550px;     
+    }
+
+    .prev_btn, .next_btn{
+        top:55%;
     }
 
     .prev_btn {
@@ -1471,7 +1482,7 @@ p.lien{
     }
 
     .develop_btn{
-        margin-top:76px;
+        margin-top:40px;
     }
         
     .theme.third h2{
@@ -1522,25 +1533,39 @@ p.lien{
         font-size:2rem;
     }
 
+    
+    /* STYLISATION DU SIDE MENU */
+    .input_control input{
+        font-size:2.5rem; 
+    }
 
+    .menu_links a{
+        font-size:2.5rem;
+    }
 
+    .small_guides_title{
+        font-size:2.5rem;
+    }
 
+    .small_guides h4{
+        font-size:2.5rem;
+    }
 
+    .select_control p{
+        font-size:2.6rem;
+    }
 
+    .languages{
+        font-size:2.6rem;
+    }
 
+    .menu_links.other_menus a{
+        font-size:2.5rem;
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
+    .follow_us_to{
+        font-size:2.5rem;
+    }
 
 
     /* PAGE 2 - MEDIAS ############################### */
@@ -1652,17 +1677,6 @@ p.lien{
     }
 
 
-
-
-
-
-
-
-
-
-
-
-
     /* STYLISATION DES THEMES (UN FICHIER PAR THEME)*/
 
     .developpement{
@@ -1692,12 +1706,6 @@ p.lien{
         font-size:2.5rem;
         text-align:right;
     }
-
-  
-
-
-    
-
 
     /* PETITS THEMES*/
 
