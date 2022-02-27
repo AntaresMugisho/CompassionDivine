@@ -318,32 +318,12 @@ DE LA LIGNE VERTE ET DE LA BARRE DE NAVIGATION */
     z-index:10;
 }
 
-
 .develop_btn:hover{
     background-color:#058b6a;
     
     border:2px solid #fff;
     color:#f1f1f1;
 }
-
-/* NOT WORKING PROPERLY
-.develop_btn::before{
-    content:"";
-    position:absolute;
-    top:50%;
-    left:50%;
-    background-color:#058b6a;
-    transform:translate(-50%,-50%);
-    transition: all 0.6s ease;
-    width:0;
-    height:100%;
-    z-index:-100;
-}
-
-.develop_btn:hover::before{
-    width:100%;
-}*/
-
 
 .theme.second h2{
     font-size:7rem;
@@ -814,7 +794,7 @@ p.copy_right{
 
 .main_media_container{
     height: 100vh;
-    margin-top:140px;
+    margin-top:120px;
     background-color: #0099ff;
 
 }
@@ -835,7 +815,7 @@ p.copy_right{
 .up_media h2{
     font-size:5rem;
     margin:30px;
-    color:white;
+    color:rgb(255, 255, 255);
     font-family:"Montserrat Thin", sans-serif;
 }
 
@@ -848,9 +828,10 @@ p.copy_right{
     flex-direction: row;
     justify-content: space-between;
     align-items:center;
-    margin:0px 20px 0px 20px;
+    margin:0px 0px 0px 0px;
     
-    width:96%;
+    width:100%;
+    height:40vmin;
     overflow-x: auto;
 }
 
@@ -859,34 +840,34 @@ p.copy_right{
     height:160px;
     border-radius:16px;
     margin:0 10px;
-    background-color:rgba(255, 255, 255, 0.76);
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
 }
 
 .down_media figure{
-    min-width:360px;
-    min-height:240px;
+    width:360px;
+    height:240px;
     margin:20px 60px;
-    border-radius:20px;
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
-    background-color: rgba(255, 255, 255, 0.76);
 }
 
 .down_media figure img{
-    width:100%;
+    width:360px;
+    height: 240px;
+    border-radius:20px;
 }
-.down_media figure figcaption{
 
+.down_media figure figcaption{
+    display:none;
     height:60px;
     width:260px;
+    
     position:relative;
-    top:180px;
+    top:-50px;
     left:180px;
    
     padding:10px;
     font-size:1.4rem;
     background-color: rgba(255, 255, 255, 0.8);
-
 }
 
 figcaption span{
