@@ -67,5 +67,5 @@ prev_btn.addEventListener("click", precedent);
 next_btn.addEventListener("click", suivant);
 
 
-// setInterval(suivant, 5000)
+setInterval(suivant, 5000)
 //clearinterval
