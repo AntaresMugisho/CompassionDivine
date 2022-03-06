@@ -1,10 +1,27 @@
 
 /* STYLE GENERAL */
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@font-face{
+    font-family: "Montserrat Thin" ;
+    src: url(../fonts/Montserrat-Thin.woff)
+    format('woff');
+    
+    font-family: "Montserrat Light" ;
+    src: url(../fonts/Montserrat-Light.woff)
+    format('woff');
+
+    font-family: "Montserrat Regular" ;
+    src: url(../fonts/Montserrat-Regular.woff)
+    format('woff');
+
+    font-family: "Montserrat Bold" ;
+    src: url(../fonts/Montserrat-Bold.woff)
+    format('woff');
+}
+
 
 * {
-    margin:0px;
+    margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
@@ -472,7 +489,8 @@ DE LA LIGNE VERTE ET DE LA BARRE DE NAVIGATION */
     border-radius:15px;
     padding:15px;
     z-index:1500;
-    display: none;
+    display:none;
+
     transition: all 1s;
 }
 
@@ -761,7 +779,7 @@ DE LA LIGNE VERTE ET DE LA BARRE DE NAVIGATION */
 }
 
 .communities div{
-    background-color: rgba(2, 148, 51, 0.4);
+    background-color: rgba(2, 148, 51, 0.3);
     margin:1px;
     min-width:20%;
     padding: 20px;
