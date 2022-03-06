@@ -866,6 +866,7 @@ p.copy_right{
     height:240px;
     margin:20px 60px;
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+    border-radius:20px;
 }
 
 .down_media figure img{
@@ -1037,8 +1038,8 @@ figcaption span{
     padding-left:40px;
     font-size:6rem;
     font-family:"Montserrat Thin";
-    color:#f1f1f1;
-    background-color: #0099ff;
+    color:#010101;
+    /* background-color: #0099ff; */
 }
 
 section{
@@ -1081,7 +1082,7 @@ section .text p{
 
 /*Section 0*/
 .resume_section{
-    background-color: #0099ff;
+    /* background-color: #0099ff; */
 }
 
 .g_line{
@@ -1132,7 +1133,7 @@ section .text p{
 /*Section 1*/
 
 .section_1{
-    background-color: #d5fa90;
+    /* background-color: #d5fa90; */
 }
 
 .etiquette._1{
@@ -1152,7 +1153,7 @@ section .text p{
 /*Section 2*/
 
 .section_2{
-    background-color: #ffae00;
+    /* background-color: #ffae00; */
 }
 
 .etiquette._2, .etiquette._4{
@@ -1173,7 +1174,7 @@ section .text p{
 /*Section 3*/
 
 .section_3{
-    background-color: #0030b3;
+    /* background-color: #0030b3; */
 }
 
 .etiquette._3{
@@ -1191,7 +1192,7 @@ section .text p{
 }
 
 .section_3 .text p, .section_3 .text h2{
-    color:#f1f1f1;
+    color:#010101;
 }
 
 .etiquette._3{
@@ -1216,7 +1217,7 @@ section .text p{
 }
 
 .section_4 .text h2{
-    color:#6f00ca;
+    /* color:#6f00ca; */
 }
 
 
@@ -1385,18 +1386,20 @@ p.lien{
 
     .logo{
         height:auto;
-        width:65px;}
+        width:60px;}
 
 
     /* NOM DU SITE ET BOUTON DU MENU */
     .menu_container{
         display:flex;
-        justify-content: flex-end;
-        align-items: center;
+        justify-content: space-around;
+        align-items: flex-end;
     }
 
     .site_name{
-        font-size:2.5rem;
+        font-size:2rem;
+        text-align: center;
+        margin-right:10px;
     }
 
     .menu_btn{
@@ -1425,11 +1428,12 @@ p.lien{
     }
 
     .menu_item:hover{
-        font-size:1.6rem;
+        font-size:1.5rem;
     }
 
     .menu_item.active{
         border: 2px solid #059b25;
+        font-size:1.5rem;
     }
 
     /* CONTENEUR DU NOM DE SITE, 
@@ -1444,6 +1448,7 @@ p.lien{
         flex-direction: column;
         justify-content: flex-end;
         align-items: flex-end;
+        margin-left:10px;
     }
 
     /*---------- FIN DE L'ENTETE------------------------------*/
@@ -1720,4 +1725,11 @@ p.lien{
 
     .small_theme a{
         font-size:3rem;
+    }
+
+
+@media all and (max-width : 392px){
+
+    html{
+        font-size:39.5%;
     }
