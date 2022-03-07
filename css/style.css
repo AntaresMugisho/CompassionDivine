@@ -82,7 +82,7 @@ header {
 
 .site_name{
     font-size:2rem;
-    font-family:"Comfortaa Bold", Montserrat;
+    font-family:"Montserrat-Regular", sans-serif;
 }
 
 .menu_btn{
@@ -151,7 +151,7 @@ header {
     background-color:#fff;
     border: 3px solid #059b25;
     font-size: 1.85rem;
-    font-family:"Montserrat-Light";
+    font-family:"Montserrat-Light", sans-serif;
 }
 
 
@@ -311,7 +311,7 @@ DE LA LIGNE VERTE ET DE LA BARRE DE NAVIGATION */
 .theme.first h3{
     color:#fff;
     border-radius:5px;
-    font-family: "Montserrat-Light";
+    font-family: "Montserrat-Light", sans-serif;
     font-size:6.5rem;
     padding:10px;
     text-align:center;
@@ -324,7 +324,7 @@ DE LA LIGNE VERTE ET DE LA BARRE DE NAVIGATION */
     border:2px solid transparent;
     border-radius:7px;
     padding: 10px 28px;
-    font-family:"Montserrat-Light";
+    font-family:"Montserrat-Light", sans-serif;
     font-size:1.8rem;
     font-weight: bold;
     overflow:hidden;
@@ -419,7 +419,7 @@ DE LA LIGNE VERTE ET DE LA BARRE DE NAVIGATION */
 .second_content .guides_title{
     background-color:rgba(2, 148, 51);
     color:#FFF;
-    font-family:"Montserrat-Thin", "sans serif";
+    font-family:"Montserrat-Thin", sans-serif;
     font-size:6rem;
     text-align:center;
     padding:25px 0px;
@@ -769,7 +769,7 @@ DE LA LIGNE VERTE ET DE LA BARRE DE NAVIGATION */
     color:#029433;
     background-color:rgb(255,255,255, 0.8);
     font-size:3rem;
-    font-family: "Montserrat-Thin";
+    font-family: "Montserrat-Thin", sans-serif;
 }
 
 .communities{
@@ -793,7 +793,7 @@ DE LA LIGNE VERTE ET DE LA BARRE DE NAVIGATION */
 }
 
 .community .chief{
-    font-family:"Montserrat semibold";
+    font-family:"Montserrat-Regular", sans-serif;
 }
 
 .community .phone_number{
@@ -890,7 +890,7 @@ p.copy_right{
 }
 
 figcaption span{
-    font-family:"Montserrat-Light";
+    font-family:"Montserrat-Light", sans-serif;
 }
 
 /* PAGE 3 - CALENDRIER ############################### */
@@ -958,7 +958,7 @@ figcaption span{
 .card_wrapper *{
     font-size:2rem;
     text-align:center;
-    font-family:"Montserrat-Light";
+    font-family:"Montserrat-Light", sans-serif;
 }
 
 .card_wrapper:hover .card{
@@ -1024,7 +1024,7 @@ figcaption span{
 }
 
 .activity{
-    font-family:"Montserrat-Light";
+    font-family:"Montserrat-Light", sans-serif;
     font-size:2rem;
 }
 
@@ -1037,7 +1037,7 @@ figcaption span{
 .who_we_are{
     padding-left:40px;
     font-size:6rem;
-    font-family:"Montserrat-Thin";
+    font-family:"Montserrat-Thin", sans-serif;
     color:#010101;
     /* background-color: #0099ff; */
 }
@@ -1056,14 +1056,14 @@ section{
 }
 
 section .text h2{
-    font-family:"Montserrat", sans-serif;
+    font-family:"Montserrat-Regular", sans-serif;
     font-size:3rem;
 }
 
 section .text p{
     text-align: justify;
     font-size:2.5rem;
-    font-family:"Montserrat-Light";
+    font-family:"Montserrat-Light", sans-serif;
     line-height: 1.5;
 }
 
@@ -1481,8 +1481,9 @@ p.lien{
     /*STYLE DES THEMES*/
 
     /*Contenu des thèmes*/
-    .church_name span{
-        font-size: 7rem;
+   
+    .church_name, .church_name span{
+        font-size: 6rem;
     }
 
     .develop_btn{
@@ -1603,7 +1604,7 @@ p.lien{
    }
    
    .activity{
-       font-family:"Montserrat-Light";
+       font-family:"Montserrat-Light", sans-serif;
        font-size:3.5rem;
    }
    
