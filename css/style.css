@@ -154,7 +154,6 @@ header {
 }
 
 
-
 .menu_item.active{
     color:#059b25;
     background-color:#fff;
@@ -216,7 +215,6 @@ DE LA LIGNE VERTE ET DE LA BARRE DE NAVIGATION */
     background-position: center;
     transition:0.6s all ease;
     z-index:50;
-
     cursor:pointer;
 }
 
@@ -246,7 +244,6 @@ DE LA LIGNE VERTE ET DE LA BARRE DE NAVIGATION */
     width:500%;
     height:100%;
     overflow:hidden;
-
     display:flex;
     justify-content: flex-start;
     align-items: center;
@@ -265,7 +262,7 @@ DE LA LIGNE VERTE ET DE LA BARRE DE NAVIGATION */
     justify-content: center;
     align-items:center;
     overflow: hidden;
-
+    
     transition:0.8s ease-in-out;
 }
 
@@ -780,28 +777,34 @@ DE LA LIGNE VERTE ET DE LA BARRE DE NAVIGATION */
     background-color:rgb(255,255,255, 0.8);
     font-size:3rem;
     font-family: "Montserrat-Thin", sans-serif;
-
+    padding-top:10px;
+    padding-bottom:10px;
 }
 
 
 .contact_form{
-    background-color:rgba(255,255,255, 0.3);
     display:flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: flex-end;
     align-items: center;
-    width:460px;
-    margin:10px;
+    margin-top:10px;
+    width:500px;
     padding:10px;
     border-radius:5px;
     position:relative;
     left:50%;
     transform: translateX(-50%);
 }
+
+.contact_form *{
+    font-family:"Montserrat-Regular", sans-serif;
+}
+
 .contact_form div{
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
 }
 #name, #adress, #message{
     border:2px solid #029433;
@@ -809,6 +812,7 @@ DE LA LIGNE VERTE ET DE LA BARRE DE NAVIGATION */
     outline:none;
     padding:6px;
     margin:6px;
+
 }
 
 #name, #adress, #send_btn{
@@ -816,21 +820,48 @@ DE LA LIGNE VERTE ET DE LA BARRE DE NAVIGATION */
     height:40px;
 }
 
+#name, #adress{
+    width:100%;
+}
+
+#message{
+    width:98%;
+    height:100px;
+    font-size:1.5rem;
+}
+
 #send_btn{
     padding:6px;
     border:none;
     outline:none;
-    color:rgb(2, 148, 51);
+    border-radius:5px;
+    border:2px solid #f1f1f1;
     color:#f1f1f1;
+    background: transparent;
+    width:50%;
+    margin:6px;
+    cursor:pointer;
+    align-self: flex-end;
+    transition: background-color, color 0.4s;
+}
+#send_btn:hover{
+    background-color:#f1f1f1;
+    color:rgb(2, 148, 51);
+    font-family:"Montserrat-Bold", sans-serif;
 }
 
-#message{
-    width:100%;
-    height:200px;
-    
+.phone_numbers_section::before{
+    content:"";
+    height:1px;
+    background-color:#f1f1f1;
+    width:30%;
+    max-width:200px;
+    display:block;
+    position:relative;
+    left:50%;
+    transform:translatex(-50%);
+    margin:10px 0px 10px 0px;
 }
-
-
 
 
 .communities{
@@ -863,9 +894,9 @@ DE LA LIGNE VERTE ET DE LA BARRE DE NAVIGATION */
 
 p.copy_right{
     color:grey;
-    padding:5px;
+    padding:10px;
     font-family:sans-serif;
-    font-size:1.4rem;
+    font-size:1.8rem;
     text-align: center;
 }
 
@@ -1577,7 +1608,18 @@ p.lien{
     /* ------- FIN DU CORPS DE LA PAGE ------
 
     /* -------- PIEDS DE PAGE ----*/
+    .contact_form{
+        width:96%;
+    }
 
+    #message{
+        width:100%;
+    }
+
+    .contact_form div{
+        flex-direction:column;
+    }
+    
     .church_contacts{
         font-size:2rem;
     }
