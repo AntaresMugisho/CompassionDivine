@@ -1,16 +1,35 @@
 <?php
 
-    $to = "antaresmugisho@gmail.com";
-    $subject = "Sujet";
-    $message = wordwrap($message, 70, "\r\n");
+if (isset($_POST["message"])){
 
-    $retour = mail($to, "Sujet", "Message", "");
+    $to = "antaresmugisho@gmail.com";
+    $subject = "Ceci est le sujet du message.";
+    $message = "Message envoyé via le formulaire de contact du site exemplesite.com
+    Nom : " . $_POST["name"] . "
+    E-mail : ". $_POST["email"] . "
+    Message : " . $_POST["message"];
+
+    $retour = mail($to, $subject, $message, "From:contact@exemplesite.com" . "\r\n" . "Reply-to:" . $_POST["email"]);
 
     if ($retour){
-        echo "Message sent succesfully"
+        echo "Message envoyé avec suscès"
     }
-    else{
-        echo "Failed to send the mail"
+    esle{
+        echo "Erreur d'envoie"
     }
 
+}
+
+
+
+
+
+
+
+
+
 ?>
+    
+</body>
+</html>
+

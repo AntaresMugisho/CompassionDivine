@@ -142,12 +142,13 @@
 
 				<form class="contact_form" method="POST" action="contact.php">
 					<div>
-						<input type="text" id="name" placeholder="Nom">
-						<input type="email" id="e_mail" placeholder="E-mail">
+						<input type="text" name="name" id="name" placeholder="Nom" required>
+						<input type="email" name="email" id="e_mail" placeholder="E-mail" required>
 					</div>
-					<textarea name="" id="message" cols="30" rows="4" placeholder="Ecrivez votre message ici"></textarea>
+					<textarea name="message" id="message" cols="30" rows="4" placeholder="Ecrivez votre message ici"></textarea>
 					<button type="submit" class="send_btn">Envoyer</button>
 				</form> 
+
 
 				<p class="phone_numbers_section">Représentation Légale</br>
 					Pasteur Samuel LUGO - Représentant Légal</br>
