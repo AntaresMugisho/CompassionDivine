@@ -132,6 +132,33 @@ function suivant(){
 prev_btn.addEventListener("click", precedent);
 next_btn.addEventListener("click", suivant);
 
-
 setInterval(suivant, 5000)
 //clearinterval
+
+// SEND EMAIL FROM THE CONTACT FORM
+
+let send_btn = document.getElementsByClassName("send_btn")
+
+send_btn.addEventListener("submit", send_mail)
+
+// Clear text on the form
+//document.querySelector(".contact_form").reset()
+
+//Get input values and save it
+let name = document.getElementById("name").value;
+let e_mail = document.getElementById("e_mail").value;
+let message = documnet.getElementById("message").value;
+
+function send_mail(){
+    Email.send({
+        Host : "smtp.gmail.com",
+        Username : 'antaresmugisho@gmail.com',
+        Password : "heptvhyxbgrcznye",
+        To : 'antaresmugisho@gmail.com',
+        From : 'antaresmugisho@gmail.com',
+        Subject : 'Client ${name} need to tell you something !',
+        Body : 'Name : ${name} <br/>E-mail : ${e_mail}<br/> Message : ${message}'
+    }).then(
+    message => alert(message)
+    );
+}

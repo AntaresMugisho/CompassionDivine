@@ -140,14 +140,13 @@
 			<div class="church_contacts" id="contact_us">
 				<h5>Nous contacter</h5>
 
-				<form class="contact_form">
+				<form class="contact_form" method="POST" action="contact.php">
 					<div>
-						<input id="name" type="text" placeholder="Nom">
-						<input id="adress" type="email" placeholder="E-mail">
+						<input type="text" id="name" placeholder="Nom">
+						<input type="email" id="e_mail" placeholder="E-mail">
 					</div>
-					<textarea name="" id="message" cols="30" rows="10" placeholder="Ecrivez votre message ici"></textarea>
-					<input id="send_btn" type="submit" value="Envoyer">
-
+					<textarea name="" id="message" cols="30" rows="4" placeholder="Ecrivez votre message ici"></textarea>
+					<button type="submit" class="send_btn">Envoyer</button>
 				</form> 
 
 				<p class="phone_numbers_section">Représentation Légale</br>
@@ -200,9 +199,8 @@
 			</div>
 			<p class="copy_right">&copy; 2022 - Eglise La Compassion Divine</p>
 		</footer>
-
+		<script src="https://smtpjs.com/v3/smtp.js"></script>
 		<script src="../js/app.js"></script>
 	</body>
 
 </html>
-

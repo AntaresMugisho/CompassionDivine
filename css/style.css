@@ -806,7 +806,7 @@ DE LA LIGNE VERTE ET DE LA BARRE DE NAVIGATION */
     align-items: center;
     width:100%;
 }
-#name, #adress, #message{
+#name, #e_mail, #message{
     border:2px solid #029433;
     border-radius:5px;
     outline:none;
@@ -815,22 +815,21 @@ DE LA LIGNE VERTE ET DE LA BARRE DE NAVIGATION */
 
 }
 
-#name, #adress, #send_btn{
+#name, #e_mail, #send_btn{
     font-size:1.5rem;
     height:40px;
 }
 
-#name, #adress{
+#name, #e_mail{
     width:100%;
 }
 
 #message{
     width:98%;
-    height:100px;
     font-size:1.5rem;
 }
 
-#send_btn{
+.send_btn{
     padding:6px;
     border:none;
     outline:none;
@@ -844,7 +843,7 @@ DE LA LIGNE VERTE ET DE LA BARRE DE NAVIGATION */
     align-self: flex-end;
     transition: background-color, color 0.4s;
 }
-#send_btn:hover{
+.send_btn:hover{
     background-color:#f1f1f1;
     color:rgb(2, 148, 51);
     font-family:"Montserrat-Bold", sans-serif;
@@ -1170,11 +1169,6 @@ section .text p{
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
     background-color:#fff;
     padding:30px;
-}
-
-/*Section 0*/
-.resume_section{
-    /* background-color: #0099ff; */
 }
 
 .g_line{
@@ -1830,9 +1824,11 @@ p.lien{
         font-size:3rem;
     }
 
+}
 
 @media all and (max-width : 392px){
 
     html{
         font-size:39.5%;
     }
+}
