@@ -12,24 +12,9 @@ if (isset($_POST["message"])){
     $retour = mail($to, $subject, $message, "From:contact@exemplesite.com" . "\r\n" . "Reply-to:" . $_POST["email"]);
 
     if ($retour){
-        echo "Message envoyé avec suscès"
+        echo "Message envoyé avec suscès";
     }
     esle{
-        echo "Erreur d'envoie"
+        echo "Erreur d'envoie";
     }
-
 }
-
-
-
-
-
-
-
-
-
-?>
-    
-</body>
-</html>
-
