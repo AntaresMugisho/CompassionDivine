@@ -1,0 +1,40 @@
+
+
+// Vendor
+@import "./vendor/cdns";
+
+// Utils
+@import "./utils/variables";
+@import "./utils/mixins";
+@import "./utils/functions";
+
+// Base
+@import "./base/reset";
+@import "./base/typography";
+
+// Components
+@import "./components/icons";
+
+// Layout
+@import "./layout/forms";
+@import "./layout/containers";
+
+// Pages
+@import "./page/index";
+
+// Themes
+//@import "./themes/";
+
+
+body{
+    font-size:10px;
+}
+
+p{
+    color: $primary-color;
+}
+
+
+
+
+
