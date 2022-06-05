@@ -14,27 +14,17 @@
 
 // Components
 @import "./components/icons";
+@import "./components/buttons";
 
 // Layout
 @import "./layout/forms";
 @import "./layout/containers";
+@import "./layout/header";
 
 // Pages
 @import "./page/index";
 
 // Themes
 //@import "./themes/";
-
-
-body{
-    font-size:10px;
-}
-
-p{
-    color: $primary-color;
-}
-
-
-
 
 

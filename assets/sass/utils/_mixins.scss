@@ -1,0 +1,78 @@
+
+@mixin breakpoint($device){
+    @media screen and (max-width:map-get($breakpoints, $device)){
+        @content;
+    }
+}
+
+@mixin fit_background{
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+}
+
+@mixin link_after($bg-color : $primary_color){
+    content:"";
+    background-color:$bg-color;
+    width:0%;
+    height:3px;
+    position:absolute;
+    left:0;
+    bottom:-4px;
+    transition: width $tr_duration ease-out;
+    // z-index:-1;
+}
+
+@mixin flex_center($direction : row){
+    display:flex;
+    flex-direction:$direction;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+@mixin after_title{
+    content:"";
+    display:block;
+    width:40%;
+    height:1px;
+    margin-bottom:3rem;
+    background:$accent_color;
+    position:relative;
+    left:50%;
+    transform:translateX(-50%);
+}
+
+
+
+@mixin i_gradient_color($order:1){
+    @if $order==1{
+        background: linear-gradient(45deg, #000000, #f83600);
+        background-clip: border-box;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    @elseif $order==2{
+        background: linear-gradient(45deg, #972ae6, #626fbf);
+        background-clip: border-box;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    @elseif $order==3{
+        background: linear-gradient(45deg, #000000, #fad126);
+        background-clip: border-box;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    
+    @elseif $order==4{
+        background: linear-gradient(45deg, #015eea, #00c0fa);
+        background-clip: border-box;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}

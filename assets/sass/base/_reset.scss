@@ -1,0 +1,26 @@
+
+
+*, 
+::before,
+::after{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+input[type="reset"], 
+input[type="submit"], 
+input[type="button"],
+button{
+    border:none;
+    outline: none;
+    cursor:pointer;
+}

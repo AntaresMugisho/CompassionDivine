@@ -3,54 +3,61 @@
 <html>
 
 	<head>
-		<meta charset="UTF-8"/>
-		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-		<meta name="keywords" content="eglise, compassion, divine, theme, guide">
-		<title>Eglise la Compassion Divine - Accueil</title>
-		<link rel="stylesheet" type="text/css" href="../assets/css/style.css"/>
+		<meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Eglise la Compassion Divine - Accueil</title>
+		
+        <meta name="title" content="Eglise la Compassion Divine - Accueil">
+		<meta name="description" content="Passez su temps dans la présence de Dieu !
+		L'Eglise La Compassion Divine Internationale vous propose des enseignements centrés sur Bible et culturellement pertinents, qui vous incitent à chercher Dieu tout au long de la journée."/>
+		<meta name="keywords" content="eglise, compassion, divine, biblique, dieu, jesus">
+		
 		<link rel="shortcut icon" type="image/png" href="../images/logo_ecd_small.png"/>
-		<meta name="description" content="L'Eglise La Compassion Divine vous propose des guides et Enseigmements simples pour vous accompagner dans votre vie Chrétienne."/>
+		<link rel="stylesheet" type="text/css" href="../assets/css/style.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
 	</head>
 
 	<body>
 
 		<header>
+			<div class="navbar">
 
-			<div class="logo_container">
-				<a href="../html/index.html">
-					<img class="logo" alt="Logo ECD" src="../images/logo_ecd.png"/>
-				</a>
-			</div>
-			
-			<div class="navigation_bar_container">
-				
-				<div class="after_logo">
-					
-					<div class="menu_container">
-						<h1 class="site_name">EGLISE LA COMPASSION DIVINE</h1>
-						<button class="menu_btn" onClick="show_menu()">
-							<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#029433"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
-						</button>
-						</div>
-					
-					<div class="green_line"></div>
-
-					<nav id="nav_bar">
-						<ul class="nav_items">
-							<li class="menu_item active" id="first_menu"> <a href="../html/index.html">Accueil</a> </li>
-							<li class="menu_item"> <a href="../html/media.html">Média</a></li>
-							<li class="menu_item"> <a href="../html/calendrier.html">Calendrier</a></li>
-							<li class="menu_item"> <a href="../html/about_us.html">A Propos</a></li>
-							<li class="menu_item" id="last_menu"> <a href="#contact_us">Contacts</a></li>
-						</ul>
-					</nav>
+				<div class="logo_container">
+					<a href="./index.html">
+						<img class="logo" alt="Logo ECD" src="../images/logo_ecd.png"/>
+					</a>
 				</div>
+				
+				<nav>
+					<ul class="nav">
+						<li> <a class="nav__link nav__link--active"href="../html/index.html">Accueil</a> </li>
+						<li> <a class="nav__link" href="../html/media.html">Enseignements</a></li>
+						<li> <a class="nav__link" href="../html/calendrier.html">Média</a></li>
+						<li> <a class="nav__link" href="../html/about_us.html">Calendrier</a></li>
+						<li> <a class="nav__link btn btn--normal" href="#contact_us">Contacts</a></li>
+					</ul>
+				</nav>
+
+				<i class="fa-solid fa-bars humburger"></i>
+
+			</div>
+				
+			<div class="hero">
+				<h1 class="org_name">Eglise La Compassion Divine </br>Internaitonale</h1>
+				<h1 class="slogan">La Parole de Dieu à portée de mains.</h1>
+				<button class="btn btn--filled">Commencer les enseignements</button>
 			</div>
 
 		</header>
 
-		<main>
+
+
+
+
+		<!-- <main>
 			<div class="themes_container">
 				
 				<div class="themes">
@@ -263,7 +270,7 @@
 			<p class="copy_right">Copyright 2022 - Eglise La Compassion Divine</p>
 		</footer>
 
-		<script src="../js/app.js"></script>
+		<script src="../assets/js/app.js"></script> -->
 	</body>
 
 </html>

@@ -1,0 +1,64 @@
+header{
+
+    background-image:url(/images/praying.jpg);
+    @include fit_background;
+
+    .logo_container img{
+        width:80px;
+    }   
+    
+    .nav{
+        @include flex_center();
+
+        &__link{
+            color:#000;
+            margin:0 20px;
+            font-family: $title;
+            font-size: fontSize("normal");
+            font-weight:300;
+            transition: color $tr_duration ease-out;
+            position:relative;
+            
+            &::after{
+                @include link_after();
+            }
+
+            &:hover{
+                color:$primary_color;
+            }
+
+            &:hover::after{
+                width:100%;
+            }
+    
+            &--active{
+                color:$primary_color;
+                font-weight: 700;
+            } 
+
+            &.btn::after{
+                display:none;
+            }
+
+            
+        }
+    }
+
+    i.humburger{
+        display: none;
+    
+    }
+    
+    .org_name{
+        color:$secondary_color;
+        font-size:fontSize("title_2");
+        font-weight: 400;
+        width: 60%;
+    }
+    
+    .slogan{
+        color:$primary_color;
+        width: 60%;
+        margin:20px 0;
+    }
+}
