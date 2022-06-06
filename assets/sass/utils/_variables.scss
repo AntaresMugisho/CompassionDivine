@@ -26,7 +26,7 @@ $tr_duration : .3s;
 //Font size
 $font_size:(
     heading: 8rem,
-    title_1: 6rem,
+    title_1: 5.8rem,
     title_2: 3.4rem,
     normal: 2.4rem,
 );
@@ -35,6 +35,7 @@ $font_size:(
 $breakpoints: (
     mobile: 480px,
     tablet: 768px,
+    laptop: 978px,
     desktop: 1024px
     );
 
