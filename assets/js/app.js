@@ -1,25 +1,27 @@
-// SIDE MENU
-let menu_btn = document.querySelector(".menu_btn");
-let close_btn = document.querySelector(".close_btn");
-let side_menu = document.querySelector(".side_menu");
-let site_name = document.querySelector(".site_name")
 
-function show_menu(){
-    menu_btn.style.display="none";
+// Show / Hide menu on mobile and tablet
 
-    side_menu.style.display="block";
-    side_menu.style.transform="translateX(0%)";
-    side_menu.style.transition="0.6s all ease";
-    
+let navbar = document.querySelector(".nav");
+
+const humburger = document.querySelector(".humburger");
+
+humburger.addEventListener('click', toggle_menu)
+
+function toggle_menu(){
+    navbar.classList.toggle("nav--show");
+
+    humburger.classList.toggle("fa-bars");
+    humburger.classList.toggle("fa-xmark");
 }
 
-function hide_menu(){
-    menu_btn.style.display="block";
-    side_menu.style.display="none";
-
-    side_menu.style.transform="translateX(101%)";
-    side_menu.style.transition="transform 1s";
+const nav_links = document.getElementsByClassName("nav__link");
+for (const nav_link of nav_links){
+    nav_link.addEventListener("click", toggle_menu)
 }
+
+
+
+
 
 // THEME SLIDER
 

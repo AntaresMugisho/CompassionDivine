@@ -20,7 +20,6 @@
     left:0;
     bottom:-4px;
     transition: width $tr_duration ease-out;
-    // z-index:-1;
 }
 
 @mixin flex_center($direction : row){
