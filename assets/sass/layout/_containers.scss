@@ -1,0 +1,23 @@
+
+// All sections
+section{
+    @include flex_center(column);
+    align-items: space-evenly;
+    padding:$main_margin*1.5 $main_margin;
+
+    .title, .description{
+        text-align:center;
+ 
+    }
+
+    .title{
+        color:$primary_color;
+        
+    }
+
+    .description{
+        width:80%;
+        margin-bottom:16px;
+    }
+
+}
