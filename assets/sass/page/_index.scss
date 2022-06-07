@@ -24,7 +24,7 @@ header.index_header{
     .slogan{
         color:$primary_color;
         width: 60%;
-        margin:20px 0;
+        margin: 2% 0 3%;
 
         @include breakpoint("mobile"){
             width:100%;
@@ -147,7 +147,7 @@ header.index_header{
 
 // Section 2 : Pourquoi suivre nos enseignements ?
 .section_2{
-    background: linear-gradient(180deg, $primary_color 32%, $secondary_color 32%);
+    background: linear-gradient(180deg, $primary_color 32%, #fff 32%);
 
     .title{
         color:#fff;

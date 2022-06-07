@@ -286,7 +286,7 @@ header.index_header .org_name {
 header.index_header .slogan {
   color: #0e874c;
   width: 60%;
-  margin: 20px 0;
+  margin: 2% 0 3%;
 }
 
 @media screen and (max-width: 480px) {
@@ -399,7 +399,7 @@ header.index_header .slogan {
 }
 
 .section_2 {
-  background: linear-gradient(180deg, #0e874c 32%, #d6d6d6 32%);
+  background: linear-gradient(180deg, #0e874c 32%, #fff 32%);
 }
 
 .section_2 .title {
