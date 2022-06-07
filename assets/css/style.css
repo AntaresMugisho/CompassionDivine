@@ -142,7 +142,7 @@ header .navbar {
   padding: 4em 5%;
   position: fixed;
   background-color: rgba(255, 255, 255, 0.95);
-  border-bottom: 1px dashed #f0f0f0;
+  border-bottom: 1px dashed white;
   z-index: 10000;
 }
 
@@ -156,25 +156,12 @@ header .hero {
   padding-top: 20vh;
 }
 
-header {
-  background-image: url(/images/praying.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-@media screen and (max-width: 768px) {
-  header {
-    background-position: 90% 20vh;
-  }
-}
-
-header .logo_container img {
+.navbar .logo_container img {
   width: 15%;
   min-width: 50px;
 }
 
-header .nav {
+.navbar .nav {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -183,7 +170,7 @@ header .nav {
 }
 
 @media screen and (max-width: 768px) {
-  header .nav {
+  .navbar .nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -199,21 +186,21 @@ header .nav {
     transform: translateX(100%) scale(0);
     transition: transform 0.3s;
   }
-  header .nav--show {
+  .navbar .nav--show {
     border-radius: 0;
     transform: translateX(0);
     z-index: 10000;
   }
 }
 
-header .nav li {
+.navbar .nav li {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 
-header .nav__link {
+.navbar .nav__link {
   color: #000;
   margin: 0 20px;
   font-family: "Ubuntu", sans-serif;
@@ -224,13 +211,13 @@ header .nav__link {
 }
 
 @media screen and (max-width: 768px) {
-  header .nav__link {
+  .navbar .nav__link {
     margin: 20px 0;
     font-size: 3.4rem;
   }
 }
 
-header .nav__link::after {
+.navbar .nav__link::after {
   content: "";
   background-color: #0e874c;
   width: 0%;
@@ -241,56 +228,69 @@ header .nav__link::after {
   transition: width 0.3s ease-out;
 }
 
-header .nav__link:hover {
+.navbar .nav__link:hover {
   color: #0e874c;
 }
 
-header .nav__link:hover::after {
+.navbar .nav__link:hover::after {
   width: 100%;
 }
 
-header .nav__link--active {
+.navbar .nav__link--active {
   color: #0e874c;
   font-weight: 700;
 }
 
-header .nav__link.btn::after {
+.navbar .nav__link.btn::after {
   display: none;
 }
 
-header i.humburger {
+.navbar i.humburger {
   font-size: 30px;
   color: #0e874c;
   display: none;
 }
 
 @media screen and (max-width: 768px) {
-  header i.humburger {
+  .navbar i.humburger {
     display: block;
   }
 }
 
-header .org_name {
-  color: #707070;
+header.index_header {
+  background-image: url(/images/praying.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media screen and (max-width: 768px) {
+  header.index_header {
+    background-position: 90% 20vh;
+  }
+}
+
+header.index_header .org_name {
+  color: #8a8a8a;
   font-size: 3.4rem;
   font-weight: 400;
   width: 60%;
 }
 
 @media screen and (max-width: 480px) {
-  header .org_name {
+  header.index_header .org_name {
     width: 100%;
   }
 }
 
-header .slogan {
+header.index_header .slogan {
   color: #0e874c;
   width: 60%;
   margin: 20px 0;
 }
 
 @media screen and (max-width: 480px) {
-  header .slogan {
+  header.index_header .slogan {
     width: 100%;
     text-shadow: 2px 2px 2px #faf6af;
   }
@@ -396,5 +396,124 @@ header .slogan {
 
 .plan_container .content:nth-child(3) {
   background-color: #faf6af;
+}
+
+.section_2 {
+  background: linear-gradient(180deg, #0e874c 32%, #d6d6d6 32%);
+}
+
+.section_2 .title {
+  color: #fff;
+}
+
+.section_2 .description {
+  color: #faf6af;
+}
+
+.cards_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 32px;
+  margin: 20px 0 30px;
+}
+
+.cards_container .card {
+  border-radius: 8px;
+  max-width: 260px;
+  min-height: 280px;
+  padding: 5%;
+  position: relative;
+  box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+.cards_container .card--title {
+  font-family: "Ubuntu", sans-serif;
+}
+
+.cards_container .card--subtitle {
+  font-weight: 700;
+}
+
+.cards_container .card hr {
+  position: absolute;
+  right: 0;
+  top: 31%;
+  height: 3px;
+  width: 40%;
+}
+
+.cards_container .card:nth-child(1) {
+  background: linear-gradient(180deg, #d6d6d6 85%, #01b7ff 85%);
+}
+
+.cards_container .card:nth-child(1) .card--title {
+  color: #01b7ff;
+}
+
+.cards_container .card:nth-child(1) hr {
+  background-color: #01b7ff;
+}
+
+.cards_container .card:nth-child(2) {
+  background: linear-gradient(180deg, #d6d6d6 85%, #ffa806 85%);
+}
+
+.cards_container .card:nth-child(2) .card--title {
+  color: #ffa806;
+}
+
+.cards_container .card:nth-child(2) hr {
+  background-color: #ffa806;
+}
+
+.cards_container .card:nth-child(3) {
+  background: linear-gradient(180deg, #d6d6d6 85%, #0e874c 85%);
+}
+
+.cards_container .card:nth-child(3) .card--title {
+  color: #0e874c;
+}
+
+.cards_container .card:nth-child(3) hr {
+  background-color: #0e874c;
+}
+
+.container__reason_why {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 5% 0;
+}
+
+.container__reason_why div:first-child {
+  width: 60%;
+}
+
+.container__reason_why h2 {
+  font-size: 8rem;
+}
+
+.container__reason_why h2 span:nth-child(odd) {
+  color: #0e874c;
+}
+
+.container__reason_why h2 span:nth-child(4) {
+  display: block;
+  font-size: 3.4rem;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  margin: 5% 0;
+}
+
+.bible {
+  border: 2px solid #000;
+  height: 280px;
+  box-sizing: content-box;
+}
+
+.bible img {
+  height: 280px;
+  transform: translate(24px, -24px);
 }
 /*# sourceMappingURL=style.css.map */
