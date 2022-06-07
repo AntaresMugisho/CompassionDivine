@@ -30,6 +30,23 @@
 }
 
 
+@mixin card_color($color){
+    background: linear-gradient(180deg, $secondary_color 85%, $color 85%);
+
+    .card--title{
+        color:$color;
+    }
+
+    hr{
+        background-color:$color;
+    }
+}
+
+
+
+
+
+
 
 
 @mixin after_title{
