@@ -20,54 +20,36 @@ for (const nav_link of nav_links){
 }
 
 
+// Animations avec intersection observer
 
+let options = {
+    // root: null,
+    rootMargin: "-100px 0px",
+    treshhold: .5
+}
 
+const observer = new IntersectionObserver(handle_intersect, options);
 
-// THEME SLIDER
+const observables = document.querySelectorAll(".obs");
 
-let theme_slider=document.getElementsByClassName("theme");
-
-let visible = 0;
-
-let prev_btn = document.querySelector(".prev_btn");
-let next_btn = document.querySelector(".next_btn");
-
-let themes_nb = theme_slider.length;
-
-
-function delete_active_id(){
-    for (let i=0; i < themes_nb; i++ ){
-        theme_slider[i].removeAttribute("id");
-        document.querySelector(".label_slide.r"+i).style.backgroundColor="white";
+observables.forEach(observable => {
+    if (observable.classList.contains("obs")){
+       observable.classList.add("obs--not-visible"); 
     }
-}
 
-function precedent(){
-    visible--;
-        if (visible  < 0){
-            visible = themes_nb -1
-        }
-    delete_active_id();
-    //theme_slider[visible].setAttribute("id", "active");
-    document.querySelector(".label_slide.r"+visible).style.backgroundColor="rgb(2, 148, 51)"
-    document.getElementById("radio" + visible).checked=true;
-}
+    observer.observe(observable);
+})
 
-function suivant(){
-    visible++;
-        if (visible >= themes_nb){
-            visible=0
+function handle_intersect(entries, observer){
+
+    entries.forEach(entry => {
+
+        if (entry.isIntersecting){
+            entry.target.classList.remove("obs--not-visible");
         }
 
-    delete_active_id();
-    //theme_slider[visible].setAttribute("id", "active");
-    document.querySelector(".label_slide.r"+visible).style.backgroundColor="rgb(2, 148, 51)"
-    document.getElementById("radio" + visible).checked=true;
+        // else{
+        //     entry.target.classList.add("obs--not-visible");
+        // }
+    })
 }
-
-prev_btn.addEventListener("click", precedent);
-next_btn.addEventListener("click", suivant);
-
-
-setInterval(suivant, 5000)
-//clearinterval

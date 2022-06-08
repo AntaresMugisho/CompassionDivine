@@ -28,3 +28,53 @@
 
 // Themes
 //@import "./themes/";
+
+
+//Animations
+
+.obs{
+    opacity:1;
+    transform:traslateY(0);
+    transition: transform .5s, opacity .5s;
+
+    &--not-visible{
+        opacity:0;
+        transform: translateY(50px);
+    }
+}
+
+
+@media (prefers-reduced-motion:reduce){
+    .obs{
+        opacity:1;
+        transform:traslate(0, 0);
+        transition: transform 0s, opacity 0s;
+    }
+}
+
+
+
+// Pending page
+
+.pending{
+    @include flex_center(column);
+    height:100vh;
+    background-color: #4158D0;
+    background-image: linear-gradient(30deg, #4158D0 0%, #5072c8 46%, #a410d2 100%);
+
+    p{
+        color:#fff;
+    }
+
+    .msg{
+        font-family:$title;
+        text-align: center;
+        padding:5%;
+        
+    }
+
+    .creative-mind{
+        font-family: CreativeMind;
+        font-size:10rem;
+    }
+}

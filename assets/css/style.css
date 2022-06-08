@@ -973,4 +973,48 @@ header.index_header .slogan {
     width: 100%;
   }
 }
+
+.obs {
+  opacity: 1;
+  transform: traslateY(0);
+  transition: transform .5s, opacity .5s;
+}
+
+.obs--not-visible {
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .obs {
+    opacity: 1;
+    transform: traslate(0, 0);
+    transition: transform 0s, opacity 0s;
+  }
+}
+
+.pending {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #4158D0;
+  background-image: linear-gradient(30deg, #4158D0 0%, #5072c8 46%, #a410d2 100%);
+}
+
+.pending p {
+  color: #fff;
+}
+
+.pending .msg {
+  font-family: "Ubuntu", sans-serif;
+  text-align: center;
+  padding: 5%;
+}
+
+.pending .creative-mind {
+  font-family: CreativeMind;
+  font-size: 10rem;
+}
 /*# sourceMappingURL=style.css.map */
