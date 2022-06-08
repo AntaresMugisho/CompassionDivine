@@ -142,7 +142,7 @@ header .navbar {
   padding: 4em 5%;
   position: fixed;
   background-color: rgba(255, 255, 255, 0.95);
-  border-bottom: 1px dashed white;
+  border-bottom: 1px dashed #f0f0f0;
   z-index: 10000;
 }
 
@@ -156,12 +156,25 @@ header .hero {
   padding-top: 20vh;
 }
 
-.navbar .logo_container img {
+header {
+  background-image: url(/images/praying.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    background-position: 90% 20vh;
+  }
+}
+
+header .logo_container img {
   width: 15%;
   min-width: 50px;
 }
 
-.navbar .nav {
+header .nav {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -170,7 +183,7 @@ header .hero {
 }
 
 @media screen and (max-width: 768px) {
-  .navbar .nav {
+  header .nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -186,21 +199,21 @@ header .hero {
     transform: translateX(100%) scale(0);
     transition: transform 0.3s;
   }
-  .navbar .nav--show {
+  header .nav--show {
     border-radius: 0;
     transform: translateX(0);
     z-index: 10000;
   }
 }
 
-.navbar .nav li {
+header .nav li {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 
-.navbar .nav__link {
+header .nav__link {
   color: #000;
   margin: 0 20px;
   font-family: "Ubuntu", sans-serif;
@@ -211,13 +224,13 @@ header .hero {
 }
 
 @media screen and (max-width: 768px) {
-  .navbar .nav__link {
+  header .nav__link {
     margin: 20px 0;
     font-size: 3.4rem;
   }
 }
 
-.navbar .nav__link::after {
+header .nav__link::after {
   content: "";
   background-color: #0e874c;
   width: 0%;
@@ -228,69 +241,56 @@ header .hero {
   transition: width 0.3s ease-out;
 }
 
-.navbar .nav__link:hover {
+header .nav__link:hover {
   color: #0e874c;
 }
 
-.navbar .nav__link:hover::after {
+header .nav__link:hover::after {
   width: 100%;
 }
 
-.navbar .nav__link--active {
+header .nav__link--active {
   color: #0e874c;
   font-weight: 700;
 }
 
-.navbar .nav__link.btn::after {
+header .nav__link.btn::after {
   display: none;
 }
 
-.navbar i.humburger {
+header i.humburger {
   font-size: 30px;
   color: #0e874c;
   display: none;
 }
 
 @media screen and (max-width: 768px) {
-  .navbar i.humburger {
+  header i.humburger {
     display: block;
   }
 }
 
-header.index_header {
-  background-image: url(/images/praying.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-@media screen and (max-width: 768px) {
-  header.index_header {
-    background-position: 90% 20vh;
-  }
-}
-
-header.index_header .org_name {
-  color: #8a8a8a;
+header .org_name {
+  color: #707070;
   font-size: 3.4rem;
   font-weight: 400;
   width: 60%;
 }
 
 @media screen and (max-width: 480px) {
-  header.index_header .org_name {
+  header .org_name {
     width: 100%;
   }
 }
 
-header.index_header .slogan {
+header .slogan {
   color: #0e874c;
   width: 60%;
   margin: 2% 0 3%;
 }
 
 @media screen and (max-width: 480px) {
-  header.index_header .slogan {
+  header .slogan {
     width: 100%;
     text-shadow: 2px 2px 2px #faf6af;
   }
@@ -397,6 +397,7 @@ header.index_header .slogan {
 .plan_container .content:nth-child(3) {
   background-color: #faf6af;
 }
+<<<<<<< HEAD
 
 .section_2 {
   background: linear-gradient(180deg, #0e874c 32%, #fff 32%);
@@ -516,4 +517,6 @@ header.index_header .slogan {
   height: 280px;
   transform: translate(24px, -24px);
 }
+=======
+>>>>>>> parent of b2973ee (Section deuxième pour la page d'accueil)
 /*# sourceMappingURL=style.css.map */
