@@ -42,24 +42,25 @@
     }
 }
 
-
-
-
-
-
-
-
-@mixin after_title{
-    content:"";
-    display:block;
-    width:40%;
-    height:1px;
-    margin-bottom:3rem;
-    background:$accent_color;
-    position:relative;
-    left:50%;
-    transform:translateX(-50%);
+@mixin line_after(){
+    &::after{
+        content:"";
+        display:block;
+        width:40%;
+        height:2px;
+        margin-top:.3rem;
+        background:$primary_color;
+    }
+    
 }
+
+
+
+
+
+
+
+
 
 
 

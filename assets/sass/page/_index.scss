@@ -117,7 +117,6 @@ header.index_header{
                 position:unset;
                 width:100%;
                 background:$secondary_color;
-              
             }
         }
 
@@ -144,19 +143,17 @@ header.index_header{
 
 
 
-
 // Section 2 : Pourquoi suivre nos enseignements ?
 .section_2{
-    background: linear-gradient(180deg, $primary_color 32%, $secondary_color 32%);
+    background: linear-gradient(180deg, $primary_color 32%, #fff 32%);
 
     @include breakpoint("tablet"){
         background: linear-gradient(180deg, $primary_color 30%, #fff 30%);
     }
-
+    
     .title{
         color:#fff;
     }
-
     .description{
         color:$accent_color;
     }
@@ -293,5 +290,132 @@ header.index_header{
             width:100%;
             transform: translate(20px, -16px);
         }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Section 3 : Notre communauté
+
+.section_community{
+    background-color: $secondary_color;
+
+}
+
+.community_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:16px;
+
+}
+
+
+.community{
+    width:290px;
+    // min-height:416px;
+    padding:16px;
+    margin-top: 80px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .3);
+    position : relative;
+    
+
+
+    &__avatar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        border-radius:50%;
+        border:12px inset #fff; 
+        box-shadow: 0 0 8px rgba(0, 0, 0, .3);
+        
+        width:160px;
+        height:160px;
+        object-fit: cover;
+        
+        position : absolute;
+        left:50%;
+        transform: translate(-50%, -60%);
+    }
+
+    &__name{
+        @include flex_center(column);
+        @include line_after();
+        color:$primary_color;
+        margin-top: 60px;
+        text-align: center;
+        font-family: $title;
+        font-size:2rem;
+
+        span:nth-child(2){
+            font-weight:700;
+        }
+    }
+
+    &__place{
+        font-family: $title;
+        
+
+        span:nth-child(1){
+            font-weight: 700;
+        }
+    }
+
+    &__adress{
+        color:darken($secondary_color, 40);
+        font-size:2rem; 
+    }
+
+    &__contact{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        color:#fff;
+        background-color: $primary_color;
+        border-radius: 6px;
+        font-size:fontSize("normal");
+        text-align: center;
+        padding:1.2rem;
+        margin:$main_margin 0;
+        transition: background-color $tr_duration ease-out;
+
+        &:hover{
+            background-color: darken($primary_color, 10);
+        }
+    }
+}
+
+.btn_container{
+    @include flex_center();
+    margin-top:$main_margin;
+
+    .btn{
+        margin:0 24px;
     }
 }

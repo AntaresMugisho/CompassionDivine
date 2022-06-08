@@ -11,6 +11,10 @@
     font-size: fontSize("normal");
     transition: background-color $tr_duration ease-out;
 
+    @include breakpoint("tablet"){
+        font-size: 3.3rem;
+    };
+
     &--filled{
         background-color: $primary_color;
         color:$accent_color;

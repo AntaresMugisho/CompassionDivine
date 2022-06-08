@@ -79,6 +79,12 @@ p {
   transition: background-color 0.3s ease-out;
 }
 
+@media screen and (max-width: 768px) {
+  .btn {
+    font-size: 3.3rem;
+  }
+}
+
 .btn--filled {
   background-color: #0e874c;
   color: #faf6af;
@@ -400,7 +406,7 @@ header.index_header .slogan {
 }
 
 .section_2 {
-  background: linear-gradient(180deg, #0e874c 32%, #d6d6d6 32%);
+  background: linear-gradient(180deg, #0e874c 32%, #fff 32%);
 }
 
 @media screen and (max-width: 768px) {
@@ -600,5 +606,110 @@ header.index_header .slogan {
     width: 100%;
     transform: translate(20px, -16px);
   }
+}
+
+.section_community {
+  background-color: #d6d6d6;
+}
+
+.community_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.community {
+  width: 290px;
+  padding: 16px;
+  margin-top: 80px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.community__avatar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 50%;
+  border: 12px inset #fff;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -60%);
+}
+
+.community__name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #0e874c;
+  margin-top: 60px;
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 2rem;
+}
+
+.community__name::after {
+  content: "";
+  display: block;
+  width: 40%;
+  height: 2px;
+  margin-top: .3rem;
+  background: #0e874c;
+}
+
+.community__name span:nth-child(2) {
+  font-weight: 700;
+}
+
+.community__place {
+  font-family: "Ubuntu", sans-serif;
+}
+
+.community__place span:nth-child(1) {
+  font-weight: 700;
+}
+
+.community__adress {
+  color: #707070;
+  font-size: 2rem;
+}
+
+.community__contact {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #fff;
+  background-color: #0e874c;
+  border-radius: 6px;
+  font-size: 2.4rem;
+  text-align: center;
+  padding: 1.2rem;
+  margin: 5% 0;
+  transition: background-color 0.3s ease-out;
+}
+
+.community__contact:hover {
+  background-color: #095932;
+}
+
+.btn_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+}
+
+.btn_container .btn {
+  margin: 0 24px;
 }
 /*# sourceMappingURL=style.css.map */
