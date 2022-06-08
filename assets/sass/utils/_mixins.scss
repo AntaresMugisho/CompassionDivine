@@ -51,45 +51,4 @@
         margin-top:.3rem;
         background:$primary_color;
     }
-    
-}
-
-
-
-
-
-
-
-
-
-
-
-@mixin i_gradient_color($order:1){
-    @if $order==1{
-        background: linear-gradient(45deg, #000000, #f83600);
-        background-clip: border-box;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-
-    @elseif $order==2{
-        background: linear-gradient(45deg, #972ae6, #626fbf);
-        background-clip: border-box;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-
-    @elseif $order==3{
-        background: linear-gradient(45deg, #000000, #fad126);
-        background-clip: border-box;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-    
-    @elseif $order==4{
-        background: linear-gradient(45deg, #015eea, #00c0fa);
-        background-clip: border-box;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
 }

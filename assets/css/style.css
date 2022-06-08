@@ -25,6 +25,12 @@ button {
   cursor: pointer;
 }
 
+@font-face {
+  font-family: CreativeMind;
+  src: url(/fonts/creative_mind.woff) format("woff");
+  src: url(/fonts/creative_mind.woff2) format("woff2");
+}
+
 html {
   font-size: 62.5%;
 }
@@ -261,6 +267,131 @@ header .hero {
 @media screen and (max-width: 768px) {
   .navbar i.humburger {
     display: block;
+  }
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #0e874c;
+  padding: 5%;
+}
+
+footer .container {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.8rem;
+  width: 70%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+}
+
+footer .container ul {
+  color: #fff;
+  list-style: none;
+}
+
+footer .container ul li {
+  font-weight: 300;
+  color: #fff;
+  margin-bottom: .4rem;
+}
+
+footer .container ul li:nth-child(1) {
+  font-weight: 600;
+}
+
+footer .container a {
+  color: #fff;
+  transition: color 0.3s ease-out;
+}
+
+footer .container a:hover {
+  color: #faf6af;
+}
+
+footer .container .mail, footer .container .phone {
+  grid-column: 1;
+}
+
+footer .container .help {
+  grid-row: 1;
+  grid-column: 2;
+}
+
+footer .container .legal {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+footer .container .follow-us {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+footer .container .follow-us .social {
+  display: flex;
+}
+
+footer .container .follow-us a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #d6d6d6;
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+  padding: .4rem;
+  margin: 1.5rem 1.5rem 0 0;
+  transition: 0.3s ease-out;
+}
+
+footer .container .follow-us--facebook:hover {
+  background-color: #4267B2;
+  border-color: transparent;
+}
+
+footer .container .follow-us--instagram:hover {
+  background-image: linear-gradient(49.2deg, #f9ed32 10%, #ee2a7b 55%, #002aff);
+  border: #fff;
+}
+
+footer .container .follow-us--youtube:hover {
+  background-color: #ff0000;
+  border-color: transparent;
+}
+
+footer .container .follow-us--twitter:hover {
+  background-color: #1DA1F2;
+  border-color: transparent;
+}
+
+footer .copy-rights {
+  margin-top: 3rem;
+  color: rgba(255, 255, 255, 0.815);
+  font-family: "Roboto", sans-serif;
+  font-size: 1.8rem;
+}
+
+.obs {
+  opacity: 1;
+  transform: traslateY(0);
+  transition: transform .5s, opacity .5s;
+}
+
+.obs--not-visible {
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .obs {
+    opacity: 1;
+    transform: traslate(0, 0);
+    transition: transform 0s, opacity 0s;
   }
 }
 
