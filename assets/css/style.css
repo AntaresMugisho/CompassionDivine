@@ -254,6 +254,10 @@ header .hero {
   font-weight: 700;
 }
 
+.navbar .nav__link.btn {
+  padding: .5rem 1.6rem;
+}
+
 .navbar .nav__link.btn::after {
   display: none;
 }
@@ -781,7 +785,6 @@ header.index_header .slogan {
   flex-direction: column;
   align-items: center;
   border-radius: 50%;
-  border: 12px inset #fff;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
   width: 160px;
   height: 160px;
