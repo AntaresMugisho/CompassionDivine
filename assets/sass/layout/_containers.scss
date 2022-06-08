@@ -18,6 +18,10 @@ section{
     .description{
         width:80%;
         margin-bottom:16px;
+
+        @include breakpoint("mobile"){
+            width:90%;
+        }
     }
 }
 

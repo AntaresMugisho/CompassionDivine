@@ -210,7 +210,7 @@ header.index_header{
 
             @include breakpoint("mobile"){
                 width:70%;
-                top:38%;
+                top:34%;
             }
         }
 
@@ -235,7 +235,7 @@ header.index_header{
         gap:48px;
 
         .btn{
-            width:90%;
+            width:100%;
             align-self: center;
         }
     }
