@@ -327,8 +327,15 @@ header.index_header{
     display: flex;
     justify-content: center;
     align-items: center;
+
     flex-wrap: wrap;
     gap:16px;
+
+    @include breakpoint("tablet"){
+        gap:32px;
+    }
+
+    
 
 }
 
@@ -342,7 +349,12 @@ header.index_header{
     border-radius: 8px;
     box-shadow: 0 0 8px rgba(0, 0, 0, .3);
     position : relative;
-    
+
+    @include breakpoint("mobile"){
+        width:90%;
+        padding-left:32px;
+        padding-right:32px;
+    }
 
 
     &__avatar{
@@ -366,11 +378,17 @@ header.index_header{
     &__name{
         @include flex_center(column);
         @include line_after();
+
         color:$primary_color;
         margin-top: 60px;
         text-align: center;
         font-family: $title;
         font-size:2rem;
+
+        @include breakpoint("tablet"){
+            font-size: fontSize("normal");
+        }
+
 
         span:nth-child(2){
             font-weight:700;
@@ -380,7 +398,6 @@ header.index_header{
     &__place{
         font-family: $title;
         
-
         span:nth-child(1){
             font-weight: 700;
         }
@@ -388,7 +405,11 @@ header.index_header{
 
     &__adress{
         color:darken($secondary_color, 40);
-        font-size:2rem; 
+        font-size:2rem;
+
+        @include breakpoint("tablet"){
+            font-size: fontSize("normal");
+        } 
     }
 
     &__contact{
@@ -405,6 +426,15 @@ header.index_header{
         margin:$main_margin 0;
         transition: background-color $tr_duration ease-out;
 
+        @include breakpoint("mobile"){
+            justify-content:center;            
+
+        }
+
+        i{
+            margin-right:1rem;
+        }
+
         &:hover{
             background-color: darken($primary_color, 10);
         }
@@ -415,7 +445,22 @@ header.index_header{
     @include flex_center();
     margin-top:$main_margin;
 
+    @include breakpoint("mobile"){
+        @include flex_center(column);
+      
+    }
+
     .btn{
         margin:0 24px;
+        font-family:$title;
+
+        @include breakpoint("tablet"){
+            margin:0 4px;
+        }
+
+        @include breakpoint("mobile"){
+            margin:8px 0px;
+            width:100%;
+        }
     }
 }
