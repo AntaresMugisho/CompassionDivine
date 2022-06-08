@@ -67,8 +67,13 @@ p {
 }
 
 .btn {
-  border-radius: 30px;
-  padding: 10px 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+  padding: 20px;
+  width: fit-content;
   font-family: "Roboto", sans-serif;
   font-size: 2.4rem;
   transition: background-color 0.3s ease-out;
@@ -94,10 +99,6 @@ p {
 }
 
 .btn--secondary {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
   background-color: #e3e3e3;
   color: #000;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
@@ -403,6 +404,12 @@ header .slogan {
   background: linear-gradient(180deg, #0e874c 32%, #fff 32%);
 }
 
+@media screen and (max-width: 768px) {
+  .section_2 {
+    background: linear-gradient(180deg, #0e874c 30%, #fff 30%);
+  }
+}
+
 .section_2 .title {
   color: #fff;
 }
@@ -418,6 +425,20 @@ header .slogan {
   margin: 20px 0 30px;
 }
 
+@media screen and (max-width: 768px) {
+  .cards_container {
+    grid-gap: 24px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .cards_container {
+    grid-template-columns: 1fr;
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
 .cards_container .card {
   border-radius: 8px;
   max-width: 260px;
@@ -425,6 +446,19 @@ header .slogan {
   padding: 5%;
   position: relative;
   box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 768px) {
+  .cards_container .card {
+    min-height: 240px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .cards_container .card {
+    max-width: unset;
+    min-height: 180px;
+  }
 }
 
 .cards_container .card--title {
@@ -441,6 +475,13 @@ header .slogan {
   top: 31%;
   height: 3px;
   width: 40%;
+}
+
+@media screen and (max-width: 480px) {
+  .cards_container .card hr {
+    width: 70%;
+    top: 38%;
+  }
 }
 
 .cards_container .card:nth-child(1) {
@@ -487,8 +528,30 @@ header .slogan {
   margin: 5% 0;
 }
 
+@media screen and (max-width: 480px) {
+  .container__reason_why {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+  }
+  .container__reason_why .btn {
+    width: 90%;
+    align-self: center;
+  }
+}
+
 .container__reason_why div:first-child {
   width: 60%;
+}
+
+@media screen and (max-width: 480px) {
+  .container__reason_why div:first-child {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .container__reason_why h2 {
@@ -513,10 +576,35 @@ header .slogan {
   box-sizing: content-box;
 }
 
+@media screen and (max-width: 768px) {
+  .bible {
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .bible {
+    height: unset;
+    width: 90%;
+    transform: translateX(-16px);
+  }
+}
+
 .bible img {
-  height: 280px;
+  height: 100%;
   transform: translate(24px, -24px);
 }
+<<<<<<< Updated upstream
 =======
 >>>>>>> parent of b2973ee (Section deuxième pour la page d'accueil)
+=======
+
+@media screen and (max-width: 480px) {
+  .bible img {
+    height: unset;
+    width: 100%;
+    transform: translate(24px, -16px);
+  }
+}
+>>>>>>> Stashed changes
 /*# sourceMappingURL=style.css.map */
