@@ -771,4 +771,30 @@ header.index_header .slogan {
     width: 100%;
   }
 }
+
+.donation .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10rem;
+}
+
+.donation__img {
+  width: 300px;
+  margin-right: 5rem;
+}
+
+.donation__text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.donation__text .btn {
+  margin-top: 2rem;
+  width: 40%;
+}
 /*# sourceMappingURL=style.css.map */
