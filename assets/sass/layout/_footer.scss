@@ -1,0 +1,124 @@
+
+
+
+footer{
+    @include flex_center(column);
+
+    background-color:$primary_color;
+    padding:$main_margin;
+}
+
+footer .container{
+    font-family:$normal;
+    font-size: 1.8rem;
+    width:70%;
+    display:grid;        
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:2rem;
+
+    @include breakpoint("mobile"){
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    ul{
+        color:#fff;
+        list-style: none;
+
+        li{
+            font-weight: 300;
+            color:#fff;
+            margin-bottom:.4rem;
+        }
+
+        li:nth-child(1){
+            font-weight: 600;
+        } 
+    }
+
+    a{
+        color:#fff;
+        transition:color $tr_duration ease-out;
+
+        &:hover{
+            color:$accent_color; 
+        }
+    }
+
+
+    .mail, .phone{
+        grid-column: 1;
+    }
+    
+    .help{
+        grid-row: 1;
+        grid-column: 2;
+    }
+
+    .legal{
+        grid-column:2 ;
+        grid-row: 2;
+    }
+
+    
+    .follow-us{
+        grid-column: 3;
+        grid-row: 1;
+
+        @include breakpoint("mobile"){
+            grid-column: span 2;
+            grid-row: 4;
+            justify-self: center;
+        }
+        
+        .social{
+            display: flex;
+            @include breakpoint("mobile"){
+                justify-content: center;
+            }
+        }
+
+        a{  
+            @include flex_center();
+            border:2px solid $secondary_color;
+            border-radius:50%;
+            width:4rem;
+            height:4rem;
+            padding:.4rem;
+            margin:1.5rem 1.5rem 0 0;
+            transition: $tr_duration ease-out;
+        }
+        
+        &--facebook:hover{
+            background-color:#4267B2;
+            border-color:transparent;
+        }
+        
+        &--instagram:hover{
+            background-image: linear-gradient(49.2deg,#f9ed32 10%,#ee2a7b 55%,#002aff);
+            border:#fff; 
+        }
+
+        &--youtube:hover{
+            background-color:#ff0000;
+            border-color:transparent;
+        }
+        
+        &--twitter:hover{
+            background-color: #1DA1F2;
+            border-color:transparent;
+        }
+    }  
+}
+
+.copy-rights{
+    margin-top:3rem;
+    color:rgba(255, 255, 255, 0.815);
+    font-family: $normal;
+    font-size: 1.8rem;
+
+    // .creative-mind{
+    //     font-family: CreativeMind;
+    //     font-size:4rem;
+    //     margin-left:3rem;
+    // }
+}
