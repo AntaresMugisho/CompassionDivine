@@ -585,12 +585,20 @@ header.index_header .slogan {
   .bible {
     height: unset;
     width: 90%;
-    transform: translateX(-16px);
+    transform: translateX(-12px);
   }
 }
 
 .bible img {
   height: 100%;
   transform: translate(24px, -24px);
+}
+
+@media screen and (max-width: 480px) {
+  .bible img {
+    height: unset;
+    width: 100%;
+    transform: translate(20px, -16px);
+  }
 }
 /*# sourceMappingURL=style.css.map */
