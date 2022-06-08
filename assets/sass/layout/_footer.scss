@@ -1,11 +1,10 @@
 
 
-
 footer{
     @include flex_center(column);
 
     background-color:$primary_color;
-    padding:$main_margin;
+    padd(-ing:$main_margin;
 }
 
 footer .container{
