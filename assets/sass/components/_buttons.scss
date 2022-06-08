@@ -1,0 +1,42 @@
+
+
+.btn{
+    @include flex_center();
+
+
+    border-radius:40px;
+    padding:20px;
+    width:fit-content;
+    font-family: $normal;
+    font-size: fontSize("normal");
+    transition: background-color $tr_duration ease-out;
+
+    &--filled{
+        background-color: $primary_color;
+        color:$accent_color;
+        
+        &:hover{
+            color:#fff;
+            background-color:darken($primary_color, 10);
+        }
+    }
+
+    &--normal{
+        border: 2px solid $primary_color;
+        color:$primary_color;
+
+        &:hover{
+            background-color: #fff;
+        }
+    }
+
+    &--secondary{
+        background-color: lighten($secondary_color, 5);
+        color:#000;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
+
+        &:hover{
+            background-color: #fff;
+        }
+    }
+}

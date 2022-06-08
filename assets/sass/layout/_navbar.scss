@@ -1,0 +1,92 @@
+
+
+.navbar{
+
+    .logo_container img{
+        width:15%;
+        min-width: 50px;;
+    }   
+    
+    .nav{
+        @include flex_center();
+        z-index: 10000;
+    
+        @include breakpoint("tablet"){
+    
+            @include flex_center(column);
+            
+            background-color: rgba(255, 255, 255, 0.95);
+            width: 100%;
+            height:90vh;
+            border-top-left-radius: 100%;
+            border-bottom-left-radius: 100%;
+            position:absolute;
+            top:10vh;
+            right:0;
+            
+            
+            transform: translateX(100%) scale(0);
+            transition: transform $tr_duration;
+    
+            &--show{
+                border-radius:0;
+                transform: translateX(0);
+                z-index:10000; 
+            }
+        }
+    
+        li{
+            @include flex-center();
+        }
+    
+        &__link{
+            color:#000;
+            margin:0 20px;
+            font-family: $title;
+            font-size: fontSize("normal");
+            font-weight:300;
+            transition: color $tr_duration ease-out;
+            position:relative;
+    
+            @include breakpoint("tablet"){
+                margin:20px 0;
+                font-size:fontSize("title_2");
+            }
+            
+            &::after{
+                @include link_after();
+            }
+    
+            &:hover{
+                color:$primary_color;
+            }
+    
+            &:hover::after{
+                width:100%;
+            }
+    
+            &--active{
+                color:$primary_color;
+                font-weight: 700;
+            } 
+    
+            &.btn::after{
+                display:none;
+            }
+        }
+    
+    }
+    
+    i.humburger{
+        font-size:30px;
+        color:$primary_color;
+        display: none;
+        
+        @include breakpoint("tablet"){
+            display:block;
+        }
+    
+    }
+
+}
+

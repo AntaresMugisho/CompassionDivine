@@ -1,0 +1,30 @@
+
+
+header{
+    height:100vh;
+
+    .navbar{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+
+        width:100%;
+        max-height: 10vh;
+        padding:4em $main_margin;
+
+        position:fixed;
+        background-color:rgba(255, 255, 255, .95);
+        border-bottom: 1px dashed lighten($secondary_color, 50);
+        z-index: 10000;
+    }
+
+    .hero{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        height:80%;
+        margin:0 $main_margin;
+        padding-top: 20vh;
+    }
+}
