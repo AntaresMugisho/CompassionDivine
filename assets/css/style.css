@@ -975,6 +975,579 @@ header.index_header .slogan {
   }
 }
 
+header.index_header {
+  background-image: url(../../images/praying.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media screen and (max-width: 768px) {
+  header.index_header {
+    background-position: 65% 0;
+  }
+}
+
+header.index_header .org_name {
+  color: #8a8a8a;
+  font-size: 3.4rem;
+  font-weight: 400;
+  width: 60%;
+}
+
+@media screen and (max-width: 480px) {
+  header.index_header .org_name {
+    width: 100%;
+  }
+}
+
+header.index_header .slogan {
+  color: #0e874c;
+  width: 60%;
+  margin: 20px 0;
+}
+
+@media screen and (max-width: 480px) {
+  header.index_header .slogan {
+    width: 80%;
+  }
+}
+
+.plan_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 60%;
+  max-width: 700px;
+  margin: 20px;
+}
+
+@media screen and (max-width: 978px) {
+  .plan_container {
+    max-width: unset;
+    margin: 0;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .plan_container {
+    max-width: unset;
+    margin: 0;
+    width: 100%;
+    gap: 16px;
+  }
+}
+
+.plan_container .content {
+  width: 50%;
+  min-width: 260px;
+  max-width: 320px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+
+@media screen and (max-width: 480px) {
+  .plan_container .content {
+    min-width: unset;
+    max-width: unset;
+    width: 100%;
+    border-radius: 6px;
+  }
+  .plan_container .content .btn {
+    width: 80%;
+    align-self: center;
+  }
+}
+
+.plan_container .content:nth-child(1) {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 40%, #d6d6d6 40%);
+  position: relative;
+  top: -16px;
+  left: -16px;
+  z-index: 0;
+}
+
+@media screen and (max-width: 480px) {
+  .plan_container .content:nth-child(1) {
+    position: unset;
+  }
+}
+
+.plan_container .content:nth-child(1) h3 {
+  transform: translateX(-16px);
+  color: #0e874c;
+  width: 110%;
+  font-family: "Ubuntu", sans-serif;
+}
+
+@media screen and (max-width: 480px) {
+  .plan_container .content:nth-child(1) h3 {
+    transform: unset;
+    width: 100%;
+  }
+}
+
+.plan_container .content:nth-child(4) {
+  background-image: linear-gradient(90deg, #d6d6d6 95%, rgba(255, 255, 255, 0) 95%);
+  position: relative;
+  bottom: -16px;
+  left: 16px;
+  z-index: 0;
+}
+
+@media screen and (max-width: 480px) {
+  .plan_container .content:nth-child(4) {
+    position: unset;
+    width: 100%;
+    background: #d6d6d6;
+  }
+}
+
+.plan_container .content:nth-child(2) {
+  background-color: #92d7ff;
+}
+
+.plan_container .content:nth-child(3) {
+  background-color: #faf6af;
+}
+
+.section_2 {
+  background: linear-gradient(180deg, #0e874c 32%, #fff 32%);
+}
+
+@media screen and (max-width: 768px) {
+  .section_2 {
+    background: linear-gradient(180deg, #0e874c 30%, #fff 30%);
+  }
+}
+
+.section_2 .title {
+  color: #fff;
+}
+
+.section_2 .description {
+  color: #faf6af;
+}
+
+.cards_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 32px;
+  margin: 20px 0 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .cards_container {
+    grid-gap: 24px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .cards_container {
+    grid-template-columns: 1fr;
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+.cards_container .card {
+  border-radius: 8px;
+  max-width: 260px;
+  min-height: 280px;
+  padding: 5%;
+  position: relative;
+  box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 768px) {
+  .cards_container .card {
+    min-height: 240px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .cards_container .card {
+    max-width: unset;
+    min-height: 180px;
+  }
+}
+
+.cards_container .card--title {
+  font-family: "Ubuntu", sans-serif;
+}
+
+.cards_container .card--subtitle {
+  font-weight: 700;
+}
+
+.cards_container .card hr {
+  position: absolute;
+  right: 0;
+  top: 31%;
+  height: 3px;
+  width: 40%;
+}
+
+@media screen and (max-width: 480px) {
+  .cards_container .card hr {
+    width: 60%;
+    top: 33%;
+  }
+}
+
+.cards_container .card:nth-child(1) {
+  background: linear-gradient(180deg, #d6d6d6 85%, #01b7ff 85%);
+}
+
+.cards_container .card:nth-child(1) .card--title {
+  color: #01b7ff;
+}
+
+.cards_container .card:nth-child(1) hr {
+  background-color: #01b7ff;
+}
+
+.cards_container .card:nth-child(2) {
+  background: linear-gradient(180deg, #d6d6d6 85%, #ffa806 85%);
+}
+
+.cards_container .card:nth-child(2) .card--title {
+  color: #ffa806;
+}
+
+.cards_container .card:nth-child(2) hr {
+  background-color: #ffa806;
+}
+
+.cards_container .card:nth-child(3) {
+  background: linear-gradient(180deg, #d6d6d6 85%, #0e874c 85%);
+}
+
+.cards_container .card:nth-child(3) .card--title {
+  color: #0e874c;
+}
+
+.cards_container .card:nth-child(3) hr {
+  background-color: #0e874c;
+}
+
+.container__reason_why {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 5% 0;
+}
+
+@media screen and (max-width: 480px) {
+  .container__reason_why {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+  }
+  .container__reason_why .btn {
+    width: 100%;
+    align-self: center;
+  }
+}
+
+.container__reason_why div:first-child {
+  width: 60%;
+}
+
+@media screen and (max-width: 480px) {
+  .container__reason_why div:first-child {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.container__reason_why h2 {
+  font-size: 8rem;
+}
+
+.container__reason_why h2 span:nth-child(odd) {
+  color: #0e874c;
+}
+
+.container__reason_why h2 span:nth-child(4) {
+  display: block;
+  font-size: 3.4rem;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  margin: 5% 0;
+}
+
+.bible {
+  border: 2px solid #000;
+  height: 280px;
+  box-sizing: content-box;
+}
+
+@media screen and (max-width: 768px) {
+  .bible {
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .bible {
+    height: unset;
+    width: 90%;
+    transform: translateX(-12px);
+  }
+}
+
+.bible img {
+  height: 100%;
+  transform: translate(24px, -24px);
+}
+
+@media screen and (max-width: 480px) {
+  .bible img {
+    height: unset;
+    width: 100%;
+    transform: translate(20px, -16px);
+  }
+}
+
+.section_community {
+  background-color: #d6d6d6;
+}
+
+.community_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+@media screen and (max-width: 768px) {
+  .community_container {
+    gap: 32px;
+  }
+}
+
+.community {
+  width: 290px;
+  padding: 16px;
+  margin-top: 80px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+@media screen and (max-width: 480px) {
+  .community {
+    width: 90%;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+.community__avatar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 50%;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -60%);
+}
+
+.community__name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #0e874c;
+  margin-top: 60px;
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 2rem;
+}
+
+.community__name::after {
+  content: "";
+  display: block;
+  width: 40%;
+  height: 2px;
+  margin-top: .3rem;
+  background: #0e874c;
+}
+
+@media screen and (max-width: 768px) {
+  .community__name {
+    font-size: 2.4rem;
+  }
+}
+
+.community__name span:nth-child(2) {
+  font-weight: 700;
+}
+
+.community__place {
+  font-family: "Ubuntu", sans-serif;
+}
+
+.community__place span:nth-child(1) {
+  font-weight: 700;
+}
+
+.community__adress {
+  color: #707070;
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .community__adress {
+    font-size: 2.4rem;
+  }
+}
+
+.community__contact {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #fff;
+  background-color: #0e874c;
+  border-radius: 6px;
+  font-size: 2.4rem;
+  text-align: center;
+  padding: 1.2rem;
+  margin: 5% 0;
+  transition: background-color 0.3s ease-out;
+}
+
+@media screen and (max-width: 480px) {
+  .community__contact {
+    justify-content: center;
+  }
+}
+
+.community__contact i {
+  margin-right: 1rem;
+}
+
+.community__contact:hover {
+  background-color: #095932;
+}
+
+.btn_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+}
+
+@media screen and (max-width: 480px) {
+  .btn_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.btn_container .btn {
+  margin: 0 24px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+  .btn_container .btn {
+    margin: 0 4px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .btn_container .btn {
+    margin: 8px 0px;
+    width: 100%;
+  }
+}
+
+.donation .container {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  grid-column-gap: 5rem;
+  grid-row-gap: 3rem;
+  margin-top: 8rem;
+}
+
+@media screen and (max-width: 768px) {
+  .donation .container {
+    grid-gap: 3rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .donation .container {
+    grid-template-columns: 1fr 3fr;
+    margin-top: 6rem;
+  }
+}
+
+.donation__img {
+  width: 260px;
+  grid-row: span 2;
+  justify-self: flex-end;
+  align-self: center;
+}
+
+@media screen and (max-width: 480px) {
+  .donation__img {
+    width: 120px;
+    grid-row: 1;
+    justify-self: center;
+  }
+}
+
+.donation__text {
+  width: 80%;
+  align-self: center;
+}
+
+@media screen and (max-width: 480px) {
+  .donation__text {
+    width: 100%;
+  }
+}
+
+.donation__btn {
+  width: 40%;
+  height: fit-content;
+  grid-column: 2;
+}
+
+@media screen and (max-width: 768px) {
+  .donation__btn {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .donation__btn {
+    grid-row: 2;
+    grid-column: span 2;
+    width: 100%;
+  }
+}
+
 .obs {
   opacity: 1;
   transform: traslateY(0);
