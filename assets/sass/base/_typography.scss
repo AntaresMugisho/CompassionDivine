@@ -34,7 +34,6 @@ html {
 h1{
     @extend %bold_typo;
     font-size:map-get($font_size,"heading");
-    
 }
 
 h2{
@@ -52,5 +51,4 @@ p{
     font-family:$normal;
     font-size:map-get($font_size,"normal");
     padding:1.6rem 0;
-
 }
