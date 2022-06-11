@@ -5,6 +5,7 @@ header.index_header{
     
     @include fit_background;
 
+
     @include breakpoint("tablet"){
         background-position:65% 0;
         
@@ -17,7 +18,7 @@ header.index_header{
         width: 60%;
 
         @include breakpoint("mobile"){
-            //width: 80%;
+            width: 80%;
             color:darken($secondary_color, 100);
             // text-shadow: 0px  0px 5px rgba(255, 255, 255, 1);
 
