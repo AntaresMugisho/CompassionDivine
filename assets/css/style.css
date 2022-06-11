@@ -622,7 +622,7 @@ header.index_header .slogan {
 @media screen and (max-width: 480px) {
   .cards_container .card hr {
     width: 60%;
-    top: 34%;
+    top: 33%;
   }
 }
 

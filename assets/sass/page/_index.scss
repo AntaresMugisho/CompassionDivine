@@ -1,5 +1,7 @@
 
-// Header 
+
+// HEADER > Hero 
+
 header.index_header{
     background-image:url(../../images/praying.jpg);
     
@@ -7,7 +9,6 @@ header.index_header{
 
     @include breakpoint("tablet"){
         background-position:65% 0;
-        
     }
 
     .org_name{
@@ -18,7 +19,6 @@ header.index_header{
 
         @include breakpoint("mobile"){
             width: 100%;
-            //color:darken($secondary_color, 100);
         }
     }
     
@@ -33,10 +33,13 @@ header.index_header{
     }
 }
 
+// MAIN CONTENT
 
-// SECTIONS
-
-// Section 1 : Continent les différents plans (enseignements) par catégorie.
+// +--------------------------------------------------+
+// |                                                  |
+// | Rapproche-toi de Dieu !                          |
+// |                                                  |
+// +--------------------------------------------------+
 
 .plan_container{
     display: flex;
@@ -130,20 +133,12 @@ header.index_header{
     }   
 }
 
+// +--------------------------------------------------+
+// |                                                  |
+// | Pourquoi suivre nos enseignements ?              |
+// |                                                  |
+// +--------------------------------------------------+
 
-
-
-
-
-
-
-
-
-
-
-
-
-// Section 2 : Pourquoi suivre nos enseignements ?
 .section_2{
     background: linear-gradient(180deg, $primary_color 32%, #fff 32%);
 
@@ -160,7 +155,6 @@ header.index_header{
 }
 
 .cards_container{
-
     display: grid;
     grid-template-columns:repeat(3, 1fr);
     grid-gap:32px;
@@ -210,7 +204,7 @@ header.index_header{
 
             @include breakpoint("mobile"){
                 width:60%;
-                top:34%;
+                top:33%;
             }
         }
 
@@ -293,31 +287,14 @@ header.index_header{
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// Section 3 : Notre communauté
+// +--------------------------------------------------+
+// |                                                  |
+// | Notre communauté !                               |
+// |                                                  |
+// +--------------------------------------------------+
 
 .section_community{
     background-color: $secondary_color;
-
 }
 
 .community_container{
@@ -331,11 +308,7 @@ header.index_header{
     @include breakpoint("tablet"){
         gap:32px;
     }
-
-    
-
 }
-
 
 .community{
     width:290px;
@@ -352,7 +325,6 @@ header.index_header{
         padding-left:32px;
         padding-right:32px;
     }
-
 
     &__avatar{
         display: flex;
@@ -385,7 +357,6 @@ header.index_header{
         @include breakpoint("tablet"){
             font-size: fontSize("normal");
         }
-
 
         span:nth-child(2){
             font-weight:700;
@@ -425,7 +396,6 @@ header.index_header{
 
         @include breakpoint("mobile"){
             justify-content:center;            
-
         }
 
         i{
@@ -462,13 +432,12 @@ header.index_header{
     }
 }
 
+// +--------------------------------------------------+
+// |                                                  |
+// | Je donne aujourd'hui !                           |
+// |                                                  |
+// +--------------------------------------------------+
 
-
-
-
-
-
-// Sectin 4: Faire un don
 .donation{
     
     .container{
@@ -486,7 +455,6 @@ header.index_header{
             grid-template-columns: 1fr 3fr;
             margin-top:6rem;
         }
-
     }
 
     &__img{
@@ -500,7 +468,6 @@ header.index_header{
             grid-row: 1;
             justify-self: center;
         }
-  
     }
 
     &__text{
@@ -514,12 +481,10 @@ header.index_header{
     }
 
     &__btn{
-
         width:40%;
         height: fit-content;
         grid-column: 2;
         
-
         @include breakpoint("tablet"){
              width:80%;
         }
