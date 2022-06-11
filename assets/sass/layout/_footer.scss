@@ -4,7 +4,7 @@ footer{
     @include flex_center(column);
 
     background-color:$primary_color;
-    padd(-ing:$main_margin;
+    padding:$main_margin;
 }
 
 footer .container{
@@ -17,6 +17,8 @@ footer .container{
 
     @include breakpoint("mobile"){
         grid-template-columns: repeat(2, 1fr);
+        width:80%;
+        grid-column-gap:4rem;
     }
 
     ul{
