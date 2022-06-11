@@ -424,8 +424,7 @@ header.index_header .org_name {
 
 @media screen and (max-width: 480px) {
   header.index_header .org_name {
-    width: 80%;
-    color: black;
+    width: 100%;
   }
 }
 
@@ -433,6 +432,12 @@ header.index_header .slogan {
   color: #0e874c;
   width: 60%;
   margin: 20px 0;
+}
+
+@media screen and (max-width: 480px) {
+  header.index_header .slogan {
+    width: 80%;
+  }
 }
 
 .plan_container {
