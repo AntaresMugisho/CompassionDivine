@@ -7,7 +7,7 @@ header.index_header{
     
     @include fit_background;
 
-    @include breakpoint("tablet"){
+    @include breakpoint(tablet){
         background-position:65% 0;
     }
 
@@ -17,7 +17,7 @@ header.index_header{
         font-weight: 400;
         width: 60%;
 
-        @include breakpoint("mobile"){
+        @include breakpoint(mobile){
             width: 100%;
         }
     }
@@ -27,7 +27,7 @@ header.index_header{
         width: 60%;
         margin:20px 0;
 
-        @include breakpoint("mobile"){
+        @include breakpoint(mobile){
             width:80%;
         }
     }
@@ -55,7 +55,7 @@ header.index_header{
         width:100%;
     }
 
-    @include breakpoint("mobile"){
+    @include breakpoint(mobile){
         max-width: unset;
         margin: 0;
         width:100%;
@@ -73,7 +73,7 @@ header.index_header{
         align-items: flex-start;
         justify-content: space-evenly;
 
-        @include breakpoint("mobile"){
+        @include breakpoint(mobile){
             min-width: unset;
             max-width: unset;
             width:100%;
@@ -92,7 +92,7 @@ header.index_header{
             left:-16px;
             z-index: 0;
 
-            @include breakpoint("mobile"){
+            @include breakpoint(mobile){
                 position:unset;
             }
 
@@ -102,7 +102,7 @@ header.index_header{
                 width:110%;
                 font-family: $title;
 
-                @include breakpoint("mobile"){
+                @include breakpoint(mobile){
                     transform:unset;
                     width:100%;
                 }
@@ -116,7 +116,7 @@ header.index_header{
             left:16px;
             z-index: 0;
 
-            @include breakpoint("mobile"){
+            @include breakpoint(mobile){
                 position:unset;
                 width:100%;
                 background:$secondary_color;
@@ -142,7 +142,7 @@ header.index_header{
 .section_2{
     background: linear-gradient(180deg, $primary_color 32%, #fff 32%);
 
-    @include breakpoint("tablet"){
+    @include breakpoint(tablet){
         background: linear-gradient(180deg, $primary_color 30%, #fff 30%);
     }
     
@@ -160,11 +160,11 @@ header.index_header{
     grid-gap:32px;
     margin:20px 0 30px;
 
-    @include breakpoint("tablet"){
+    @include breakpoint(tablet){
         grid-gap:24px;
     }
 
-    @include breakpoint("mobile"){
+    @include breakpoint(mobile){
         grid-template-columns: 1fr;
         width:100%;
         margin-top:0;
@@ -178,11 +178,11 @@ header.index_header{
         position:relative;
         box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.2);
         
-        @include breakpoint("tablet"){
+        @include breakpoint(tablet){
             min-height: 240px;
         }
 
-        @include breakpoint("mobile"){
+        @include breakpoint(mobile){
             max-width: unset;
             min-height: 180px;
         }
@@ -202,7 +202,7 @@ header.index_header{
             height:3px;
             width:40%;
 
-            @include breakpoint("mobile"){
+            @include breakpoint(mobile){
                 width:60%;
                 top:33%;
             }
@@ -224,7 +224,7 @@ header.index_header{
     @include flex_center();
     margin:$main_margin 0;
 
-    @include breakpoint("mobile"){
+    @include breakpoint(mobile){
         @include flex_center(column);
         gap:48px;
 
@@ -236,7 +236,7 @@ header.index_header{
     
     div:first-child{
         width:60%;
-        @include breakpoint("mobile"){
+        @include breakpoint(mobile){
             width:100%;
             display:flex;
             flex-direction: column;
@@ -265,11 +265,11 @@ header.index_header{
     height:280px;
     box-sizing:content-box;
 
-    @include breakpoint("tablet"){
+    @include breakpoint(tablet){
         height:200px;
     }
 
-    @include breakpoint("mobile"){
+    @include breakpoint(mobile){
         height:unset;
         width:90%;
         transform: translateX(-12px);
@@ -279,7 +279,7 @@ header.index_header{
         height:100%;
         transform: translate(24px, -24px);
 
-        @include breakpoint("mobile"){
+        @include breakpoint(mobile){
             height:unset;
             width:100%;
             transform: translate(20px, -16px);
@@ -305,7 +305,7 @@ header.index_header{
     flex-wrap: wrap;
     gap:16px;
 
-    @include breakpoint("tablet"){
+    @include breakpoint(tablet){
         gap:32px;
     }
 }
@@ -320,7 +320,7 @@ header.index_header{
     box-shadow: 0 0 8px rgba(0, 0, 0, .3);
     position : relative;
 
-    @include breakpoint("mobile"){
+    @include breakpoint(mobile){
         width:90%;
         padding-left:32px;
         padding-right:32px;
@@ -354,7 +354,7 @@ header.index_header{
         font-family: $title;
         font-size:2rem;
 
-        @include breakpoint("tablet"){
+        @include breakpoint(tablet){
             font-size: fontSize("normal");
         }
 
@@ -375,7 +375,7 @@ header.index_header{
         color:darken($secondary_color, 40);
         font-size:2rem;
 
-        @include breakpoint("tablet"){
+        @include breakpoint(tablet){
             font-size: fontSize("normal");
         } 
     }
@@ -394,7 +394,7 @@ header.index_header{
         margin:$main_margin 0;
         transition: background-color $tr_duration ease-out;
 
-        @include breakpoint("mobile"){
+        @include breakpoint(mobile){
             justify-content:center;            
         }
 
@@ -412,7 +412,7 @@ header.index_header{
     @include flex_center();
     margin-top:$main_margin;
 
-    @include breakpoint("mobile"){
+    @include breakpoint(mobile){
         @include flex_center(column);
       
     }
@@ -421,11 +421,11 @@ header.index_header{
         margin:0 24px;
         font-family:$title;
 
-        @include breakpoint("tablet"){
+        @include breakpoint(tablet){
             margin:0 4px;
         }
 
-        @include breakpoint("mobile"){
+        @include breakpoint(mobile){
             margin:8px 0px;
             width:100%;
         }
@@ -447,11 +447,11 @@ header.index_header{
         grid-row-gap: 3rem;
         margin-top:8rem;
 
-        @include breakpoint("tablet"){
+        @include breakpoint(tablet){
             grid-gap:3rem;
         }
 
-        @include breakpoint("mobile"){
+        @include breakpoint(mobile){
             grid-template-columns: 1fr 3fr;
             margin-top:6rem;
         }
@@ -463,7 +463,7 @@ header.index_header{
         justify-self: flex-end;
         align-self: center;
 
-        @include breakpoint("mobile"){
+        @include breakpoint(mobile){
             width:120px;
             grid-row: 1;
             justify-self: center;
@@ -475,7 +475,7 @@ header.index_header{
         width:80%;
         align-self: center;
 
-        @include breakpoint("mobile"){
+        @include breakpoint(mobile){
             width:100%;
         }
     }
@@ -485,11 +485,11 @@ header.index_header{
         height: fit-content;
         grid-column: 2;
         
-        @include breakpoint("tablet"){
+        @include breakpoint(tablet){
              width:80%;
         }
 
-        @include breakpoint("mobile"){
+        @include breakpoint(mobile){
             grid-row: 2;
             grid-column: span 2;
             width:100%;

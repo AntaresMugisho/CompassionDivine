@@ -12,7 +12,7 @@
         @include flex_center();
         z-index: 10000;
     
-        @include breakpoint("tablet"){
+        @include breakpoint(tablet){
     
             @include flex_center(column);
             
@@ -49,7 +49,7 @@
             transition: color $tr_duration ease-out;
             position:relative;
     
-            @include breakpoint("tablet"){
+            @include breakpoint(tablet){
                 margin:20px 0;
                 font-size:fontSize("title_2");
             }
@@ -86,7 +86,7 @@
         color:$primary_color;
         display: none;
         
-        @include breakpoint("tablet"){
+        @include breakpoint(tablet){
             display:block;
         }
     }

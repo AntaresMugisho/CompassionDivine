@@ -18,7 +18,7 @@ section{
         width:80%;
         margin-bottom:16px;
 
-        @include breakpoint("mobile"){
+        @include breakpoint(mobile){
             width:90%;
         }
     }
