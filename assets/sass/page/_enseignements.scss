@@ -171,6 +171,10 @@
     box-shadow: .6rem .8rem 1.2rem rgba(0,0,0, .2);
     padding-bottom:1.6rem;
     overflow:hidden;
+
+    @include breakpoint(mobile){
+        border-radius:6px;
+    }
     
     img{
         width:100%;
