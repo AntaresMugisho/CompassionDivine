@@ -52,3 +52,18 @@
         background:$primary_color;
     }
 }
+
+@mixin backgound_filter($height:100vh) {
+    &::before{
+        content:"";
+        display:block;
+        width:100%;
+        height:$height;
+        background-color: rgba(255, 255, 255, 0.5);
+        position:absolute;
+        top:0;
+        left:0;
+        z-index:0;
+    }
+    
+}

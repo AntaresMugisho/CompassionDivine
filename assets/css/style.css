@@ -419,6 +419,20 @@ header.index_header {
   }
 }
 
+@media screen and (max-width: 480px) {
+  header.index_header::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+  }
+}
+
 header.index_header .org_name {
   color: #8a8a8a;
   font-size: 3.4rem;
@@ -428,7 +442,9 @@ header.index_header .org_name {
 
 @media screen and (max-width: 480px) {
   header.index_header .org_name {
+    color: #575757;
     width: 100%;
+    z-index: 1;
   }
 }
 
@@ -441,7 +457,12 @@ header.index_header .slogan {
 @media screen and (max-width: 480px) {
   header.index_header .slogan {
     width: 80%;
+    z-index: 1;
   }
+}
+
+header.index_header .btn {
+  z-index: 1;
 }
 
 .plan_container {
