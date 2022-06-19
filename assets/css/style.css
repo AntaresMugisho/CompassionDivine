@@ -1012,13 +1012,13 @@ header.index_header .btn {
 
 @media screen and (max-width: 480px) {
   .enseignements_header {
-    height: 50vh;
+    height: 80vh;
   }
   .enseignements_header::before {
     content: "";
     display: block;
     width: 100%;
-    height: 50vh;
+    height: 80vh;
     background-color: rgba(255, 255, 255, 0.5);
     position: absolute;
     top: 0;
@@ -1028,7 +1028,7 @@ header.index_header .btn {
 }
 
 .enseignements_header .hero {
-  background-image: url(../images/bible-parole.png);
+  background-image: url(../../images/bible-parole.png);
   background-repeat: no-repeat;
   background-position: bottom right;
   background-size: 40rem;
@@ -1057,7 +1057,7 @@ header.index_header .btn {
 
 @media screen and (max-width: 480px) {
   .enseignements_header .hero .description {
-    width: 70%;
+    width: 80%;
   }
 }
 
@@ -1091,8 +1091,7 @@ header.index_header .btn {
 
 @media screen and (max-width: 480px) {
   .search_field input:nth-child(1) {
-    width: 300px;
-    min-width: unset;
+    min-width: 190px;
     margin-left: 0px;
   }
 }
@@ -1103,7 +1102,7 @@ header.index_header .btn {
 
 @media screen and (max-width: 480px) {
   .search_field input:nth-child(2) {
-    width: fit-content;
+    width: 90px;
     margin: 0;
   }
 }
@@ -1146,7 +1145,7 @@ header.index_header .btn {
 
 @media screen and (max-width: 480px) {
   :root {
-    --lesson-width:180px;
+    --lesson-width:144px;
   }
 }
 
