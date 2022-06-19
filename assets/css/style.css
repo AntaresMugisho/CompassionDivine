@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css");
 *,
@@ -74,9 +73,6 @@ p {
 }
 
 .btn {
-  /*
-        Center les éléments enfants contenus dans le parent qui reçoit cette mixin. 
-    */
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -119,9 +115,6 @@ p {
 }
 
 section {
-  /*
-        Center les éléments enfants contenus dans le parent qui reçoit cette mixin. 
-    */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -186,9 +179,6 @@ header .hero {
 }
 
 .navbar .nav {
-  /*
-        Center les éléments enfants contenus dans le parent qui reçoit cette mixin. 
-    */
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -198,9 +188,6 @@ header .hero {
 
 @media screen and (max-width: 768px) {
   .navbar .nav {
-    /*
-        Center les éléments enfants contenus dans le parent qui reçoit cette mixin. 
-    */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -224,9 +211,6 @@ header .hero {
 }
 
 .navbar .nav li {
-  /*
-        Center les éléments enfants contenus dans le parent qui reçoit cette mixin. 
-    */
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -251,9 +235,6 @@ header .hero {
 }
 
 .navbar .nav__link::after {
-  /*
-        Créer un effet de surlignage lors du survol sur un menu de navigation
-    */
   content: "";
   background-color: #0e874c;
   width: 0%;
@@ -298,9 +279,6 @@ header .hero {
 }
 
 footer {
-  /*
-        Center les éléments enfants contenus dans le parent qui reçoit cette mixin. 
-    */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -388,9 +366,6 @@ footer .container .follow-us .social {
 }
 
 footer .container .follow-us a {
-  /*
-        Center les éléments enfants contenus dans le parent qui reçoit cette mixin. 
-    */
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -445,12 +420,6 @@ header.index_header {
 }
 
 @media screen and (max-width: 480px) {
-  header.index_header {
-    /*
-        Ajoute un filtre blanchâtre sur au dessus d'une image servant de background pour améliorer le contraste.
-        Utilisé surtout dans la résolution d'un téléphone mobile.
-    */
-  }
   header.index_header::before {
     content: "";
     display: block;
@@ -683,9 +652,6 @@ header.index_header .btn {
 }
 
 .cards_container .card:nth-child(1) {
-  /*
-        Appliquqe la couleur assée en paramètre aux éléments ci-dessous spécifiés, que comporte chacune des cartes de la page d'accueil (Vision-Mission-Message).
-    */
   background: linear-gradient(180deg, #d6d6d6 85%, #01b7ff 85%);
 }
 
@@ -698,9 +664,6 @@ header.index_header .btn {
 }
 
 .cards_container .card:nth-child(2) {
-  /*
-        Appliquqe la couleur assée en paramètre aux éléments ci-dessous spécifiés, que comporte chacune des cartes de la page d'accueil (Vision-Mission-Message).
-    */
   background: linear-gradient(180deg, #d6d6d6 85%, #ffa806 85%);
 }
 
@@ -713,9 +676,6 @@ header.index_header .btn {
 }
 
 .cards_container .card:nth-child(3) {
-  /*
-        Appliquqe la couleur assée en paramètre aux éléments ci-dessous spécifiés, que comporte chacune des cartes de la page d'accueil (Vision-Mission-Message).
-    */
   background: linear-gradient(180deg, #d6d6d6 85%, #0e874c 85%);
 }
 
@@ -728,9 +688,6 @@ header.index_header .btn {
 }
 
 .container__reason_why {
-  /*
-        Center les éléments enfants contenus dans le parent qui reçoit cette mixin. 
-    */
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -740,9 +697,6 @@ header.index_header .btn {
 
 @media screen and (max-width: 480px) {
   .container__reason_why {
-    /*
-        Center les éléments enfants contenus dans le parent qui reçoit cette mixin. 
-    */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -867,16 +821,10 @@ header.index_header .btn {
 }
 
 .community__name {
-  /*
-        Center les éléments enfants contenus dans le parent qui reçoit cette mixin. 
-    */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /*
-        Dans la section "Notre Communauté" de la page d'accueil, crée une ligne en dessous du nom du représentant de chaque communauté.
-    */
   color: #0e874c;
   margin-top: 60px;
   text-align: center;
@@ -951,9 +899,6 @@ header.index_header .btn {
 }
 
 .btn_container {
-  /*
-        Center les éléments enfants contenus dans le parent qui reçoit cette mixin. 
-    */
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -963,9 +908,6 @@ header.index_header .btn {
 
 @media screen and (max-width: 480px) {
   .btn_container {
-    /*
-        Center les éléments enfants contenus dans le parent qui reçoit cette mixin. 
-    */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1071,10 +1013,6 @@ header.index_header .btn {
 @media screen and (max-width: 480px) {
   .enseignements_header {
     height: 50vh;
-    /*
-        Ajoute un filtre blanchâtre sur au dessus d'une image servant de background pour améliorer le contraste.
-        Utilisé surtout dans la résolution d'un téléphone mobile.
-    */
   }
   .enseignements_header::before {
     content: "";
@@ -1090,7 +1028,7 @@ header.index_header .btn {
 }
 
 .enseignements_header .hero {
-  background-image: url(../../images/bible-parole.png);
+  background-image: url(../images/bible-parole.png);
   background-repeat: no-repeat;
   background-position: bottom right;
   background-size: 40rem;
@@ -1128,9 +1066,6 @@ header.index_header .btn {
 }
 
 .search_field .search_form {
-  /*
-        Center les éléments enfants contenus dans le parent qui reçoit cette mixin. 
-    */
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -1294,9 +1229,6 @@ header.index_header .btn {
 }
 
 .pending {
-  /*
-        Center les éléments enfants contenus dans le parent qui reçoit cette mixin. 
-    */
   display: flex;
   flex-direction: column;
   justify-content: center;

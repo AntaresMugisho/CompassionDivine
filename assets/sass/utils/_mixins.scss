@@ -12,10 +12,8 @@
 }
 
 @mixin link_after($bg-color : $primary_color){
-    /*
-        Créer un effet de surlignage lors du survol sur un menu de navigation
-    */
-
+    // Créer un effet de surlignage lors du survol sur un menu de navigation
+  
     content:"";
     background-color:$bg-color;
     width:0%;
@@ -27,9 +25,7 @@
 }
 
 @mixin flex_center($direction : row){
-    /*
-        Center les éléments enfants contenus dans le parent qui reçoit cette mixin. 
-    */
+    // Center les éléments enfants contenus dans le parent qui reçoit cette mixin. 
 
     display:flex;
     flex-direction:$direction;
@@ -39,9 +35,7 @@
 
 
 @mixin card_color($color){
-    /*
-        Appliquqe la couleur assée en paramètre aux éléments ci-dessous spécifiés, que comporte chacune des cartes de la page d'accueil (Vision-Mission-Message).
-    */
+    // Appliquqe la couleur assée en paramètre aux éléments ci-dessous spécifiés, que comporte chacune des cartes de la page d'accueil (Vision-Mission-Message).
 
     background: linear-gradient(180deg, $secondary_color 85%, $color 85%);
 
@@ -55,10 +49,8 @@
 }
 
 @mixin line_after(){
-    /*
-        Dans la section "Notre Communauté" de la page d'accueil, crée une ligne en dessous du nom du représentant de chaque communauté.
-    */
-
+    // Dans la section "Notre Communauté" de la page d'accueil, crée une ligne en dessous du nom du représentant de chaque communauté.
+    
     &::after{
         content:"";
         display:block;
@@ -70,10 +62,8 @@
 }
 
 @mixin backgound_filter($height:100vh) {
-    /*
-        Ajoute un filtre blanchâtre sur au dessus d'une image servant de background pour améliorer le contraste.
-        Utilisé surtout dans la résolution d'un téléphone mobile.
-    */
+    // Ajoute un filtre blanchâtre sur au dessus d'une image servant de background pour améliorer le contraste.
+    // Utilisé surtout dans la résolution d'un téléphone mobile.
 
     &::before{
         content:"";
@@ -86,5 +76,4 @@
         left:0;
         z-index:0;
     }
-    
 }

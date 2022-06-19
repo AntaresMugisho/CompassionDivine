@@ -20,13 +20,11 @@ header.index_header{
         font-size:fontSize("title_2");
         font-weight: 400;
         width: 60%;
-        
 
         @include breakpoint(mobile){
             color:darken($secondary_color, 50);
             width: 100%;
             z-index:1;
-            
         }
     }
     
@@ -35,7 +33,6 @@ header.index_header{
         width: 60%;
         margin:20px 0;
         
-
         @include breakpoint(mobile){
             width:80%;
             z-index:1;
