@@ -75,8 +75,8 @@
         @extend %input_all;
         width:70%;
         min-width:300px;
-        box-shadow: inset 2px 0 3px rgba(0, 0, 0, 0.2);
         border:2px solid darken($secondary_color, 20);
+        box-shadow: inset 2px 0 3px rgba(0, 0, 0, 0.2);
 
         @include breakpoint(mobile){
             min-width:190px;
@@ -139,7 +139,7 @@
     }
 
     @include breakpoint(mobile){
-        --lesson-width:144px;
+        --lesson-width:155px;
     }
 }
 
@@ -168,7 +168,7 @@
 .lesson{
     width:var(--lesson-width);
     border-radius:10px;
-    box-shadow: 6px 8px 12px rgba(0,0,0, .2);
+    box-shadow: .6rem .8rem 1.2rem rgba(0,0,0, .2);
     padding-bottom:1.6rem;
     overflow:hidden;
     

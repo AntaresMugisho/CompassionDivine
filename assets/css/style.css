@@ -1085,8 +1085,8 @@ header.index_header .btn {
 .search_field input:nth-child(1) {
   width: 70%;
   min-width: 300px;
-  box-shadow: inset 2px 0 3px rgba(0, 0, 0, 0.2);
   border: 2px solid #a3a3a3;
+  box-shadow: inset 2px 0 3px rgba(0, 0, 0, 0.2);
 }
 
 @media screen and (max-width: 480px) {
@@ -1145,7 +1145,7 @@ header.index_header .btn {
 
 @media screen and (max-width: 480px) {
   :root {
-    --lesson-width:144px;
+    --lesson-width:155px;
   }
 }
 
@@ -1178,7 +1178,7 @@ header.index_header .btn {
 .lesson {
   width: var(--lesson-width);
   border-radius: 10px;
-  box-shadow: 6px 8px 12px rgba(0, 0, 0, 0.2);
+  box-shadow: 0.6rem 0.8rem 1.2rem rgba(0, 0, 0, 0.2);
   padding-bottom: 1.6rem;
   overflow: hidden;
 }
