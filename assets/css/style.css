@@ -1180,6 +1180,7 @@ header.index_header .btn {
   border-radius: 10px;
   box-shadow: 0.6rem 0.8rem 1.2rem rgba(0, 0, 0, 0.2);
   padding-bottom: 1.6rem;
+  justify-self: center;
   overflow: hidden;
 }
 
@@ -1212,6 +1213,68 @@ header.index_header .btn {
 
 .lesson .btn {
   height: 40px;
+}
+
+.medias_header {
+  background-color: #fdfbdf;
+}
+
+.event {
+  background-color: #f0f0f0;
+  display: grid;
+  grid-template-rows: 3;
+}
+
+.event__title {
+  color: #0e874c;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.event__subtitle span {
+  color: #a3a3a3;
+  font-size: 1.6rem;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.wrapper .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  gap: 2rem;
+}
+
+.item {
+  width: 100%;
+  min-width: 180px;
+  max-width: 300px;
+  position: relative;
+}
+
+.item__thumb {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+.item__legend {
+  font-size: 1.5rem;
+  width: 100%;
+  padding: 1rem;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  bottom: 0;
 }
 
 .obs {
