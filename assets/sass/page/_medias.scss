@@ -1,0 +1,91 @@
+
+
+// HEADER > Hero 
+.medias_header{
+    background-color: lighten($accent-color, 10);
+
+    @include breakpoint(tablet){
+        height:50vh;
+    }
+
+
+    .hero .title{
+        width:60%;
+
+        @include breakpoint(tablet){
+            width:100%;
+        }
+
+    }
+}
+
+//Section première
+.event{
+    background-color:lighten($secondary_color, 10);
+    display: grid;
+    grid-template-rows: 3;
+
+    &__title{
+        color:$primary_color;
+        font-family: $title;
+    }
+
+    &__subtitle{
+        span{
+            color:darken($secondary_color,20);
+            font-size:1.6rem;
+        }
+    }
+}
+
+.wrapper{
+    @include flex_center();
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap:1.5rem;
+
+    @include breakpoint(tablet){
+        flex-wrap: wrap;
+    }
+
+    @include breakpoint(mobile){
+        justify-content: center;
+    }
+    
+    .container{
+        @include flex_center(column);
+        // justify-content: space-between;
+        gap:2rem;
+    }
+}
+
+.item{
+    width:100%;
+    min-width: 180px;
+    max-width:300px;
+    position:relative;
+
+    @include breakpoint(tablet){
+        min-width: unset;
+        max-width: 220px;
+    }
+    @include breakpoint(mobile){
+        max-width: 43vw;
+    }
+
+    &__thumb{
+        width:100%;
+        max-height:400px;
+        object-fit:cover;
+    }
+
+    &__legend{
+        font-size: 1.5rem;
+        width:100%;
+        padding:1rem;
+        color:#fff;
+        background-color:rgba(0,0,0,.5);
+        position:absolute;
+        bottom:0;
+    }
+}
