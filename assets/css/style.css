@@ -1219,6 +1219,12 @@ header.index_header .btn {
   background-color: #fdfbdf;
 }
 
+@media screen and (max-width: 768px) {
+  .medias_header {
+    height: 50vh;
+  }
+}
+
 .event {
   background-color: #f0f0f0;
   display: grid;
@@ -1241,7 +1247,20 @@ header.index_header .btn {
   justify-content: center;
   align-items: center;
   align-items: flex-start;
+  justify-content: flex-start;
   gap: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .wrapper {
+    justify-content: center;
+  }
 }
 
 .wrapper .container {
@@ -1249,8 +1268,6 @@ header.index_header .btn {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  justify-content: space-between;
-  height: 100%;
   gap: 2rem;
 }
 
@@ -1259,6 +1276,19 @@ header.index_header .btn {
   min-width: 180px;
   max-width: 300px;
   position: relative;
+}
+
+@media screen and (max-width: 768px) {
+  .item {
+    min-width: unset;
+    max-width: 220px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .item {
+    max-width: 43vw;
+  }
 }
 
 .item__thumb {
