@@ -10,7 +10,7 @@
     
     .nav{
         @include flex_center();
-        z-index: 10000;
+        z-index: 1000;
     
         @include breakpoint(tablet){
     
@@ -25,14 +25,13 @@
             top:10vh;
             right:0;
             
-            
             transform: translateX(100%) scale(0);
             transition: transform $tr_duration;
     
             &--show{
                 border-radius:0;
                 transform: translateX(0);
-                z-index:10000; 
+                z-index:1000; 
             }
         }
     

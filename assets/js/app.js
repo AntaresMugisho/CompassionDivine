@@ -20,6 +20,8 @@ for (const nav_link of nav_links){
 }
 
 
+
+
 // Animations avec intersection observer
 
 let options = {
@@ -52,4 +54,19 @@ function handle_intersect(entries, observer){
         //     entry.target.classList.add("obs--not-visible");
         // }
     })
+}
+
+
+// Fenêtre modale sur la page Médias
+
+const modal_triggers = document.querySelectorAll(".modal-trigger");
+const modal_container = document.querySelector(".modal-container");
+
+modal_triggers.forEach(trigger => trigger.addEventListener("click", toggleModal));
+
+function toggleModal(target){
+    modal_container.classList.toggle("active")
+    console.log(modal_container.classList)
+    
+
 }
