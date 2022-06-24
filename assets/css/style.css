@@ -1318,6 +1318,10 @@ header.index_header .btn {
   bottom: 0;
 }
 
+.modal-trigger {
+  cursor: pointer;
+}
+
 .modal-container {
   visibility: hidden;
   transition: visibility .4s;
@@ -1365,8 +1369,9 @@ header.index_header .btn {
   transition: opacity .4s .2s ease-out, transform .4s;
 }
 
-.modal .item_thumb {
+.modal .item__thumb {
   width: 100%;
+  max-height: unset;
   height: 100%;
   object-fit: cover;
 }
@@ -1376,21 +1381,22 @@ header.index_header .btn {
   font-size: 2rem;
 }
 
-.modal .bi {
+.modal i {
   font-size: 3.8rem;
   display: block;
   position: absolute;
   bottom: 0;
   color: #fff;
   cursor: pointer;
+  z-index: 10000;
   display: none;
 }
 
-.modal .bi.left-arrow {
+.modal i.left-arrow {
   left: 5px;
 }
 
-.modal .bi.right-arrow {
+.modal i.right-arrow {
   right: 5px;
 }
 

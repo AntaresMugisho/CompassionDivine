@@ -97,7 +97,9 @@
 
 // Fenêtre modale
 
-
+.modal-trigger{
+    cursor:pointer;
+}
 
 .modal-container{
     visibility:hidden;
@@ -147,15 +149,15 @@
         transform: translate(-50%, -50%);
         transition: opacity .4s .2s ease-out,
                     transform .4s;
-
     }
-    
 }
+
 
 .modal{
 
-    .item_thumb{
+    .item__thumb{
         width:100%;
+        max-height:unset;
         height:100%;
         object-fit:cover;
     }
@@ -165,13 +167,14 @@
         font-size: 2rem;
     }
 
-    .bi{
+    i{
         font-size: 3.8rem;
         display:block;
         position:absolute;
         bottom:0;
         color:#fff;
         cursor:pointer;
+        z-index: 10000;
         display:none;
 
         &.left-arrow{
