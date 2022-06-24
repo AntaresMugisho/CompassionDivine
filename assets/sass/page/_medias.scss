@@ -15,7 +15,6 @@
         @include breakpoint(tablet){
             width:100%;
         }
-
     }
 }
 
@@ -55,7 +54,7 @@
     
     .container{
         @include flex_center(column);
-        // justify-content: space-between;
+        justify-content: space-between;
         gap:2rem;
     }
 }
@@ -95,6 +94,12 @@
 
 
 
+
+
+
+
+
+
 // Fenêtre modale
 
 .modal-trigger{
@@ -104,34 +109,46 @@
 .modal-container{
     visibility:hidden;
     transition: visibility .4s;
+    width:100vw;
+    height:100vh;
+    position:absolute;
+    @include flex_center();
 
     .overlay{
-        opacity: 0;
-        width:100vw;
+        opacity:0;
+        width:100%;
         height:100%;
-        background-color: #333333d3;
+        background-color: rgba(0, 0, 0, 0.3);
+
+        backdrop-filter:blur(15px);
+        -webkit-backdrop-filter:blur(15px);
+
         position:absolute;
-        top:0;
-        left:0;
-        z-index:10000;
         transition: opacity .4s .2s ease-out;
     }
 
     .modal{
         opacity: 0;
-        width:90vw;
+        width: 90vw;
+        height: 1000px;
         max-width: 800px;
-        height:500px;
+        max-height: 90vh;
         background-color:#fff;
-        border:10px solid #fff;
+        border: 15px solid #fff;
 
         position:absolute;
-        top:30%;
+        top:50%;
         left:50%;
         transform: translate(-50%, calc(-50% - 50px));
-        z-index:10000;
         transition:opacity .4s ease-out,
-                    transform .4s;
+                   transform .4s;
+
+        @include breakpoint(mobile){
+            width:95vw;
+            height:auto;
+            max-height:88vh;
+            border-width:10px;
+        }
     }
 }
 
@@ -157,9 +174,13 @@
 
     .item__thumb{
         width:100%;
-        max-height:unset;
         height:100%;
+        max-height:unset;
         object-fit:cover;
+
+        @include breakpoint(mobile){
+            height:unset;
+        }
     }
 
     .item__legend{
