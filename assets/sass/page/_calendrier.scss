@@ -10,7 +10,7 @@
 
 // +--------------------------------------------------+
 // |                                                  |
-// |                                |
+// | Tableau d'horaire hebdomadaire                   |
 // |                                                  |
 // +--------------------------------------------------+
 
@@ -33,14 +33,13 @@ th{
     font-weight:600;
     font-size: fontSize("normal");
     color:$primary_color;
-
     padding:1rem .5rem;
     border-bottom:5px solid $primary_color;
     
     &:not(:first-child){
-        width:30%;
-        
+        width:30%;  
     }
+
     span{
         display: block;
         color:darken($secondary_color, 20);
@@ -69,35 +68,30 @@ td{
             font-size: 1rem;
         }
     }
-    
+
     .activity{
         display:block;
         font-weight:300;
     }
 }
 
-
-
-
-
-
-
-
-
+// +--------------------------------------------------+
+// |                                                  |
+// | Evenements à venir                               |
+// |                                                  |
+// +--------------------------------------------------+
 
 .comming_events{
     background: linear-gradient(180deg, lighten($secondary_color, 10) 31%, #fff 31%);
 
     @include breakpoint(mobile){
-    background: linear-gradient(180deg, lighten($secondary_color, 10) 20%, #fff 20%);
-        
+        background: linear-gradient(180deg, lighten($secondary_color, 10) 20%, #fff 20%);
     }
 
     .event{
         width:80%;
         margin-top:30px;
-        background-color: transparent;
-        
+        background-color: transparent;   
         display: grid;
         grid-template-columns: 2;
         grid-template-rows: 3;
@@ -115,14 +109,6 @@ td{
         *{
             align-self: center;
         }
-
-        // &__title{
-
-        // }
-
-        // &__description{
-        
-        // }
 
         &__illustration{
             grid-column: 2;
@@ -151,4 +137,3 @@ td{
         }
     }
 }
-

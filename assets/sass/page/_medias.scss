@@ -1,13 +1,13 @@
 
 
 // HEADER > Hero 
+
 .medias_header{
     background-color: lighten($accent-color, 10);
 
     @include breakpoint(tablet){
         height:50vh;
     }
-
 
     .hero .title{
         width:60%;
@@ -18,7 +18,14 @@
     }
 }
 
-//Section première
+// MAIN CONTENT
+
+// +--------------------------------------------------+
+// |                                                  |
+// | Evenements passés                                |
+// |                                                  |
+// +--------------------------------------------------+
+
 .event{
     background-color:lighten($secondary_color, 10);
     display: grid;
@@ -92,16 +99,11 @@
     }
 }
 
-
-
-
-
-
-
-
-
-
-// Fenêtre modale
+// +--------------------------------------------------+
+// |                                                  |
+// | Fenêtre modale                                   |
+// |                                                  |
+// +--------------------------------------------------+
 
 .modal-trigger{
     cursor:pointer;
@@ -164,7 +166,6 @@
                     transform .4s;
     }
 }
-
 
 .modal{
 
