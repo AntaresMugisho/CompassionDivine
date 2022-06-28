@@ -1281,6 +1281,7 @@ header.index_header .btn {
   align-items: center;
   justify-content: space-between;
   gap: 2rem;
+  height: 100%;
 }
 
 .item {
@@ -1326,8 +1327,8 @@ header.index_header .btn {
 .modal-container {
   visibility: hidden;
   transition: visibility .4s;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   position: absolute;
   display: flex;
   flex-direction: row;
@@ -1339,7 +1340,7 @@ header.index_header .btn {
   opacity: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
   position: absolute;
@@ -1411,6 +1412,138 @@ header.index_header .btn {
 
 .modal i.right-arrow {
   right: 5px;
+}
+
+.calendrier_header {
+  height: 10vh;
+}
+
+table {
+  empty-cells: hide;
+  border-spacing: 1rem;
+  table-layout: fixed;
+}
+
+caption {
+  color: #a3a3a3;
+  text-align: left;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 2rem;
+  margin: 10px;
+}
+
+th {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 600;
+  font-size: 2.4rem;
+  color: #0e874c;
+  padding: 1rem .5rem;
+  border-bottom: 5px solid #0e874c;
+}
+
+th:not(:first-child) {
+  width: 30%;
+}
+
+th span {
+  display: block;
+  color: #a3a3a3;
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
+td {
+  font-size: 2rem;
+  font-family: "Roboto", sans-serif;
+  padding: 1rem;
+  background-color: #e4fcf1;
+}
+
+td:nth-child(odd) {
+  background-color: #f0f0f0;
+}
+
+td.day {
+  vertical-align: top;
+  text-align: right;
+}
+
+td .hour sup {
+  font-size: 1rem;
+}
+
+td .activity {
+  display: block;
+  font-weight: 300;
+}
+
+.comming_events {
+  background: linear-gradient(180deg, #f0f0f0 31%, #fff 31%);
+}
+
+@media screen and (max-width: 480px) {
+  .comming_events {
+    background: linear-gradient(180deg, #f0f0f0 20%, #fff 20%);
+  }
+}
+
+.comming_events .event {
+  width: 80%;
+  margin-top: 30px;
+  background-color: transparent;
+  display: grid;
+  grid-template-columns: 2;
+  grid-template-rows: 3;
+  grid-gap: 4rem;
+}
+
+@media screen and (max-width: 768px) {
+  .comming_events .event {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .comming_events .event {
+    width: 100%;
+    grid-template-columns: 1;
+  }
+}
+
+.comming_events .event * {
+  align-self: center;
+}
+
+.comming_events .event__illustration {
+  grid-column: 2;
+  grid-row: span 3;
+  height: 500px;
+}
+
+@media screen and (max-width: 768px) {
+  .comming_events .event__illustration {
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .comming_events .event__illustration {
+    height: unset;
+    grid-column: 1;
+    grid-row: unset;
+    width: 100%;
+  }
+}
+
+.comming_events .event .btn {
+  height: 40px;
+  width: 60%;
+}
+
+@media screen and (max-width: 480px) {
+  .comming_events .event .btn {
+    width: 100%;
+  }
 }
 
 .obs {

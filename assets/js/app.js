@@ -60,6 +60,9 @@ function toggleModal(e){
     if (modal_container.classList.contains("active")){
         let icons = '<i class="bi bi-caret-left-fill left-arrow"></i><i class="bi bi-caret-right-fill right-arrow"></i>'
         var content = e.target.parentElement.innerHTML;
+        console.log(content)
+        content = content.replace("mpj_thumb", "mpj_full");
+        console.log(content)
 
         modal.innerHTML = icons + content;
     }
