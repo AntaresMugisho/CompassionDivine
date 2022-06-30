@@ -1,0 +1,158 @@
+
+
+// HEADER > Hero 
+
+.about_header{
+    height:10vh;
+
+}
+
+// ASIDE NAVIGATION
+
+// +--------------------------------------------------+
+// |                                                  |
+// |                   |
+// |                                                  |
+// +--------------------------------------------------+
+
+
+.aside_menu{
+    @include flex_center(column);
+    
+    align-items: flex-start;
+    width:240px;
+    height:400px;
+    padding:3rem;
+    background-color:$accent_color;
+    border-top-right-radius:100%;
+    border-bottom-right-radius:30%;
+
+    position:fixed;
+    top:50%;
+    transform: translateY(-50%);
+    box-shadow: 0 0 0px rgba(0, 0, 0, 0.1);
+
+    a{  
+        font-family: $normal;
+        font-weight: 400;
+        font-size:2rem;
+        color:#000;
+        padding:1rem 0;
+        transition: margin $tr_duration;
+
+        &:hover{
+            font-weight: 300;
+            color:$primary_color;
+            margin-left:.5rem;
+        }
+    }
+}
+
+.deco-line{
+    width:30%;
+    height:6px;
+    border-radius:3px;
+    background-color: rgb(0, 0, 0);
+    margin:2rem 0;
+}
+
+
+
+// MAIN CONTENT
+
+// +--------------------------------------------------+
+// |                                                  |
+// | Général                                            |
+// |                                                  |
+// +--------------------------------------------------+
+
+.about_container{
+    @include flex_center(column);
+    
+    @media screen and (max-width: 1024px) {
+        align-items:flex-end;
+    }
+}
+
+
+.about{
+    align-items: flex-start;
+    width:65%;
+
+    @media screen and (max-width: 1024px) {
+        width:70%;
+    }
+
+    &__title{
+        font-weight:300;
+        color:$primary_color;
+    }
+
+    &__subtitle{
+        font-family: $title;
+        padding:2rem 0;
+    }
+
+    &__description{
+        font-weight: 600;
+        font-size: fontSize("title_2");
+    }
+}
+
+// +--------------------------------------------------+
+// |                                                  |
+// | Resumé                                           |
+// |                                                  |
+// +--------------------------------------------------+
+
+.summury{
+    width:100%;
+    background-color:lighten($secondary_color, 10);
+    border: 2px solid;
+    padding:1rem 0;
+    margin:1rem 0;
+    border-radius:12px;
+    font-weight:300;
+
+    span:nth-child(1){
+        background-color:$secondary_color;
+        color:#fff;
+        padding:1rem;
+        border-top-left-radius:8px;
+        border-bottom-left-radius:8px;
+        font-weight:400;
+    }
+}
+
+.summury.vision{
+    background-color:lighten(#01b7ff, 20);
+    border-color:#01b7ff;
+
+    span:nth-child(1){
+        background-color:#01b7ff;
+    }
+}
+
+.summury.mission{
+    background-color:lighten(#ffa806, 20);
+    border-color:#ffa806;
+
+    span:nth-child(1){
+        background-color:#ffa806;
+    }
+}
+
+.summury.message{
+    background-color:lighten($primary_color, 20);
+    border-color:$primary_color;
+    span:nth-child(1){
+        background-color:$primary_color;
+    }
+}
+
+
+// +--------------------------------------------------+
+// |                                                  |
+// |                   |
+// |                                                  |
+// +--------------------------------------------------+
