@@ -1,0 +1,139 @@
+
+
+// HEADER > Hero 
+
+.calendrier_header{
+    height:10vh;
+}
+
+// MAIN CONTENT
+
+// +--------------------------------------------------+
+// |                                                  |
+// | Tableau d'horaire hebdomadaire                   |
+// |                                                  |
+// +--------------------------------------------------+
+
+table{
+    empty-cells: hide;
+    border-spacing:1rem;
+    table-layout: fixed;
+}
+
+caption{
+    color:darken($secondary_color,20);
+    text-align: left;
+    font-family: $title;
+    font-size: 2rem;
+    margin:10px;
+}
+
+th{   
+    font-family: $title;
+    font-weight:600;
+    font-size: fontSize("normal");
+    color:$primary_color;
+    padding:1rem .5rem;
+    border-bottom:5px solid $primary_color;
+    
+    &:not(:first-child){
+        width:30%;  
+    }
+
+    span{
+        display: block;
+        color:darken($secondary_color, 20);
+        font-size: 1.6rem;
+        font-weight: 300;
+    }
+}
+
+td{
+    font-size: 2rem;
+    font-family: $normal;
+    padding:1rem;
+    background-color: lighten($primary_color, 65);
+
+    &:nth-child(odd){
+        background-color: lighten($secondary_color, 10);
+    }
+    
+    &.day{
+        vertical-align: top;
+        text-align:right;
+    }
+
+    .hour{
+        sup{
+            font-size: 1rem;
+        }
+    }
+
+    .activity{
+        display:block;
+        font-weight:300;
+    }
+}
+
+// +--------------------------------------------------+
+// |                                                  |
+// | Evenements à venir                               |
+// |                                                  |
+// +--------------------------------------------------+
+
+.comming_events{
+    background: linear-gradient(180deg, lighten($secondary_color, 10) 31%, #fff 31%);
+
+    @include breakpoint(mobile){
+        background: linear-gradient(180deg, lighten($secondary_color, 10) 20%, #fff 20%);
+    }
+
+    .event{
+        width:80%;
+        margin-top:30px;
+        background-color: transparent;   
+        display: grid;
+        grid-template-columns: 2;
+        grid-template-rows: 3;
+        grid-gap:4rem;
+
+        @include breakpoint(tablet){
+            width: 100%;
+        }
+        
+        @include breakpoint(mobile){
+            width: 100%;
+            grid-template-columns: 1;
+        }
+
+        *{
+            align-self: center;
+        }
+
+        &__illustration{
+            grid-column: 2;
+            grid-row: span 3;
+            height:500px;
+
+            @include breakpoint(tablet){
+                height:300px;
+            }
+
+            @include breakpoint(mobile){
+                height: unset;
+                grid-column: 1 ;
+                grid-row: unset;
+                width:100%;
+            }
+        }
+
+        .btn{
+            height:40px;
+            width:60%;
+
+            @include breakpoint(mobile){
+                width:100%;
+            }
+        }
+    }
+}

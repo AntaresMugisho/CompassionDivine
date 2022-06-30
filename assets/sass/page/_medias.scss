@@ -1,0 +1,204 @@
+
+
+// HEADER > Hero 
+
+.medias_header{
+    background-color: lighten($accent-color, 10);
+
+    @include breakpoint(tablet){
+        height:50vh;
+    }
+
+    .hero .title{
+        width:60%;
+
+        @include breakpoint(tablet){
+            width:100%;
+        }
+    }
+}
+
+// MAIN CONTENT
+
+// +--------------------------------------------------+
+// |                                                  |
+// | Evenements passés                                |
+// |                                                  |
+// +--------------------------------------------------+
+
+.event{
+    background-color:lighten($secondary_color, 10);
+    display: grid;
+    grid-template-rows: 3;
+    position:relative;
+
+    &__title{
+        color:$primary_color;
+        font-family: $title;
+    }
+
+    &__subtitle{
+        span{
+            color:darken($secondary_color,20);
+            font-size:1.6rem;
+        }
+    }
+}
+
+.wrapper{
+    @include flex_center();
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap:1.5rem;
+
+    @include breakpoint(tablet){
+        flex-wrap: wrap;
+    }
+
+    @include breakpoint(mobile){
+        justify-content: center;
+    }
+    
+    .container{
+        @include flex_center(column);
+        justify-content: space-between;
+        gap:2rem;
+        height:100%;
+    }
+}
+
+.item{
+    width:100%;
+    min-width: 180px;
+    max-width:300px;
+    position:relative;
+
+    @include breakpoint(tablet){
+        min-width: unset;
+        max-width: 220px;
+    }
+
+    @include breakpoint(mobile){
+        max-width: 43vw;
+    }
+
+    &__thumb{
+        width:100%;
+        max-height:400px;
+        object-fit:cover;
+    }
+
+    &__legend{
+        font-size: 1.5rem;
+        width:100%;
+        padding:1rem;
+        color:#fff;
+        background-color:rgba(0,0,0,.5);
+        position:absolute;
+        bottom:0;
+    }
+}
+
+// +--------------------------------------------------+
+// |                                                  |
+// | Fenêtre modale                                   |
+// |                                                  |
+// +--------------------------------------------------+
+
+.modal-trigger{
+    cursor:pointer;
+}
+
+.modal-container{
+    visibility:hidden;
+    transition: visibility .4s;
+    width:100%;
+    height:100%;
+    position:absolute;
+    @include flex_center();
+
+    .overlay{
+        opacity:0;
+        width:100%;
+        height:100%;
+        background-color: rgba(255, 255, 255, 0.3);
+
+        backdrop-filter:blur(15px);
+        -webkit-backdrop-filter:blur(15px);
+
+        position:absolute;
+        transition: opacity .4s .2s ease-out;
+    }
+
+    .modal{
+        opacity: 0;
+        background-color:#fff;
+        border: 15px solid #fff;
+
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%, calc(-50% - 50px));
+        transition:opacity .4s ease-out,
+                   transform .4s;
+
+        @include breakpoint(mobile){
+            width:95vw;
+            height:auto;
+            max-height:88vh;
+            border-width:10px;
+        }
+    }
+}
+
+.modal-container.active{
+    visibility: visible;
+  
+    .overlay{
+        opacity:1;
+        transition: opacity .4s ease-out;
+    }
+
+    .modal{
+        opacity:1;
+        transform: translate(-50%, -50%);
+        transition: opacity .4s .2s ease-out,
+                    transform .4s;
+    }
+}
+
+.modal{
+
+    .item__thumb{
+        width: 90vw;
+        height: auto;
+        max-width: 800px;
+        max-height: 90vh;
+        object-fit:cover;
+
+    }
+
+    .item__legend{
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    i{
+        font-size: 3.8rem;
+        display:block;
+        position:absolute;
+        bottom:0;
+        color:#fff;
+        cursor:pointer;
+        z-index: 10000;
+        display:none;
+
+        &.left-arrow{
+            left:5px;
+        }
+
+        &.right-arrow{
+            right:5px;
+        }
+    }
+}

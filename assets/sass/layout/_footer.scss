@@ -15,7 +15,7 @@ footer .container{
     grid-template-columns: repeat(3, 1fr);
     grid-gap:2rem;
 
-    @include breakpoint("mobile"){
+    @include breakpoint(mobile){
         grid-template-columns: repeat(2, 1fr);
         width:80%;
         grid-column-gap:4rem;
@@ -65,7 +65,7 @@ footer .container{
         grid-column: 3;
         grid-row: 1;
 
-        @include breakpoint("mobile"){
+        @include breakpoint(mobile){
             grid-column: span 2;
             grid-row: 4;
             justify-self: center;
@@ -73,7 +73,7 @@ footer .container{
         
         .social{
             display: flex;
-            @include breakpoint("mobile"){
+            @include breakpoint(mobile){
                 justify-content: center;
             }
         }

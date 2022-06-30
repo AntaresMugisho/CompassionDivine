@@ -1,0 +1,202 @@
+
+
+// HEADER > Hero 
+
+.enseignements_header{
+    height:70vh;
+
+    @include breakpoint(tablet){
+        height:55vh;
+    }
+
+    @include breakpoint(mobile){
+        height:80vh;
+
+        @include backgound_filter(80vh);
+     }
+
+    .hero{
+        background-image:url(../../images/bible-parole.png);
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        background-size:40rem;
+        
+        @include breakpoint(tablet){
+            background-size:30rem;
+        }
+
+        .title{
+            font-size: fontSize("heading");
+            color:$primary-color;
+            margin:2rem 0;
+            z-index:1;
+        }
+
+        .description{
+            font-family: $title;
+            font-size: fontSize("title_2");
+            font-weight: 300;
+            width:60%;
+            z-index:1;
+
+            @include breakpoint(mobile){
+                width:80%;
+             }
+        }
+    }
+}
+
+// MAIN CONTENT
+
+// +--------------------------------------------------+
+// |                                                  |
+// | Barre de Recherche                               |
+// |                                                  |
+// +--------------------------------------------------+
+
+.search_field{
+    background-color: $secondary_color;
+    
+    .search_form{
+        @include flex_center();
+        width:80%;
+    }
+
+    %input_all{
+        border-radius:30px;
+        min-height:40px;
+        margin: 0 10px;
+        padding: 1rem 3rem;
+        outline:none;
+        font-size: fontSize("normal");
+    }
+    
+    input:nth-child(1){
+        @extend %input_all;
+        width:70%;
+        min-width:300px;
+        border:2px solid darken($secondary_color, 20);
+        box-shadow: inset 2px 0 3px rgba(0, 0, 0, 0.2);
+
+        @include breakpoint(mobile){
+            min-width:190px;
+            margin-left:0px;
+        }
+        
+        &:focus{
+            border-color:$primary-color;
+        }
+    }
+
+    input:nth-child(2){
+        @extend %input_all;
+
+        @include breakpoint(mobile){
+            width:90px;
+            margin:0;
+         }
+    }
+}
+
+// +--------------------------------------------------+
+// |                                                  |
+// | Lessons                                          |
+// |                                                  |
+// +--------------------------------------------------+
+
+.lessons_filter{
+    align-items: flex-start;
+
+    &__title{
+        color:$primary-color;
+        text-align: left;
+        font-family: $title;
+        font-size: fontSize("title_2");
+        margin-bottom:1rem;
+    }
+
+    &__subtitle{
+        @extend .lessons_filter__title;
+        font-size:fontSize("normal");
+        color:#000;
+
+        &::after{
+            content:"";
+            display: block;
+            width:84vw;
+            height:.2rem;
+            margin-top: .5rem;;
+            background-color: $secondary-color;
+        }
+    }
+}
+
+:root{
+    --lesson-width:260px;
+
+    @include breakpoint(tablet){
+        --lesson-width:200px;
+    }
+
+    @include breakpoint(mobile){
+        --lesson-width:155px;
+    }
+}
+
+.lessons_container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(var(--lesson-width), 1fr));
+    grid-template-rows: 1;
+    grid-gap:30px;
+    width:100%;
+    margin-top: 4rem;
+
+    @include breakpoint(tablet){
+        grid-gap:20px;
+    }
+
+    @include breakpoint(mobile){
+        grid-column-gap:10px;
+        grid-row-gap:20px;
+    }
+
+    &:not(:nth-last-child(1)){
+        margin-bottom:10rem;
+    }
+}
+
+.lesson{
+    width:var(--lesson-width);
+    border-radius:10px;
+    box-shadow: .6rem .8rem 1.2rem rgba(0,0,0, .2);
+    padding-bottom:1.6rem;
+    justify-self: center;
+    overflow:hidden;
+
+    @include breakpoint(mobile){
+        border-radius:6px;
+    }
+    
+    img{
+        width:100%;
+        height:180px;
+        object-fit: cover;
+        
+        @include breakpoint(mobile){
+            height:100px;
+        }
+    }
+
+    &__title{
+        font-size: fontSize("normal");
+        margin-top: $main_margin;
+    }
+
+    &__description{
+        font-size: 1.8rem;
+    }
+
+    .btn{
+        height:40px;
+    }
+}
