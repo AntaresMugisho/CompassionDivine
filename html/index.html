@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="fr">
+<html>
+
+	<head>
+		<meta charset="UTF-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<meta name="keywords" content="eglise, compassion, divine, theme, guide">
+		<title>Eglise la Compassion Divine Internationale - Accueil</title>
+		<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+		<link rel="shortcut icon" type="image/png" href="../images/logo_ecd_small.png"/>
+		<meta name="description" content="L'Eglise La Compassion Divine vous propose des guides et Enseigmements simples pour vous accompagner dans votre vie Chrétienne."/>
+	</head>
+
+	<body>
+		
+		<header>
+
+			<div class="logo_container">
+				<a href="../html/index.html">
+					<img class="logo" alt="Logo ECD" src="../images/logo_ecd.png"/>
+				</a>
+			</div>
+			
+			<div class="navigation_bar_container">
+				
+				<div class="after_logo">
+					
+					<div class="menu_container">
+						<h1 class="site_name">EGLISE LA COMPASSION DIVINE INTERNATIONALE</h1>
+						<button class="menu_btn" onClick="show_menu()">
+							<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#029433"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+						</button>
+						</div>
+					
+					<div class="green_line"></div>
+
+					<nav id="nav_bar">
+						<ul class="nav_items">
+							<li class="menu_item active" id="first_menu"> <a href="../html/index.html">Accueil</a> </li>
+							<li class="menu_item"> <a href="../html/media.html">Média</a></li>
+							<li class="menu_item"> <a href="../html/calendrier.html">Calendrier</a></li>
+							<li class="menu_item"> <a href="../html/about_us.html">A Propos</a></li>
+							<li class="menu_item" id="last_menu"> <a href="#contact_us">Contacts</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+
+		</header>
+
+		<main>
+			<div class="themes_container">
+				
+				<div class="themes">
+					<input type="radio" name="radio_btn" class="radio_slide" id="radio0" checked>
+					<input type="radio" name="radio_btn" class="radio_slide" id="radio1">
+					<input type="radio" name="radio_btn" class="radio_slide" id="radio2">
+					<input type="radio" name="radio_btn" class="radio_slide" id="radio3">
+					<input type="radio" name="radio_btn" class="radio_slide" id="radio4">
+
+					<div id="active" class="theme zero">
+						<h2 class="church_name">EGLISE<span>LA COMPASSION</span><span>DIVINE</span><span>INTERNATIONALE</span></h2>					
+					</div>
+						
+					<div class="theme first">
+						<h2>Thème de la semaine</h2>
+						<h3>LA CONSTANCE <br>DANS LA COMMUNION<br>FRATERNELLE</h3>
+						<a href="../html/theme1.html" class="develop_btn">Développer</a>
+					</div>
+	
+					<div class="theme second">
+						<h2>LES DONS<br>DU SAINT ESPRIT</h2>
+						<h3 class="verset">1 Corinthiens 12 : 7-11</h3>
+						<a href="../html/theme2.html" class="develop_btn">Développer</a>
+					</div>
+					<div class="theme third">
+						<h2>« LA CONSTANCE DANS <br> LA VIE DE PRIERE »</h2>
+						<h3 class="verset">Matthieu 7:7-9 & Esaï 6:6-9</h3>
+						<a href="../html/theme3.html" class="develop_btn">Développer</a>
+					</div>
+					<div class="theme fourth">
+						<h2><span>« LA CONSTANCE</span><br>DANS L'EVANGELISATION »</h2>
+						<h3 class="verset">Jacques 1:8-9 & Ephésiens 6:14</h3>
+						<a href="../html/theme4.html" class="develop_btn">Développer</a>
+					</div>
+				</div>
+				
+				<button class="prev_btn"></button>
+				<button class="next_btn"></button>
+
+				<div class="transparent_white_line1"></div>
+				<div class="transparent_white_line2">					
+					<label for="radio0" class="label_slide r0"></label>
+					<label for="radio1" class="label_slide r1"></label>
+					<label for="radio2" class="label_slide r2"></label>
+					<label for="radio3" class="label_slide r3"></label>
+					<label for="radio4" class="label_slide r4"></label>
+				</div>
+
+			</div>
+
+			<div class="second_content">
+				<h2 class="guides_title">Suivez nos guides !</h2>
+				<div class="guides">
+					<a href="">
+						<div class="guid_1">
+							<h3>Une vie Chrétienne.</h3>
+						</div>
+					</a>
+					<a href="">
+						<div class="guid_2">
+							<h3>La Bible.</h3>
+						</div>
+				   </a>
+					<a href="">
+						<div class="guid_3">
+							<h3>Conseils pour prier.</h3>
+						</div>
+					</a>
+					<a href="">
+						<div class="guid_4">
+							<h3>Laissez-vous guidé par le Saint-Esprit !</h3>
+						</div>
+					</a>
+				</div>
+			</div>
+
+			
+
+			<div class="side_menu">
+				
+
+			</div>
+			
+		</main>
+		
+		<footer class="real_footer">
+			<div class="church_contacts" id="contact_us">
+				<h5>Nous contacter</h5>
+
+				<form class="contact_form" method="POST" action="contact.php">
+					<div>
+						<input type="text" name="name" id="name" placeholder="Nom" required>
+						<input type="email" name="email" id="e_mail" placeholder="E-mail" required>
+					</div>
+					<textarea name="message" id="message" cols="30" rows="4" placeholder="Ecrivez votre message ici"></textarea>
+					<button type="submit" class="send_btn">Envoyer</button>
+				</form> 
+
+
+				<p class="phone_numbers_section">Représentation Légale</br>
+					Pasteur Samuel LUGO - Représentant Légal</br>
+					+222 41 272 679</br></br>
+					Pasteure Cécile LUGO - Représentante Légale Adjointe</br>
+					+222 32 064 992
+				</p>
+ 
+			</div>
+			<div class="communities">
+				<div class="community">
+					<h5>Goma - RD Congo</h5>
+					<p><span class="location">Goma, Nord-Kivu, RD Congo</span> </br>
+						<span class="adress">Route Katindo, Rue Mosqué, en Diagonale de CEBCE
+						HOREBU</span></br></br>
+						<span class="chief">Pasteur Jacques & Gladys KANYEMBE N'KUNA</span></br></br>
+						<span class="phone_number">Contacts: +243 993 914 476 /
+						          +243 975 835 479</span>
+					</p>
+				</div>
+				<div class="community">
+					<h5>Bangui - Centrafrique</h5>
+					<p><span class="location">Bangui, Ombella M'poko, Centrafrique</span> </br>
+						<span class="adress">Route aéroport, Combattant, Rue Nyagato
+							à 10 mètres
+						</span></br></br>
+						<span class="chief">Pasteur Prince Wyllen & Ingrid WOUNGANE</span></br></br>
+						<span class="phone_number">Contacts: +236 75 360 095 /
+						          +236 72 887 303</span>
+					</p>
+				</div>
+				<div class="community">
+					<h5>Cibitoke - Burundi</h5>
+					<p><span class="location">Cibitoke, Bugamba Burundi</span> </br>
+						<span class="adress">Adresse non fournie</span></br></br>
+						<span class="chief">Pasteur François & Espérance NTAKIRUTIMANA</span></br></br>
+						<span class="phone_number">Contacts: +257 69 783 929</span>
+					</p>
+				</div>
+				<div class="community">
+					<h5>Yaoundé - Cameroun</h5>
+					<p><span class="location">Yaoundé,  Cameroun</span> </br>
+						<span class="adress">ESSOS Vision Confort</span></br></br>
+						<span class="chief">Pasteure Cécile LUGO</span></br></br>
+						<span class="phone_number">Contacts: +222 32 064 992 /
+						          +237 653 313 622</span>
+					</p>
+				</div>
+			</div>
+			<p class="copy_right">&copy; 2022 - Eglise La Compassion Divine</p>
+		</footer>
+		<script src="https://smtpjs.com/v3/smtp.js"></script>
+		<script src="../js/app.js"></script>
+	</body>
+
+</html>
