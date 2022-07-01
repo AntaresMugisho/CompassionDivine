@@ -1572,6 +1572,12 @@ td .activity {
   box-shadow: 0 0 0px rgba(0, 0, 0, 0.1);
 }
 
+@media screen and (max-width: 1024px) {
+  .aside_menu {
+    display: none;
+  }
+}
+
 .aside_menu a {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -1602,7 +1608,7 @@ td .activity {
   align-items: center;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1336px) {
   .about_container {
     align-items: flex-end;
   }
@@ -1613,9 +1619,15 @@ td .activity {
   width: 65%;
 }
 
+@media screen and (max-width: 1336px) {
+  .about {
+    width: 80%;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .about {
-    width: 70%;
+    width: 100%;
   }
 }
 
@@ -1634,49 +1646,82 @@ td .activity {
   font-size: 3.4rem;
 }
 
-.summury {
-  width: 100%;
-  background-color: #f0f0f0;
-  border: 2px solid;
-  padding: 1rem 0;
-  margin: 1rem 0;
-  border-radius: 12px;
-  font-weight: 300;
+.about:nth-child(odd) {
+  background-color: #fefded;
 }
 
-.summury span:nth-child(1) {
+.about:nth-child(even) {
+  background-color: #f7f7f7;
+}
+
+.resume {
+  width: 100%;
+  border: 2px solid;
+  border-radius: 12px;
+  padding: 0rem 0;
+  margin: 1rem 0;
+  font-weight: 300;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+@media screen and (max-width: 480px) {
+  .resume {
+    border-radius: 6px;
+  }
+}
+
+.resume span {
+  padding: 1rem;
+  display: block;
+}
+
+.resume span .bible_ref {
+  font-style: italic;
+}
+
+.resume span:first-of-type {
   background-color: #d6d6d6;
   color: #fff;
-  padding: 1rem;
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
   font-weight: 400;
 }
 
-.summury.vision {
+@media screen and (max-width: 480px) {
+  .resume span:first-of-type {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+  }
+}
+
+.resume.vision {
   background-color: #67d4ff;
   border-color: #01b7ff;
 }
 
-.summury.vision span:nth-child(1) {
+.resume.vision span:nth-child(1) {
   background-color: #01b7ff;
 }
 
-.summury.mission {
+.resume.mission {
   background-color: #ffcc6c;
   border-color: #ffa806;
 }
 
-.summury.mission span:nth-child(1) {
+.resume.mission span:nth-child(1) {
   background-color: #ffa806;
 }
 
-.summury.message {
+.resume.message {
   background-color: #18e380;
   border-color: #0e874c;
 }
 
-.summury.message span:nth-child(1) {
+.resume.message span:nth-child(1) {
   background-color: #0e874c;
 }
 

@@ -7,14 +7,13 @@
 
 }
 
-// ASIDE NAVIGATION
+// ASIDE
 
 // +--------------------------------------------------+
 // |                                                  |
-// |                   |
+// | Menu latéral                                     |
 // |                                                  |
 // +--------------------------------------------------+
-
 
 .aside_menu{
     @include flex_center(column);
@@ -31,6 +30,10 @@
     top:50%;
     transform: translateY(-50%);
     box-shadow: 0 0 0px rgba(0, 0, 0, 0.1);
+   
+    @media screen and (max-width: 1024px) {
+        display:none;
+    }
 
     a{  
         font-family: $normal;
@@ -56,36 +59,38 @@
     margin:2rem 0;
 }
 
-
-
 // MAIN CONTENT
 
 // +--------------------------------------------------+
 // |                                                  |
-// | Général                                            |
+// | Général                                          |
 // |                                                  |
 // +--------------------------------------------------+
 
 .about_container{
     @include flex_center(column);
     
-    @media screen and (max-width: 1024px) {
+    @media screen and (max-width: 1336px) {
         align-items:flex-end;
     }
 }
-
 
 .about{
     align-items: flex-start;
     width:65%;
 
-    @media screen and (max-width: 1024px) {
-        width:70%;
+    @media screen and (max-width: 1336px) {
+        width:80%;
     }
 
+    @media screen and (max-width: 1024px) {
+        width:100%;
+    }
+  
     &__title{
         font-weight:300;
         color:$primary_color;
+
     }
 
     &__subtitle{
@@ -99,32 +104,60 @@
     }
 }
 
+
+.about:nth-child(odd){
+    background-color: lighten($accent_color, 13);
+}
+.about:nth-child(even){
+    background-color: lighten($secondary_color, 13);
+}
+
 // +--------------------------------------------------+
 // |                                                  |
 // | Resumé                                           |
 // |                                                  |
 // +--------------------------------------------------+
 
-.summury{
+.resume{
     width:100%;
-    background-color:lighten($secondary_color, 10);
     border: 2px solid;
-    padding:1rem 0;
-    margin:1rem 0;
     border-radius:12px;
+    padding:0rem 0;
+    margin:1rem 0;
     font-weight:300;
 
-    span:nth-child(1){
+    @include breakpoint(mobile){
+        border-radius: 6px;
+    }
+
+    @include flex_center();
+    justify-content: flex-start;
+
+    span{
+        padding:1rem;
+        display: block;
+
+        .bible_ref{
+            font-style: italic;
+        }
+    }
+
+    span:first-of-type{
         background-color:$secondary_color;
         color:#fff;
-        padding:1rem;
         border-top-left-radius:8px;
         border-bottom-left-radius:8px;
         font-weight:400;
+
+        @include breakpoint(mobile){
+            border-top-left-radius:4px;
+        border-bottom-left-radius:4px;
+        }
     }
+
 }
 
-.summury.vision{
+.resume.vision{
     background-color:lighten(#01b7ff, 20);
     border-color:#01b7ff;
 
@@ -133,7 +166,7 @@
     }
 }
 
-.summury.mission{
+.resume.mission{
     background-color:lighten(#ffa806, 20);
     border-color:#ffa806;
 
@@ -142,14 +175,14 @@
     }
 }
 
-.summury.message{
+.resume.message{
     background-color:lighten($primary_color, 20);
     border-color:$primary_color;
+    
     span:nth-child(1){
         background-color:$primary_color;
     }
 }
-
 
 // +--------------------------------------------------+
 // |                                                  |
