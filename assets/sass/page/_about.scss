@@ -7,7 +7,7 @@
 
 }
 
-// ASIDE
+// ASIDE CONTENT
 
 // +--------------------------------------------------+
 // |                                                  |
@@ -90,7 +90,6 @@
     &__title{
         font-weight:300;
         color:$primary_color;
-
     }
 
     &__subtitle{
@@ -104,10 +103,10 @@
     }
 }
 
-
 .about:nth-child(odd){
     background-color: lighten($accent_color, 13);
 }
+
 .about:nth-child(even){
     background-color: lighten($secondary_color, 13);
 }
@@ -154,7 +153,6 @@
         border-bottom-left-radius:4px;
         }
     }
-
 }
 
 .resume.vision{
@@ -183,9 +181,3 @@
         background-color:$primary_color;
     }
 }
-
-// +--------------------------------------------------+
-// |                                                  |
-// |                   |
-// |                                                  |
-// +--------------------------------------------------+
