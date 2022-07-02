@@ -1766,6 +1766,57 @@ td .activity {
   color: #fff;
 }
 
+.orator {
+  color: #fff;
+  font-style: italic;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.lecture-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.lecture-section {
+  width: 70%;
+}
+
+.lecture-section .lecture__title {
+  color: #0e874c;
+  font-size: 5.56rem;
+  font-weight: 300;
+  margin: 3rem 0 1rem;
+}
+
+.lecture-section p, .lecture-section .lecture__title {
+  align-self: flex-start;
+  line-height: 1.5;
+}
+
+.reference {
+  width: 100%;
+  padding: 0 2rem 2rem;
+  margin: 2rem 0;
+  background-color: #fcf9c7;
+  border-radius: 6px;
+  font-style: italic;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 2rem;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.reference span:first-of-type {
+  display: block;
+  width: fit-content;
+  padding: .3rem 2rem;
+  border-radius: 40px;
+  color: #095932;
+  background-color: rgba(0, 0, 0, 0.1);
+  transform: translateY(-12px);
+}
+
 .obs {
   opacity: 1;
   transform: traslateY(0);
