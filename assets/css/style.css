@@ -1757,6 +1757,12 @@ td .activity {
   transition: color 0.3s;
 }
 
+@media screen and (max-width: 480px) {
+  .breadcrumb a {
+    font-size: 1.5rem;
+  }
+}
+
 .breadcrumb a:hover {
   color: #095932;
 }
@@ -1783,6 +1789,12 @@ td .activity {
   width: 70%;
 }
 
+@media screen and (max-width: 1024px) {
+  .lecture-section {
+    width: 100%;
+  }
+}
+
 .lecture-section .lecture__title {
   color: #0e874c;
   font-size: 5.56rem;
@@ -1793,6 +1805,15 @@ td .activity {
 .lecture-section p, .lecture-section .lecture__title {
   align-self: flex-start;
   line-height: 1.5;
+}
+
+.lecture-section ul {
+  list-style-type: disc;
+  width: 80%;
+}
+
+.lecture-section ul li {
+  font-size: 3rem;
 }
 
 .reference {
@@ -1815,6 +1836,11 @@ td .activity {
   color: #095932;
   background-color: rgba(0, 0, 0, 0.1);
   transform: translateY(-12px);
+}
+
+.pdf-link {
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
 }
 
 .obs {
