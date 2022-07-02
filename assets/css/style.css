@@ -1726,40 +1726,44 @@ td .activity {
 }
 
 .lesson_header {
-  height: 10vh;
+  height: 80vh;
+  background-image: linear-gradient(73.1deg, #227e22 8%, #63a211 86.9%);
 }
 
-.arboresence {
+.lesson_header .hero {
+  justify-content: space-between;
+}
+
+.breadcrumb {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: .5rem 1rem;
+  border-radius: 6px;
 }
 
-.arboresence span {
-  color: #0e874c;
+.breadcrumb li i {
+  font-size: 1.2rem;
+  color: #fff;
+  margin: 0 1rem;
+}
+
+.breadcrumb a {
+  color: #fff;
   font-family: "Ubuntu", sans-serif;
-  position: relative;
-  margin-right: 1rem;
-  background-color: red;
-  z-index: 10;
+  font-size: 1.8rem;
+  transition: color 0.3s;
 }
 
-.arboresence span::after {
-  content: "";
-  width: 40px;
-  height: 40px;
-  background-color: transparent;
-  border: 3px solid #0e874c;
-  position: absolute;
-  right: 0;
-  top: -25%;
-  transform: rotate(45deg);
-  z-index: -10;
+.breadcrumb a:hover {
+  color: #095932;
 }
 
-.lesson-section {
-  height: 200vh;
+.lecture__title {
+  width: 90%;
+  color: #fff;
 }
 
 .obs {
