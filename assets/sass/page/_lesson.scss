@@ -1,0 +1,132 @@
+
+
+// HEADER > Hero 
+
+.lesson_header{
+    height:80vh;
+    background-image: linear-gradient( 73.1deg,  rgba(34,126,34,1) 8%, rgba(99,162,17,1) 86.9% );
+    
+    
+    .hero{
+        justify-content: space-between;
+    }
+}
+
+// +--------------------------------------------------+
+// |                                                  |
+// | Fil d'Ariane                                          |
+// |                                                  |
+// +--------------------------------------------------+
+
+.breadcrumb{
+    @include flex_center();
+
+    background-color:rgba(255, 255, 255, .1);
+    padding:.5rem 1rem;
+    border-radius: 6px;
+    
+    li i{
+        font-size: 1.2rem;
+        color:#fff;
+        margin:0 1rem;
+    }
+
+    a{
+        color:#fff;
+        font-family:$title;
+        font-size:1.8rem;
+        transition:color $tr_duration;
+
+        @include breakpoint(mobile){
+            font-size:1.5rem;
+        }
+
+        &:hover{
+            color:darken($primary_color,10);
+        }
+    }
+}
+
+.lecture__title{
+    width:90%;
+    color:#fff;
+}
+
+.orator{
+    color:#fff;
+    font-style:italic;
+    font-family: $title;
+}
+
+// MAIN CONTENT
+
+// +--------------------------------------------------+
+// |                                                  |
+// | Contenu                                          |
+// |                                                  |
+// +--------------------------------------------------+
+
+.lecture-container{
+    @include flex_center(column);
+}
+
+
+.lecture-section{
+    width:70%;
+
+    @media screen and (max-width: 1024px){
+        width:100%;
+    }
+
+    .lecture__title{
+        color:$primary_color;
+        font-size: fontSize("title_1");
+        font-weight: 300;
+        margin:3rem 0 1rem;
+    }
+
+    p, .lecture__title{
+        align-self: flex-start;
+        line-height: 1.5;
+    }
+
+    ul{
+        list-style-type:disc;
+        width:80%;
+
+        li{
+            font-size: 3rem;
+        }
+    }
+}
+
+
+
+.reference{
+    width:100%;
+    padding:0 2rem 2rem;
+    margin:2rem 0; 
+    background-color:lighten($accent_color, 5);
+    border-radius:6px;
+
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    font-size:2rem;
+
+    box-shadow: 0 3px 8px rgba(0, 0, 0, .1);
+
+    span:first-of-type{
+        display:block;
+        width:fit-content;
+        padding:.3rem 2rem;
+        border-radius:40px;
+        color:darken($primary_color, 10);
+        background-color: rgba(0, 0, 0, 0.1);
+        transform: translateY(-12px);
+    }
+}
+
+.pdf-link{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
