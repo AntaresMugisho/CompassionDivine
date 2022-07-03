@@ -1731,7 +1731,8 @@ td .activity {
 }
 
 .lesson_header .hero {
-  justify-content: space-between;
+  height: 100%;
+  justify-content: space-evenly;
 }
 
 .breadcrumb {
@@ -1770,6 +1771,12 @@ td .activity {
 .lecture__title {
   width: 90%;
   color: #fff;
+}
+
+@media screen and (max-width: 480px) {
+  .lecture__title {
+    width: 100%;
+  }
 }
 
 .orator {
