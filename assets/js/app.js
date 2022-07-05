@@ -46,51 +46,41 @@ function handle_intersect(entries, observer){
     })
 }
 
+
+
+
+
+
 // Recherche dynamique -- Page Enseignements
+// const searchInput = document.querySelector("#search");
+// const searchButton = document.querySelector("#submit-btn");
 
-const searchInput = document.querySelector("#search");
-// const searchResult = document.querySelector(".lessons_container.fist-child");
+// // const searchResult = document.querySelector(".lessons_container.fist-child");
 
-const dataArray = document.getElementsByClassName("lesson");
+// const dataArray = document.getElementsByClassName("lesson");
 
-const resultTitle = document.querySelector(".result-title");
-const resultContainer = document.querySelector(".result-container");
+// const resultTitle = document.querySelector(".result-title");
+// const resultContainer = document.querySelector(".result-container");
 
-let arr = [];
-// arr.push(dataArray)
+// let lessonsContainers = document.querySelectorAll(".lessons_container");
 
+// searchButton.addEventListener("click", filterData);
 
-// resultContainer.appendChild(dataArray);
+// function filterData(){
+//     resultContainer.innerHTML = ""
+//     searchedString = searchInput.value.toLowerCase();
 
-let lessonsContainers = document.querySelectorAll(".lessons_container");
-
-
-searchInput.addEventListener("input", filterData);
-
-function filterData(e){
+//     resultTitle.innerText = "Réultats de la recherche";
     
-    resultTitle.innerText = "Réultats de la recherche";
-
-    searchedString = e.target.value.toLowerCase();
-
-    for (i = 0; i < dataArray.length; i++){
-        let lesson =  dataArray[i];
-        // console.log("lesson :", lesson);
-
-        if (lesson.textContent.toLowerCase().includes(searchedString)){
-            // lesson.style.display = "block";
-            // arr.push(lesson);
-            
-        }
-        else{
-            dataArray[i] = " ";
-            // lesson.style.display = "none";
-        }
-    }
-    // resultContainer.innerHTML = ;
-    console.log(dataArray);
-    // console.log(resultContainer);
-}
+//     for (i = 0; i < dataArray.length; i++){
+//         let lesson =  dataArray[i];
+//         console.log("lesson :", lesson);
+        
+//         if (lesson.innerText.toLowerCase().includes(searchedString)){
+//             resultContainer.appendChild(lesson); 
+//         }
+//     }
+// }
 
 
 
