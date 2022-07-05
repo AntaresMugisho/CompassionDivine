@@ -57,7 +57,7 @@
 .search_field{
     background-color: $secondary_color;
     
-    .search_form{
+    .input-control{
         @include flex_center();
         width:80%;
     }

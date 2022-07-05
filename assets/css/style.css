@@ -1069,7 +1069,7 @@ header.index_header .btn {
   background-color: #d6d6d6;
 }
 
-.search_field .search_form {
+.search_field .input-control {
   display: flex;
   flex-direction: row;
   justify-content: center;

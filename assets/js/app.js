@@ -1,5 +1,5 @@
 
-// Show / Hide menu on mobile and tablet
+// Show / Hide menu on mobile and tablet -- Toutes les pages
 
 const humburger = document.querySelector(".humburger");
 humburger.addEventListener('click', toggle_menu)
@@ -16,7 +16,7 @@ for (const nav_link of nav_links){
     nav_link.addEventListener("click", toggle_menu)
 }
 
-// Animations avec intersection observer
+// Animations avec intersection observer -- Page d'accueil et footer
 
 let options = {
     // root: null,
@@ -46,7 +46,59 @@ function handle_intersect(entries, observer){
     })
 }
 
-// Fenêtre modale sur la page Médias
+// Recherche dynamique -- Page Enseignements
+
+const searchInput = document.querySelector("#search");
+// const searchResult = document.querySelector(".lessons_container.fist-child");
+
+const dataArray = document.getElementsByClassName("lesson");
+
+const resultTitle = document.querySelector(".result-title");
+const resultContainer = document.querySelector(".result-container");
+
+let arr = [];
+// arr.push(dataArray)
+
+
+// resultContainer.appendChild(dataArray);
+
+let lessonsContainers = document.querySelectorAll(".lessons_container");
+
+
+searchInput.addEventListener("input", filterData);
+
+function filterData(e){
+    
+    resultTitle.innerText = "Réultats de la recherche";
+
+    searchedString = e.target.value.toLowerCase();
+
+    for (i = 0; i < dataArray.length; i++){
+        let lesson =  dataArray[i];
+        // console.log("lesson :", lesson);
+
+        if (lesson.textContent.toLowerCase().includes(searchedString)){
+            // lesson.style.display = "block";
+            // arr.push(lesson);
+            
+        }
+        else{
+            dataArray[i] = " ";
+            // lesson.style.display = "none";
+        }
+    }
+    // resultContainer.innerHTML = ;
+    console.log(dataArray);
+    // console.log(resultContainer);
+}
+
+
+
+
+
+
+
+// Fenêtre modale -- Page Médias
 
 const modal_triggers = document.querySelectorAll(".modal-trigger");
 const modal_container = document.querySelector(".modal-container");
@@ -67,3 +119,5 @@ function toggleModal(e){
         modal.innerHTML = icons + content;
     }
 }
+
+
