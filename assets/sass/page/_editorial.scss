@@ -10,6 +10,10 @@
         height:50vh;
     }
 
+    @include breakpoint(mobile){
+        height:60vh;
+    }
+
     .title{
         color:#fff;
     }
@@ -53,7 +57,7 @@
     .content{
         align-items: flex-start;
         width:70%;
-        
+
         @media screen and (max-width: 1024px){
             width:100%;
         }

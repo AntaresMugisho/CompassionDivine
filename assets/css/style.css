@@ -580,6 +580,8 @@ td .activity { display: block; font-weight: 300; }
 
 @media screen and (max-width: 1024px) { .editorial_header { height: 50vh; } }
 
+@media screen and (max-width: 480px) { .editorial_header { height: 60vh; } }
+
 .editorial_header .title { color: #fff; }
 
 .editorial_header .description { font-family: "Ubuntu", sans-serif; color: #faf6af; }
