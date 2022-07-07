@@ -1850,6 +1850,74 @@ td .activity {
   font-style: italic;
 }
 
+.editorial_header {
+  height: 40vh;
+  background-color: #0e874c;
+}
+
+@media screen and (max-width: 1024px) {
+  .editorial_header {
+    height: 50vh;
+  }
+}
+
+.editorial_header .title {
+  color: #fff;
+}
+
+.editorial_header .description {
+  font-family: "Ubuntu", sans-serif;
+  color: #faf6af;
+}
+
+.main_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+
+.main_content p, .main_content li {
+  line-height: 1.5;
+  font-family: "Roboto", sans-serif;
+  font-size: 2.4rem;
+}
+
+.main_content p span, .main_content li span {
+  font-weight: 600;
+}
+
+.main_content ul {
+  list-style-type: disc;
+  width: 80%;
+  align-self: center;
+}
+
+.main_content a {
+  color: #006eff;
+}
+
+.main_content .content {
+  align-items: flex-start;
+  width: 70%;
+}
+
+@media screen and (max-width: 1024px) {
+  .main_content .content {
+    width: 100%;
+  }
+}
+
+.main_content .title {
+  font-weight: 300;
+  text-align: left;
+}
+
+.main_content h3 {
+  font-family: "Ubuntu", sans-serif;
+}
+
 .obs {
   opacity: 1;
   transform: traslateY(0);
