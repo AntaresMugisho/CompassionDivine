@@ -18,7 +18,7 @@ for (const nav_link of nav_links){
 }
 
 // +------------------------------------------------------------+
-// |Animations intersection observer -- Page d'accueil          |
+// | Animations intersection observer -- Page d'accueil         |
 // +------------------------------------------------------------+
 
 if (document.title === "Eglise la Compassion Divine - Accueil"){
@@ -88,18 +88,18 @@ if (document.title === "ECD - Enseignements"){
     
             for (i = 0; i < dataArray.length; i++){
                 let foundLesson =  dataArray[i];
-                
+        
                 if (foundLesson.innerText.toLowerCase().includes(searchedString)){
-                    
+
                     occurences++;
-                    resultStatus.innerText = `${occurences} résultats obtenus.`;
+                    resultStatus.innerText = `${occurences} résultat.s obtenu.s`;
                     
                     foundLesson.style.display = "grid";      
                 }
                 else{
                     foundLesson.style.display = "none";
                 }
-            }   
+            }
         }
         else{
             resultTitle.innerText = "Enseignements suggérés";
