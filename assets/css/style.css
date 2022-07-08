@@ -1069,7 +1069,7 @@ header.index_header .btn {
   background-color: #d6d6d6;
 }
 
-.search_field .search_form {
+.search_field .input-control {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -1096,6 +1096,7 @@ header.index_header .btn {
 @media screen and (max-width: 480px) {
   .search_field input:nth-child(1) {
     min-width: 190px;
+    width: 100%;
     margin-left: 0px;
   }
 }
@@ -1104,10 +1105,18 @@ header.index_header .btn {
   border-color: #0e874c;
 }
 
+.search_field input:nth-child(2) i {
+  display: none;
+}
+
 @media screen and (max-width: 480px) {
   .search_field input:nth-child(2) {
     width: 90px;
     margin: 0;
+  }
+  .search_field input:nth-child(2) i {
+    font-size: 2rem;
+    display: block;
   }
 }
 
@@ -1135,6 +1144,13 @@ header.index_header .btn {
   height: .2rem;
   margin-top: .5rem;
   background-color: #d6d6d6;
+}
+
+.lessons_filter .result_status {
+  color: grey;
+  font-size: 1.6rem;
+  font-weight: 600;
+  font-style: italic;
 }
 
 :root {
@@ -1572,6 +1588,12 @@ td .activity {
   box-shadow: 0 0 0px rgba(0, 0, 0, 0.1);
 }
 
+@media screen and (max-width: 1024px) {
+  .aside_menu {
+    display: none;
+  }
+}
+
 .aside_menu a {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -1602,7 +1624,7 @@ td .activity {
   align-items: center;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1336px) {
   .about_container {
     align-items: flex-end;
   }
@@ -1613,9 +1635,15 @@ td .activity {
   width: 65%;
 }
 
+@media screen and (max-width: 1336px) {
+  .about {
+    width: 80%;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .about {
-    width: 70%;
+    width: 100%;
   }
 }
 
@@ -1634,50 +1662,284 @@ td .activity {
   font-size: 3.4rem;
 }
 
-.summury {
-  width: 100%;
-  background-color: #f0f0f0;
-  border: 2px solid;
-  padding: 1rem 0;
-  margin: 1rem 0;
-  border-radius: 12px;
-  font-weight: 300;
+.about:nth-child(odd) {
+  background-color: #fefded;
 }
 
-.summury span:nth-child(1) {
+.about:nth-child(even) {
+  background-color: #f7f7f7;
+}
+
+.resume {
+  width: 100%;
+  border: 2px solid;
+  border-radius: 12px;
+  padding: 0rem 0;
+  margin: 1rem 0;
+  font-weight: 300;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+@media screen and (max-width: 480px) {
+  .resume {
+    border-radius: 6px;
+  }
+}
+
+.resume span {
+  padding: 1rem;
+  display: block;
+}
+
+.resume span .bible_ref {
+  font-style: italic;
+}
+
+.resume span:first-of-type {
   background-color: #d6d6d6;
   color: #fff;
-  padding: 1rem;
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
   font-weight: 400;
 }
 
-.summury.vision {
+@media screen and (max-width: 480px) {
+  .resume span:first-of-type {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+  }
+}
+
+.resume.vision {
   background-color: #67d4ff;
   border-color: #01b7ff;
 }
 
-.summury.vision span:nth-child(1) {
+.resume.vision span:nth-child(1) {
   background-color: #01b7ff;
 }
 
-.summury.mission {
+.resume.mission {
   background-color: #ffcc6c;
   border-color: #ffa806;
 }
 
-.summury.mission span:nth-child(1) {
+.resume.mission span:nth-child(1) {
   background-color: #ffa806;
 }
 
-.summury.message {
+.resume.message {
   background-color: #18e380;
   border-color: #0e874c;
 }
 
-.summury.message span:nth-child(1) {
+.resume.message span:nth-child(1) {
   background-color: #0e874c;
+}
+
+.lesson_header {
+  height: 80vh;
+  background-image: linear-gradient(73.1deg, #227e22 8%, #63a211 86.9%);
+}
+
+.lesson_header .hero {
+  height: 100%;
+  justify-content: space-evenly;
+}
+
+.breadcrumb {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: .5rem 1rem;
+  border-radius: 6px;
+}
+
+.breadcrumb li i {
+  font-size: 1.2rem;
+  color: #fff;
+  margin: 0 1rem;
+}
+
+.breadcrumb a {
+  color: #fff;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.8rem;
+  transition: color 0.3s;
+}
+
+@media screen and (max-width: 480px) {
+  .breadcrumb a {
+    font-size: 1.5rem;
+  }
+}
+
+.breadcrumb a:hover {
+  color: #095932;
+}
+
+.lecture__title {
+  width: 90%;
+  color: #fff;
+}
+
+@media screen and (max-width: 480px) {
+  .lecture__title {
+    width: 100%;
+  }
+}
+
+.orator {
+  color: #fff;
+  font-style: italic;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.lecture-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.lecture-section {
+  width: 70%;
+}
+
+@media screen and (max-width: 1024px) {
+  .lecture-section {
+    width: 100%;
+  }
+}
+
+.lecture-section .lecture__title {
+  color: #0e874c;
+  font-size: 5.56rem;
+  font-weight: 300;
+  margin: 3rem 0 1rem;
+}
+
+.lecture-section p, .lecture-section .lecture__title {
+  align-self: flex-start;
+  line-height: 1.5;
+}
+
+.lecture-section ul {
+  list-style-type: disc;
+  width: 80%;
+}
+
+.lecture-section li {
+  font-family: "Roboto", sans-serif;
+  font-size: 2.4rem;
+  padding: .5rem 0;
+}
+
+.reference {
+  width: 100%;
+  padding: 0 2rem 2rem;
+  margin: 2rem 0;
+  background-color: #fcf9c7;
+  border-radius: 6px;
+  font-style: italic;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 2rem;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.reference span:first-of-type {
+  display: block;
+  width: fit-content;
+  padding: .3rem 2rem;
+  border-radius: 40px;
+  color: #095932;
+  background-color: rgba(0, 0, 0, 0.1);
+  transform: translateY(-12px);
+}
+
+.pdf-link {
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+}
+
+.editorial_header {
+  height: 40vh;
+  background-color: #0e874c;
+}
+
+@media screen and (max-width: 1024px) {
+  .editorial_header {
+    height: 50vh;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .editorial_header {
+    height: 60vh;
+  }
+}
+
+.editorial_header .title {
+  color: #fff;
+}
+
+.editorial_header .description {
+  font-family: "Ubuntu", sans-serif;
+  color: #faf6af;
+}
+
+.main_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+
+.main_content p, .main_content li {
+  line-height: 1.5;
+  font-family: "Roboto", sans-serif;
+  font-size: 2.4rem;
+}
+
+.main_content p span, .main_content li span {
+  font-weight: 600;
+}
+
+.main_content ul {
+  list-style-type: disc;
+  width: 80%;
+  align-self: center;
+}
+
+.main_content a {
+  color: #006eff;
+}
+
+.main_content .content {
+  align-items: flex-start;
+  width: 70%;
+}
+
+@media screen and (max-width: 1024px) {
+  .main_content .content {
+    width: 100%;
+  }
+}
+
+.main_content .title {
+  font-weight: 300;
+  text-align: left;
+}
+
+.main_content h3 {
+  font-family: "Ubuntu", sans-serif;
 }
 
 .obs {
