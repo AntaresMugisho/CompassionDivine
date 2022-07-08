@@ -336,11 +336,14 @@ header.index_header .btn { z-index: 1; }
 
 .search_field input:nth-child(1) { width: 70%; min-width: 300px; border: 2px solid #a3a3a3; box-shadow: inset 2px 0 3px rgba(0, 0, 0, 0.2); }
 
-@media screen and (max-width: 480px) { .search_field input:nth-child(1) { min-width: 190px; margin-left: 0px; } }
+@media screen and (max-width: 480px) { .search_field input:nth-child(1) { min-width: 190px; width: 100%; margin-left: 0px; } }
 
 .search_field input:nth-child(1):focus { border-color: #0e874c; }
 
-@media screen and (max-width: 480px) { .search_field input:nth-child(2) { width: 90px; margin: 0; } }
+.search_field input:nth-child(2) i { display: none; }
+
+@media screen and (max-width: 480px) { .search_field input:nth-child(2) { width: 90px; margin: 0; }
+  .search_field input:nth-child(2) i { font-size: 2rem; display: block; } }
 
 .lessons_filter { align-items: flex-start; }
 
@@ -349,6 +352,8 @@ header.index_header .btn { z-index: 1; }
 .lessons_filter__subtitle { font-size: 2.4rem; color: #000; }
 
 .lessons_filter__subtitle::after { content: ""; display: block; width: 84vw; height: .2rem; margin-top: .5rem; background-color: #d6d6d6; }
+
+.lessons_filter .result_status { color: grey; font-size: 1.6rem; font-weight: 600; font-style: italic; }
 
 :root { --lesson-width:260px; }
 

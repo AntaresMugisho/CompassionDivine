@@ -80,6 +80,7 @@
 
         @include breakpoint(mobile){
             min-width:190px;
+            width:100%;
             margin-left:0px;
         }
         
@@ -91,9 +92,20 @@
     input:nth-child(2){
         @extend %input_all;
 
+        i{
+            display:none;
+        }
+
         @include breakpoint(mobile){
+            // width:40px;
             width:90px;
             margin:0;
+            // font-size:0;
+
+            i{
+                font-size:2rem;
+                display:block;
+            }
          }
     }
 }
@@ -128,6 +140,13 @@
             margin-top: .5rem;;
             background-color: $secondary-color;
         }
+    }
+
+    .result_status{
+        color:grey;
+        font-size:1.6rem;
+        font-weight: 600;
+        font-style: italic;
     }
 }
 
