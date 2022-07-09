@@ -2077,6 +2077,7 @@ td .activity {
 
 .pending p {
   color: #fff;
+  line-height: 1.5;
 }
 
 .pending .msg {
