@@ -1825,14 +1825,18 @@ td .activity {
   margin: 3rem 0 1rem;
 }
 
-.lecture-section p, .lecture-section .lecture__title {
+.lecture-section p, .lecture-section li, .lecture-section .lecture__title {
   align-self: flex-start;
   line-height: 1.5;
 }
 
+.lecture-section ol {
+  margin-left: 5%;
+}
+
 .lecture-section ul {
   list-style-type: disc;
-  width: 80%;
+  margin-left: 5%;
 }
 
 .lecture-section li {
@@ -1959,6 +1963,19 @@ td .activity {
     transform: traslate(0, 0);
     transition: transform 0s, opacity 0s;
   }
+}
+
+.go_top {
+  height: 40px;
+  font-size: 1.5rem;
+  position: fixed;
+  right: 3rem;
+  bottom: 3rem;
+}
+
+.go_top i {
+  margin: 1rem;
+  font-size: 1.8rem;
 }
 
 .pending {

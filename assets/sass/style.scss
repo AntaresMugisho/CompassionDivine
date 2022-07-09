@@ -36,7 +36,6 @@
 //@import "./themes/";
 
 
-
 //Animations
 
 .obs{
@@ -58,6 +57,27 @@
         transition: transform 0s, opacity 0s;
     }
 }
+
+// Retourner en haut de la page
+.go_top{
+    height:40px;
+    font-size:1.5rem;
+
+    position:fixed;
+    right:3rem;
+    bottom:3rem;
+
+    i{
+        margin:1rem;
+        font-size:1.8rem;
+    }
+
+    @include breakpoint(mobile){
+        
+    }
+
+}
+
 
 
 // Pending page

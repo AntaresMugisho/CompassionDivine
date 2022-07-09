@@ -90,14 +90,18 @@
         margin:3rem 0 1rem;
     }
 
-    p, .lecture__title{
+    p, li, .lecture__title{
         align-self: flex-start;
         line-height:1.5;
     }
 
+    ol{
+        margin-left:5%;
+    }
+
     ul{
         list-style-type:disc;
-        width:80%;
+        margin-left:5%;
     }
 
     li{
