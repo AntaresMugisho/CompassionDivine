@@ -303,7 +303,7 @@ footer .container {
 @media screen and (max-width: 480px) {
   footer .container {
     grid-template-columns: repeat(2, 1fr);
-    width: 80%;
+    width: 90%;
     grid-column-gap: 4rem;
   }
 }
