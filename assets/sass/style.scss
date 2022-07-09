@@ -73,12 +73,20 @@
     }
 
     @include breakpoint(mobile){
-        
+        width:40px;
+        padding:0;
+
+        span{
+            display:none;
+        }
+
+        i{
+            margin:0;
+            font-size:3rem;
+        }
     }
 
 }
-
-
 
 // Pending page
 

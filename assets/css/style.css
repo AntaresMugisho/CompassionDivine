@@ -1978,6 +1978,20 @@ td .activity {
   font-size: 1.8rem;
 }
 
+@media screen and (max-width: 480px) {
+  .go_top {
+    width: 40px;
+    padding: 0;
+  }
+  .go_top span {
+    display: none;
+  }
+  .go_top i {
+    margin: 0;
+    font-size: 3rem;
+  }
+}
+
 .pending {
   display: flex;
   flex-direction: column;
