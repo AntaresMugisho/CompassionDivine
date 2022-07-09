@@ -51,9 +51,13 @@
 .lecture__title{
     width:90%;
     color:#fff;
-
+    
     @include breakpoint(mobile){
         width:100%;
+        
+        .hyphens{
+            font-size: 7.3rem;
+        }
     }
 }
 
@@ -77,11 +81,7 @@
 
 
 .lecture-section{
-    width:70%;
-
-    @media screen and (max-width: 1024px){
-        width:100%;
-    }
+    max-width:1000px;
 
     .lecture__title{
         color:$primary_color;
@@ -90,16 +90,20 @@
         margin:3rem 0 1rem;
     }
 
-    p, .lecture__title{
+    p, li, .lecture__title{
         align-self: flex-start;
         line-height:1.5;
     }
 
-    ul{
-        list-style-type:disc;
-        width:80%;
+    ol{
+        margin-left:5%;
     }
 
+    ul{
+        list-style-type:disc;
+        margin-left:5%;
+    }
+    
     li{
         font-family:$normal;
         font-size: 2.4rem;

@@ -72,7 +72,6 @@ if (document.title === "ECD - Enseignements"){
     
     const dataArray = document.querySelectorAll(".lesson");
     
-    
     searchInput.addEventListener("input", filterData);
     // searchButton.addEventListener("click", filterData);
     
@@ -80,7 +79,7 @@ if (document.title === "ECD - Enseignements"){
      
         if (searchInput.value.length > 0){
     
-            searchedString = searchInput.value.toLowerCase();
+            searchedString = searchInput.value.toLowerCase().replace(/\s/g, "");
             
             resultTitle.innerText = "Résultats de la recherche";
     
@@ -88,16 +87,23 @@ if (document.title === "ECD - Enseignements"){
     
             for (i = 0; i < dataArray.length; i++){
                 let foundLesson =  dataArray[i];
-        
-                if (foundLesson.innerText.toLowerCase().includes(searchedString)){
-
-                    occurences++;
-                    resultStatus.innerText = `${occurences} résultat.s obtenu.s`;
-                    
+          
+                if (foundLesson.innerText.toLowerCase().replace(/\s/g, "").includes(searchedString)){
+                    occurences++; 
                     foundLesson.style.display = "grid";      
                 }
                 else{
                     foundLesson.style.display = "none";
+                }
+                
+                if (occurences > 1){
+                    resultStatus.innerText = `${occurences} résultats obtenus.`;
+                }
+                else if(occurences < 1){        
+                    resultStatus.innerText = `Aucun résultat obtenu.`;
+                }
+                else{
+                    resultStatus.innerText = `${occurences} résultat obtenu.`;
                 }
             }
         }
