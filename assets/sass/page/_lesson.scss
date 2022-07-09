@@ -51,9 +51,13 @@
 .lecture__title{
     width:90%;
     color:#fff;
-
+    
     @include breakpoint(mobile){
         width:100%;
+        
+        .hyphens{
+            font-size: 7.3rem;
+        }
     }
 }
 
