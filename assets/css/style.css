@@ -1949,6 +1949,76 @@ td .activity {
   font-family: "Ubuntu", sans-serif;
 }
 
+.donation_header {
+  height: 40vh;
+  background-image: radial-gradient(circle farthest-corner at 10% 20%, #0eae57 0%, #0c7475 90%);
+}
+
+.global-container {
+  align-items: flex-start;
+  max-width: 900px;
+  background-color: #f2fef8;
+}
+
+.bank {
+  display: grid;
+  grid-template-columns: 2;
+  grid-template-rows: 3;
+  grid-column-gap: 5px;
+  width: 100%;
+  background: linear-gradient(180deg, whitesmoke 90px, #fff 90px);
+  padding: 1rem;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border: 1px solid #e5e5e5;
+}
+
+@media screen and (max-width: 480px) {
+  .bank {
+    background: linear-gradient(180deg, whitesmoke 64px, #fff 64px);
+  }
+}
+
+.bank__img {
+  grid-row: 1;
+  height: 80px;
+}
+
+@media screen and (max-width: 480px) {
+  .bank__img {
+    height: 50px;
+  }
+}
+
+.bank__name {
+  grid-row: 1;
+  grid-column: 2;
+  align-self: center;
+}
+
+.bank__user-name {
+  grid-column: span 2;
+}
+
+.bank__number {
+  grid-column: span 2;
+  font-size: 3rem;
+}
+
+.bank__number span {
+  display: block;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-size: 3rem;
+}
+
+.wish {
+  align-self: center;
+  font-size: 5rem;
+  font-weight: 600;
+  font-style: italic;
+}
+
 .obs {
   opacity: 1;
   transform: traslateY(0);

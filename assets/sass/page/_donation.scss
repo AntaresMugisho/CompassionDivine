@@ -1,0 +1,79 @@
+
+
+// HEADER > Hero 
+
+.donation_header{
+    height:40vh;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(14,174,87,1) 0%, rgba(12,116,117,1) 90% );
+
+}
+
+
+
+// +--------------------------------------------------+
+// |                                                  |
+// | Main content                                     |
+// |                                                  |
+// +--------------------------------------------------+
+
+.global-container{
+    align-items: flex-start;
+    max-width:900px;
+    background-color: lighten($primary_color, 68);
+}
+
+.bank{
+    display:grid;
+    grid-template-columns: 2;
+    grid-template-rows: 3;
+    grid-column-gap:5px;
+
+    width:100%;
+    background: linear-gradient(180deg, lighten($secondary-color, 12) 90px, #fff 90px);
+    padding:1rem;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border:1px solid lighten($secondary-color, 6);
+    
+    @include breakpoint(mobile){
+        background: linear-gradient(180deg, lighten($secondary-color, 12) 64px, #fff 64px);
+    }
+
+    &__img{
+        grid-row: 1;
+        height:80px;
+
+        @include breakpoint(mobile){
+            height:50px;
+        }
+    }
+
+    &__name{
+        grid-row: 1;
+        grid-column: 2;
+        align-self: center;
+    }
+    
+    &__user-name{
+        grid-column: span 2;
+    }
+
+    &__number{
+        grid-column: span 2;
+        font-size:3rem;
+
+        span{
+            display:block;
+            font-weight:700;
+            letter-spacing: 2px;
+            font-size: 3rem;
+        }   
+    }
+}
+
+.wish{
+    align-self: center;
+    font-size: 5rem;
+    font-weight: 600;
+    font-style: italic;
+}

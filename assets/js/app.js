@@ -72,7 +72,6 @@ if (document.title === "ECD - Enseignements"){
     
     const dataArray = document.querySelectorAll(".lesson");
     
-    
     searchInput.addEventListener("input", filterData);
     // searchButton.addEventListener("click", filterData);
     
