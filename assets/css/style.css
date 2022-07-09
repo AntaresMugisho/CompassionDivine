@@ -1812,13 +1812,7 @@ td .activity {
 }
 
 .lecture-section {
-  width: 70%;
-}
-
-@media screen and (max-width: 1024px) {
-  .lecture-section {
-    width: 100%;
-  }
+  max-width: 1000px;
 }
 
 .lecture-section .lecture__title {
@@ -1931,13 +1925,7 @@ td .activity {
 
 .main_content .content {
   align-items: flex-start;
-  width: 70%;
-}
-
-@media screen and (max-width: 1024px) {
-  .main_content .content {
-    width: 100%;
-  }
+  max-width: 1000px;
 }
 
 .main_content .title {
