@@ -3,7 +3,6 @@
 .btn{
     @include flex_center();
 
-
     border-radius:40px;
     padding:20px;
     width:fit-content;
@@ -30,7 +29,8 @@
         color:$primary_color;
 
         &:hover{
-            background-color: #fff;
+            color: #fff;
+            background-color:$primary_color;
         }
     }
 

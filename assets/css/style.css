@@ -105,7 +105,8 @@ p {
 }
 
 .btn--normal:hover {
-  background-color: #fff;
+  color: #fff;
+  background-color: #0e874c;
 }
 
 .btn--secondary {
@@ -264,6 +265,10 @@ header .hero {
 
 .navbar .nav__link.btn {
   padding: .5rem 1.6rem;
+}
+
+.navbar .nav__link.btn:hover {
+  color: #fff;
 }
 
 .navbar .nav__link.btn::after {
@@ -467,6 +472,8 @@ header.index_header .slogan {
 
 header.index_header .btn {
   z-index: 1;
+  margin: 1rem;
+  min-width: 200px;
 }
 
 .plan_container {
